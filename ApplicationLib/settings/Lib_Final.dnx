@@ -48,6 +48,15 @@
         <FreqHi>0</FreqHi>
         <MultiCoreRunAll>1</MultiCoreRunAll>
     </Simulator>
+    <DebugChecksum>
+        <Checksum>3803858677</Checksum>
+    </DebugChecksum>
+    <CallStack>
+        <ShowArgs>0</ShowArgs>
+    </CallStack>
+    <Disassembly>
+        <MixedMode>1</MixedMode>
+    </Disassembly>
     <DataSample>
         <LogEnabled>0</LogEnabled>
         <GraphEnabled>0</GraphEnabled>
@@ -66,7 +75,18 @@
         <Count>0</Count>
     </Breakpoints>
     <Aliases>
-        <Count>0</Count>
+        <A0>_ "C:\Users\17520\Desktop\Lib_Final_LoRa\Lib\src\stm8l15x_clk.c" ""</A0>
+        <A1>_ "C:\Users\17520\Desktop\Lib_Final_LoRa\Lib\src\stm8l15x_gpio.c" ""</A1>
+        <A2>_ "C:\Users\17520\Desktop\Lib_Final_LoRa\Lib\src\stm8l15x_it.c" ""</A2>
+        <A3>_ "C:\Users\17520\Desktop\Lib_Final_LoRa\Lib\src\stm8l15x_rtc.c" ""</A3>
+        <A4>_ "C:\Users\17520\Desktop\Lib_Final_LoRa\Lib\src\stm8l15x_spi.c" ""</A4>
+        <A5>_ "C:\Users\17520\Desktop\Lib_Final_LoRa\Lib\src\stm8l15x_usart.c" ""</A5>
+        <A6>_ "C:\Users\17520\Desktop\Lib_Final_LoRa\User\src\LoST_Clock.c" ""</A6>
+        <A7>_ "C:\Users\17520\Desktop\Lib_Final_LoRa\User\src\LoST_EXT.c" ""</A7>
+        <A8>_ "C:\Users\17520\Desktop\Lib_Final_LoRa\User\src\LoST_GPIO.c" ""</A8>
+        <A9>_ "C:\Users\17520\Desktop\Lib_Final_LoRa\User\src\LoST_SPI.c" ""</A9>
+        <A10>_ "C:\Users\17520\Desktop\Lib_Final_LoRa\User\src\Radio_Methods.c" ""</A10>
+        <Count>11</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
     <DebuggerSettings>

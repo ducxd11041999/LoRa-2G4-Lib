@@ -43,7 +43,7 @@ void Radio_GPIO_Init(void)
   GPIO_WriteBit(GPIOB, NSS, HIGH);
 
   //pinMode(NRESET, OUTPUT);
-  GPIO_WriteBit(GPIOD, NRESET, HIGH);
+  GPIO_WriteBit(GPIOB, NRESET, HIGH);
 
   //pinMode(BUSY, INPUT);
 }
@@ -127,9 +127,9 @@ void __Reset(void)
 {
   disableInterrupts();
   delay(20);
-  GPIO_WriteBit(GPIOD, NRESET, LOW);
+  GPIO_WriteBit(GPIOB, NRESET, LOW);
   delay(50);
-  GPIO_WriteBit(GPIOD, NRESET, HIGH);
+  GPIO_WriteBit(GPIOB, NRESET, HIGH);
   delay(20);
   enableInterrupts();
 }
@@ -1238,6 +1238,7 @@ void __ProcessIrqs(void)
           }
           break;
         case MODE_TX:
+          __callbacks->getStatusRegs(1);
           if ( ( irqRegs & IRQ_TX_DONE ) == IRQ_TX_DONE )
           {
             if ( __callbacks->txDone != NULL )
@@ -1364,13 +1365,13 @@ void __ForcePreambleLength(RadioPreambleLengths_t preambleLength)
 {
   __WriteRegister_1( REG_LR_PREAMBLELENGTH, ( __ReadRegister_1( REG_LR_PREAMBLELENGTH ) & MASK_FORCE_PREAMBLELENGTH ) | preambleLength );
 }
-
-INTERRUPT_HANDLER(EXTI1_IRQHandler, 9) //EXTI1
+INTERRUPT_HANDLER(EXTI1_IRQHandler, 9)
 {
 
   /* In order to detect unexpected events during development,
      it is recommended to set a breakpoint on the following instruction.
   */
+  __callbacks->getStatusRegs(1111);
   RadioPacketTypes_t packetType = PACKET_TYPE_NONE;
 
   if ( __PollingMode == true )
@@ -1451,6 +1452,7 @@ INTERRUPT_HANDLER(EXTI1_IRQHandler, 9) //EXTI1
           }
           break;
         case MODE_TX:
+          
           if ( ( irqRegs & IRQ_TX_DONE ) == IRQ_TX_DONE )
           {
             if ( __callbacks->txDone != NULL )
@@ -1525,7 +1527,7 @@ INTERRUPT_HANDLER(EXTI1_IRQHandler, 9) //EXTI1
           break;
         case MODE_TX:
           /// callbacks debugs reg value IRQ TX
-        //   __callbacks->getStatusRegs(irqRegs);
+           __callbacks->getStatusRegs(irqRegs);
           if ( ( irqRegs & IRQ_TX_DONE ) == IRQ_TX_DONE )
           {
             if ( __callbacks->txDone != NULL )

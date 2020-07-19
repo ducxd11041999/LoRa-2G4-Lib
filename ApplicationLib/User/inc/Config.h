@@ -8,9 +8,9 @@
 #include "UART.h"
 
 #define NSS GPIO_Pin_4
-#define NRESET GPIO_Pin_2
-#define BUSY GPIO_Pin_1
-#define DIO1 GPIO_Pin_0
+#define NRESET GPIO_Pin_3
+#define BUSY GPIO_Pin_2
+#define DIO1 GPIO_Pin_1
 #define DIO2 GPIO_Pin_0
 #define DIO3 GPIO_Pin_0
 

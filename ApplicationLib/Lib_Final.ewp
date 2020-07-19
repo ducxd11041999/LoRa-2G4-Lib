@@ -16,7 +16,7 @@
                 <debug>1</debug>
                 <option>
                     <name>GenDeviceSelectMenu</name>
-                    <state>STM8L151K6	STM8L151K6</state>
+                    <state>STM8L151C6	STM8L151C6</state>
                 </option>
                 <option>
                     <name>GenCodeModel</name>
@@ -609,7 +609,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>lnk0t.icf</state>
+                    <state>$TOOLKIT_DIR$\config\lnkstm8l151k6.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -673,7 +673,7 @@
                 </option>
                 <option>
                     <name>IlinkProgramEntryLabel</name>
-                    <state></state>
+                    <state>__iar_program_start</state>
                 </option>
                 <option>
                     <name>DoFill</name>

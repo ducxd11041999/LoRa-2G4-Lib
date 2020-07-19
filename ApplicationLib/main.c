@@ -126,10 +126,10 @@ void main() {
   {
     GPIO_ToggleBits(GPIOA,GPIO_Pin_4);
     //Uart_SendNumber(223);
-    Uart_SendData8String("abc\n");
-  //  USART_SendData8(USART1, 'K');
+    //Uart_SendData8String("abc\n");
+    //USART_SendData8(USART1, 'K');
      //USART_SendData8(USART1, '\n');
-     //LoRa();
+     LoRa();
      // delay(50000);
      //GPIO_ToggleBits(GPIOA, GPIO_Pin_4);
       //GPIO_digitalWrite(GPIO_Pin_4, LOW);
@@ -143,7 +143,7 @@ void LoRa() {
     Radio.SendPayload( &counter, 1, ( TickTime_t ) {
       RX_TIMEOUT_TICK_SIZE, TX_TIMEOUT_VALUE
     }, 0 );
-  //Uart_SendData8String("Sent\n");
+    //Uart_SendData8String("Sent\n");
     if (++counter > 100) counter = 0;
     delay(50000);
     delay(50000);
