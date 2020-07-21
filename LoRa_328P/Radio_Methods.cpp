@@ -1,13 +1,6 @@
 #include "Radio_Methods.h"
-#include "UART.h"
-uint32_t c = 0;
-
-void delay(uint32_t a){
-  while(a)
-  {
-      --a;
-  }
-}
+#include "Arduino.h"
+#include "SPI.h"
 
 static RadioCallbacks_t *__callbacks = NULL;
 static bool __IrqState = false;
@@ -28,67 +21,59 @@ typedef struct
 /*!
    \brief Radio hardware registers initialization definition
 */
-#define RADIO_INIT_REGISTERS_VALUE { }
+#define RADIO_INIT_REGISTERS_VALUE  { }
 
 /*!
    \brief Radio hardware registers initialization
 */
- //const RadioRegisters_t RadioRegsInit[];// = RADIO_INIT_REGISTERS_VALUE;
+const RadioRegisters_t RadioRegsInit[] = RADIO_INIT_REGISTERS_VALUE;
 
-void Radio_GPIO_Init(void)
+void GPIO_Init(void)
 {
-  GPIO_Init_NSS_BUSY_NRESET();
-  
-  //pinMode(NSS, OUTPUT);
-  GPIO_WriteBit(GPIOB, NSS, HIGH);
+  pinMode(NSS, OUTPUT);
+  digitalWrite(NSS, HIGH);
 
-  //pinMode(NRESET, OUTPUT);
-  GPIO_WriteBit(GPIOD, NRESET, HIGH);
+  pinMode(NRESET, OUTPUT);
+  digitalWrite(NRESET, HIGH);
 
-  //pinMode(BUSY, INPUT);
+  pinMode(BUSY, INPUT);
 }
 
-void Radio_SPI_Init(void)
+void SPI_Init(void)
 {
-  //SPI.begin(); //Inir_SPI//
-  initSPI1();
+  SPI.begin();
 }
 
 void IoIrqInit(void)
 {
-  //pinMode(DIO1, INPUT);
-  //attachInterrupt(digitalPinToInterrupt(DIO1), __ProcessIrqs, RISING); //Init_EXT
-  initExternal_Interrupt_DIO1();
+  pinMode(DIO1, INPUT);
+  attachInterrupt(digitalPinToInterrupt(DIO1), __ProcessIrqs, RISING);
 }
 
 void WaitOnBusy(void)
 {
-  //initExternal_Interrupt_DIO1();
-  while (GPIO_digitalRead(BUSY) == HIGH) {} //BUSY == true
+  while (digitalRead(BUSY) == HIGH) {}
 }
 
 void __Init(RadioCallbacks_t* callbacks)
 {
   __callbacks = callbacks;
 
-  initClock();
-  
   // GPIO Init
-  Radio_GPIO_Init();
+  GPIO_Init();
 
-    // SPI Init
-  Radio_SPI_Init();
-  
-  // IoIrqInit
-  IoIrqInit();
-  
   // Reset
   __Reset();
 
+  // SPI Init
+  SPI_Init();
+
+  // IoIrqInit
+  IoIrqInit();
+
   // Wakeup
   __Wakeup();
-  // Uart
-   Init_Uart();
+
   // SetRegistersDefault
   __SetRegistersDefault();
 }
@@ -105,11 +90,11 @@ void __SetInterruptMode(void)
 
 void __SetRegistersDefault(void)
 {
-//  for ( int16_t i = 0; i < sizeof( RadioRegsInit ) / sizeof( RadioRegisters_t ); i++ )
-//  {
-//    uint8_t value = RadioRegsInit[i].Value;
-//    __WriteRegister( RadioRegsInit[i].Addr, &(value), 1 );
-//  }
+  for ( int16_t i = 0; i < sizeof( RadioRegsInit ) / sizeof( RadioRegisters_t ); i++ )
+  {
+    uint8_t value = RadioRegsInit[i].Value;
+    __WriteRegister( RadioRegsInit[i].Addr, &(value), 1 );
+  }
 }
 
 uint16_t __GetFirmwareVersion(void)
@@ -125,23 +110,22 @@ uint16_t __GetFirmwareVersion(void)
 
 void __Reset(void)
 {
-  disableInterrupts();
-  delay(20);
-  GPIO_WriteBit(GPIOD, NRESET, LOW);
-  delay(50);
-  GPIO_WriteBit(GPIOD, NRESET, HIGH);
-  delay(20);
-  enableInterrupts();
+  // __disable_irq( );
+  //  delay(20);
+  digitalWrite(NRESET, LOW);
+  //  delay(50);
+  digitalWrite(NRESET, HIGH);
+  //  delay(20);
+  // __enable_irq( );
 }
 
 void __Wakeup(void)
 {
-  WaitOnBusy();
-  GPIO_WriteBit(GPIOB, NSS, LOW);    // RadioNss = 0;
-  SPI_Transfer(RADIO_GET_STATUS); // RadioSpi->write(RADIO_GET_STATUS);
-  SPI_Transfer(0);                // RadioSpi->write(0);
-  GPIO_WriteBit(GPIOB, NSS, HIGH);   // RadioNss = 1;
-  delay(500);
+  digitalWrite(NSS, LOW);    // RadioNss = 0;
+  SPI.transfer(RADIO_GET_STATUS); // RadioSpi->write(RADIO_GET_STATUS);
+  SPI.transfer(0);                // RadioSpi->write(0);
+  digitalWrite(NSS, HIGH);   // RadioNss = 1;
+
   WaitOnBusy();
 }
 
@@ -149,13 +133,13 @@ void __WriteCommand(RadioCommands_t command, uint8_t *buffer, uint16_t size)
 {
   WaitOnBusy();
 
-  GPIO_WriteBit(GPIOB, NSS, LOW);    // RadioNss = 0;
-  SPI_Transfer((uint8_t)command); // RadioSpi->write((uint8_t)command);
+  digitalWrite(NSS, LOW);    // RadioNss = 0;
+  SPI.transfer((uint8_t)command); // RadioSpi->write((uint8_t)command);
   for (uint16_t i = 0; i < size; i++)
   {
-    SPI_Transfer(buffer[i]); // RadioSpi->write(buffer[i]);
+    SPI.transfer(buffer[i]); // RadioSpi->write(buffer[i]);
   }
-  GPIO_WriteBit(GPIOB, NSS, HIGH); // RadioNss = 1;
+  digitalWrite(NSS, HIGH); // RadioNss = 1;
 
   if (command != RADIO_SET_SLEEP)
   {
@@ -167,23 +151,23 @@ void __ReadCommand(RadioCommands_t command, uint8_t *buffer, uint16_t size)
 {
   WaitOnBusy();
 
-  GPIO_WriteBit(GPIOB, NSS, LOW); // RadioNss = 0;
+  digitalWrite(NSS, LOW); // RadioNss = 0;
   if (command == RADIO_GET_STATUS)
   {
-    buffer[0] = SPI_Transfer((uint8_t)command); // buffer[0] = RadioSpi->write((uint8_t)command);
-    SPI_Transfer(0);                            // RadioSpi->write(0);
-    SPI_Transfer(0);                            // RadioSpi->write(0);
+    buffer[0] = SPI.transfer((uint8_t)command); // buffer[0] = RadioSpi->write((uint8_t)command);
+    SPI.transfer(0);                            // RadioSpi->write(0);
+    SPI.transfer(0);                            // RadioSpi->write(0);
   }
   else
   {
-    SPI_Transfer((uint8_t)command); // RadioSpi->write((uint8_t)command);
-    SPI_Transfer(0);                // RadioSpi->write(0);
+    SPI.transfer((uint8_t)command); // RadioSpi->write((uint8_t)command);
+    SPI.transfer(0);                // RadioSpi->write(0);
     for (uint16_t i = 0; i < size; i++)
     {
-      buffer[i] = SPI_Transfer(0); // buffer[i] = RadioSpi->write(0);
+      buffer[i] = SPI.transfer(0); // buffer[i] = RadioSpi->write(0);
     }
   }
-  GPIO_WriteBit(GPIOB, NSS, HIGH); // RadioNss = 1;
+  digitalWrite(NSS, HIGH); // RadioNss = 1;
 
   WaitOnBusy();
 }
@@ -192,38 +176,38 @@ void __WriteRegister(uint16_t address, uint8_t *buffer, uint16_t size)
 {
   WaitOnBusy( );
 
-  GPIO_WriteBit(GPIOB, NSS, LOW); // RadioNss = 0;
-  SPI_Transfer( RADIO_WRITE_REGISTER ); // RadioSpi->write( RADIO_WRITE_REGISTER );
-  SPI_Transfer( ( address & 0xFF00 ) >> 8 ); // RadioSpi->write( ( address & 0xFF00 ) >> 8 );
-  SPI_Transfer( address & 0x00FF );// RadioSpi->write( address & 0x00FF );
+  digitalWrite(NSS, LOW); // RadioNss = 0;
+  SPI.transfer( RADIO_WRITE_REGISTER ); // RadioSpi->write( RADIO_WRITE_REGISTER );
+  SPI.transfer( ( address & 0xFF00 ) >> 8 ); // RadioSpi->write( ( address & 0xFF00 ) >> 8 );
+  SPI.transfer( address & 0x00FF );// RadioSpi->write( address & 0x00FF );
   for ( uint16_t i = 0; i < size; i++ )
   {
-    SPI_Transfer(buffer[i]);// RadioSpi->write( buffer[i] );
+    SPI.transfer(buffer[i]);// RadioSpi->write( buffer[i] );
   }
-  GPIO_WriteBit(GPIOB, NSS, HIGH); // RadioNss = 1;
+  digitalWrite(NSS, HIGH); // RadioNss = 1;
 
   WaitOnBusy( );
 }
 
-void __WriteRegister_1(uint16_t address, uint8_t buffer)
+void __WriteRegister_1(uint16_t address, uint8_t *buffer)
 {
-  __WriteRegister(address, &buffer, 1);
+  __WriteRegister(address, buffer, 1);
 }
 
 void __ReadRegister(uint16_t address, uint8_t *buffer, uint16_t size)
 {
   WaitOnBusy( );
 
-  GPIO_WriteBit(GPIOB, NSS, LOW); // RadioNss = 0;
-  SPI_Transfer( RADIO_READ_REGISTER ); // RadioSpi->write( RADIO_READ_REGISTER );
-  SPI_Transfer((address & 0xFF00 ) >> 8 ); // RadioSpi->write( ( address & 0xFF00 ) >> 8 );
-  SPI_Transfer( address & 0x00FF ); // RadioSpi->write( address & 0x00FF );
-  SPI_Transfer( 0 ); // RadioSpi->write( 0 );
+  digitalWrite(NSS, LOW); // RadioNss = 0;
+  SPI.transfer( RADIO_READ_REGISTER ); // RadioSpi->write( RADIO_READ_REGISTER );
+  SPI.transfer((address & 0xFF00 ) >> 8 ); // RadioSpi->write( ( address & 0xFF00 ) >> 8 );
+  SPI.transfer( address & 0x00FF ); // RadioSpi->write( address & 0x00FF );
+  SPI.transfer( 0 ); // RadioSpi->write( 0 );
   for ( uint16_t i = 0; i < size; i++ )
   {
-    buffer[i] = SPI_Transfer( 0 );// buffer[i] = RadioSpi->write( 0 );
+    buffer[i] = SPI.transfer( 0 );// buffer[i] = RadioSpi->write( 0 );
   }
-  GPIO_WriteBit(GPIOB, NSS, HIGH); // RadioNss = 1;
+  digitalWrite(NSS, HIGH); // RadioNss = 1;
 
   WaitOnBusy( );
 }
@@ -237,16 +221,16 @@ uint8_t __ReadRegister_1(uint16_t address)
 
 void __WriteBuffer(uint8_t offset, uint8_t *buffer, uint8_t size)
 {
-  //WaitOnBusy( );
-  //GPIO_ToggleBits(GPIOA, GPIO_Pin_4);
-  GPIO_WriteBit(GPIOB, NSS, LOW); // RadioNss = 0;
-  SPI_Transfer(RADIO_WRITE_BUFFER); // RadioSpi->write( RADIO_WRITE_BUFFER );
-  SPI_Transfer(offset); // RadioSpi->write( offset );
+  WaitOnBusy( );
+
+  digitalWrite(NSS, LOW); // RadioNss = 0;
+  SPI.transfer(RADIO_WRITE_BUFFER); // RadioSpi->write( RADIO_WRITE_BUFFER );
+  SPI.transfer(offset); // RadioSpi->write( offset );
   for ( uint16_t i = 0; i < size; i++ )
   {
-    SPI_Transfer(buffer[i]);// RadioSpi->write( buffer[i] );
+    SPI.transfer(buffer[i]);// RadioSpi->write( buffer[i] );
   }
-  GPIO_WriteBit(GPIOB, NSS, HIGH); // RadioNss = 1;
+  digitalWrite(NSS, HIGH); // RadioNss = 1;
 
   WaitOnBusy( );
 }
@@ -255,15 +239,15 @@ void __ReadBuffer(uint8_t offset, uint8_t *buffer, uint8_t size)
 {
   WaitOnBusy( );
 
-  GPIO_WriteBit(GPIOB, NSS, LOW); // RadioNss = 0;
-  SPI_Transfer(RADIO_READ_BUFFER);// RadioSpi->write( RADIO_READ_BUFFER );
-  SPI_Transfer(offset);// RadioSpi->write( offset );
-  SPI_Transfer(0);// RadioSpi->write( 0 );
+  digitalWrite(NSS, LOW); // RadioNss = 0;
+  SPI.transfer(RADIO_READ_BUFFER);// RadioSpi->write( RADIO_READ_BUFFER );
+  SPI.transfer(offset);// RadioSpi->write( offset );
+  SPI.transfer(0);// RadioSpi->write( 0 );
   for ( uint16_t i = 0; i < size; i++ )
   {
-    buffer[i] = SPI_Transfer(0); // buffer[i] = RadioSpi->write( 0 );
+    buffer[i] = SPI.transfer(0); // buffer[i] = RadioSpi->write( 0 );
   }
-  GPIO_WriteBit(GPIOB, NSS, HIGH); // RadioNss = 1;
+  digitalWrite(NSS, HIGH); // RadioNss = 1;
 
   WaitOnBusy( );
 }
@@ -271,7 +255,7 @@ void __ReadBuffer(uint8_t offset, uint8_t *buffer, uint8_t size)
 uint8_t __GetDioStatus(void)
 {
   uint8_t result = 0;
-  result = (GPIO_digitalRead(DIO3) << 3) | (GPIO_digitalRead(DIO2) << 2) | (GPIO_digitalRead(DIO1) << 1) | (GPIO_digitalRead(BUSY) << 0);
+  result = (digitalRead(DIO3) << 3) | (digitalRead(DIO2) << 2) | (digitalRead(DIO1) << 1) | (digitalRead(BUSY) << 0);
   return result;
 }
 
@@ -998,7 +982,7 @@ double __GetRangingResult(RadioRangingResultTypes_t resultType)
       __SetStandby( STDBY_XOSC );
       __WriteRegister_1( 0x97F, __ReadRegister_1( 0x97F ) | ( 1 << 1 ) ); // enable LORA modem clock
       __WriteRegister_1( REG_LR_RANGINGRESULTCONFIG, ( __ReadRegister_1( REG_LR_RANGINGRESULTCONFIG ) & MASK_RANGINGMUXSEL ) | ( ( ( ( uint8_t )resultType ) & 0x03 ) << 4 ) );
-      valLsb = ( ( (u32)__ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR ) << 16 ) | ( (u32)__ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR + 1 ) << 8 ) | ((u32) __ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR + 2 ) ) );
+      valLsb = ( ( __ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR ) << 16 ) | ( __ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR + 1 ) << 8 ) | ( __ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR + 2 ) ) );
       __SetStandby( STDBY_RC );
 
       // Convertion from LSB to distance. For explanation on the formula, refer to Datasheet of SX1280
@@ -1069,7 +1053,7 @@ double __GetFrequencyError()
       efeRaw[0] = __ReadRegister_1( REG_LR_ESTIMATED_FREQUENCY_ERROR_MSB );
       efeRaw[1] = __ReadRegister_1( REG_LR_ESTIMATED_FREQUENCY_ERROR_MSB + 1 );
       efeRaw[2] = __ReadRegister_1( REG_LR_ESTIMATED_FREQUENCY_ERROR_MSB + 2 );
-      efe = ( (u32)efeRaw[0] << 16 ) | ( efeRaw[1] << 8 ) | efeRaw[2];
+      efe = ( efeRaw[0] << 16 ) | ( efeRaw[1] << 8 ) | efeRaw[2];
       efe &= REG_LR_ESTIMATED_FREQUENCY_ERROR_MASK;
 
       efeHz = 1.55 * ( double )complement2( efe, 20 ) / ( 1600.0 / ( double )__GetLoRaBandwidth( ) * 1000.0 );
@@ -1093,9 +1077,9 @@ void __ProcessIrqs(void)
   {
     if ( __IrqState == true )
     {
-      // disableInterrupts();
+      // __disable_irq( );
       __IrqState = false;
-      // enableInterrupts();
+      // __enable_irq( );
     }
     else
     {
@@ -1238,7 +1222,7 @@ void __ProcessIrqs(void)
           }
           break;
         case MODE_TX:
-          __callbacks->getStatusRegs(1);
+        Serial.println("ssss");
           if ( ( irqRegs & IRQ_TX_DONE ) == IRQ_TX_DONE )
           {
             if ( __callbacks->txDone != NULL )
@@ -1364,291 +1348,4 @@ void __ProcessIrqs(void)
 void __ForcePreambleLength(RadioPreambleLengths_t preambleLength)
 {
   __WriteRegister_1( REG_LR_PREAMBLELENGTH, ( __ReadRegister_1( REG_LR_PREAMBLELENGTH ) & MASK_FORCE_PREAMBLELENGTH ) | preambleLength );
-}
-INTERRUPT_HANDLER(EXTI0_IRQHandler, 8)
-{
-
-  /* In order to detect unexpected events during development,
-     it is recommended to set a breakpoint on the following instruction.
-  */
-    //Uart_SendData8String("Nhay do day");
- // __callbacks->getStatusRegs(1111);
-  RadioPacketTypes_t packetType = PACKET_TYPE_NONE;
-
-  if ( __PollingMode == true )
-  {
-    if ( __IrqState == true )
-    {
-      // disableInterrupts();
-      __IrqState = false;
-      // enableInterrupts();
-    }
-    else
-    {
-      return;
-    }
-  }
-
-  if (__callbacks == NULL)
-  {
-    return;
-  }
-
-  packetType = __GetPacketType( true );
-  uint16_t irqRegs = __GetIrqStatus( );
-  __ClearIrqStatus( IRQ_RADIO_ALL );
-
-  switch ( packetType )
-  {
-    case PACKET_TYPE_GFSK:
-    case PACKET_TYPE_FLRC:
-    case PACKET_TYPE_BLE:
-      switch ( __OperatingMode )
-      {
-        case MODE_RX:
-          if ( ( irqRegs & IRQ_RX_DONE ) == IRQ_RX_DONE )
-          {
-            if ( ( irqRegs & IRQ_CRC_ERROR ) == IRQ_CRC_ERROR )
-            {
-              if ( __callbacks->rxError != NULL )
-              {
-                __callbacks->rxError( IRQ_CRC_ERROR_CODE );
-              }
-            }
-            else if ( ( irqRegs & IRQ_SYNCWORD_ERROR ) == IRQ_SYNCWORD_ERROR )
-            {
-              if ( __callbacks->rxError != NULL )
-              {
-                __callbacks->rxError( IRQ_SYNCWORD_ERROR_CODE );
-              }
-            }
-            else
-            {
-              if ( __callbacks->rxDone != NULL )
-              {
-                __callbacks->rxDone( );
-              }
-            }
-          }
-          if ( ( irqRegs & IRQ_SYNCWORD_VALID ) == IRQ_SYNCWORD_VALID )
-          {
-            if ( __callbacks->rxSyncWordDone != NULL )
-            {
-              __callbacks->rxSyncWordDone( );
-            }
-          }
-          if ( ( irqRegs & IRQ_SYNCWORD_ERROR ) == IRQ_SYNCWORD_ERROR )
-          {
-            if ( __callbacks->rxError != NULL )
-            {
-              __callbacks->rxError( IRQ_SYNCWORD_ERROR_CODE );
-            }
-          }
-          if ( ( irqRegs & IRQ_RX_TX_TIMEOUT ) == IRQ_RX_TX_TIMEOUT )
-          {
-            if ( __callbacks->rxTimeout != NULL )
-            {
-              __callbacks->rxTimeout( );
-            }
-          }
-          break;
-        case MODE_TX:
-          
-          if ( ( irqRegs & IRQ_TX_DONE ) == IRQ_TX_DONE )
-          {
-            if ( __callbacks->txDone != NULL )
-            {
-              __callbacks->txDone( );
-            }
-          }
-          if ( ( irqRegs & IRQ_RX_TX_TIMEOUT ) == IRQ_RX_TX_TIMEOUT )
-          {
-            if ( __callbacks->txTimeout != NULL )
-            {
-              __callbacks->txTimeout( );
-            }
-          }
-          break;
-        default:
-          // Unexpected IRQ: silently returns
-          break;
-      }
-      break;
-    case PACKET_TYPE_LORA:
-      switch ( __OperatingMode )
-      {
-        case MODE_RX:
-            /// callbacks debugs reg value IRQ RX
-          //__callbacks->getStatusRegs(irqRegs);
-          if ( ( irqRegs & IRQ_RX_DONE ) == IRQ_RX_DONE )
-          {
-            if ( ( irqRegs & IRQ_CRC_ERROR ) == IRQ_CRC_ERROR )
-            {
-              if ( __callbacks->rxError != NULL )
-              {
-                __callbacks->rxError( IRQ_CRC_ERROR_CODE );
-              }
-            }
-            else
-            {
-              if ( __callbacks->rxDone != NULL )
-              {
-                __callbacks->rxDone( );
-              }
-            }
-          }
-          if ( ( irqRegs & IRQ_HEADER_VALID ) == IRQ_HEADER_VALID )
-          {
-            if ( __callbacks->rxHeaderDone != NULL )
-            {
-              __callbacks->rxHeaderDone( );
-            }
-          }
-          if ( ( irqRegs & IRQ_HEADER_ERROR ) == IRQ_HEADER_ERROR )
-          {
-            if ( __callbacks->rxError != NULL )
-            {
-              __callbacks->rxError( IRQ_HEADER_ERROR_CODE );
-            }
-          }
-          if ( ( irqRegs & IRQ_RX_TX_TIMEOUT ) == IRQ_RX_TX_TIMEOUT )
-          {
-            if ( __callbacks->rxTimeout != NULL )
-            {
-              __callbacks->rxTimeout( );
-            }
-          }
-          if ( ( irqRegs & IRQ_RANGING_SLAVE_REQUEST_DISCARDED ) == IRQ_RANGING_SLAVE_REQUEST_DISCARDED )
-          {
-            if ( __callbacks->rxError != NULL )
-            {
-              __callbacks->rxError( IRQ_RANGING_ON_LORA_ERROR_CODE );
-            }
-          }
-          break;
-        case MODE_TX:
-          /// callbacks debugs reg value IRQ TX
-           __callbacks->getStatusRegs(irqRegs);
-          if ( ( irqRegs & IRQ_TX_DONE ) == IRQ_TX_DONE )
-          {
-            if ( __callbacks->txDone != NULL )
-            {
-              __callbacks->txDone( );
-            }
-          }
-          if ( ( irqRegs & IRQ_RX_TX_TIMEOUT ) == IRQ_RX_TX_TIMEOUT )
-          {
-            if ( __callbacks->txTimeout != NULL )
-            {
-              __callbacks->txTimeout( );
-            }
-          }
-          break;
-        case MODE_CAD:
-          if ( ( irqRegs & IRQ_CAD_DONE ) == IRQ_CAD_DONE )
-          {
-            if ( ( irqRegs & IRQ_CAD_DETECTED ) == IRQ_CAD_DETECTED )
-            {
-              if ( __callbacks->cadDone != NULL )
-              {
-                __callbacks->cadDone( true );
-              }
-            }
-            else
-            {
-              if ( __callbacks->cadDone != NULL )
-              {
-                __callbacks->cadDone( false );
-              }
-            }
-          }
-          else if ( ( irqRegs & IRQ_RX_TX_TIMEOUT ) == IRQ_RX_TX_TIMEOUT )
-          {
-            if ( __callbacks->rxTimeout != NULL )
-            {
-              __callbacks->rxTimeout( );
-            }
-          }
-          break;
-        default:
-          // Unexpected IRQ: silently returns
-          break;
-      }
-      break;
-    case PACKET_TYPE_RANGING:
-      switch ( __OperatingMode )
-      {
-        // MODE_RX indicates an IRQ on the Slave side
-        case MODE_RX:
-          if ( ( irqRegs & IRQ_RANGING_SLAVE_REQUEST_DISCARDED ) == IRQ_RANGING_SLAVE_REQUEST_DISCARDED )
-          {
-            if ( __callbacks->rangingDone != NULL )
-            {
-              __callbacks->rangingDone( IRQ_RANGING_SLAVE_ERROR_CODE );
-            }
-          }
-          if ( ( irqRegs & IRQ_RANGING_SLAVE_REQUEST_VALID ) == IRQ_RANGING_SLAVE_REQUEST_VALID )
-          {
-            if ( __callbacks->rangingDone != NULL )
-            {
-              __callbacks->rangingDone( IRQ_RANGING_SLAVE_VALID_CODE );
-            }
-          }
-          if ( ( irqRegs & IRQ_RANGING_SLAVE_RESPONSE_DONE ) == IRQ_RANGING_SLAVE_RESPONSE_DONE )
-          {
-            if ( __callbacks->rangingDone != NULL )
-            {
-              __callbacks->rangingDone( IRQ_RANGING_SLAVE_VALID_CODE );
-            }
-          }
-          if ( ( irqRegs & IRQ_RX_TX_TIMEOUT ) == IRQ_RX_TX_TIMEOUT )
-          {
-            if ( __callbacks->rangingDone != NULL )
-            {
-              __callbacks->rangingDone( IRQ_RANGING_SLAVE_ERROR_CODE );
-            }
-          }
-          if ( ( irqRegs & IRQ_HEADER_VALID ) == IRQ_HEADER_VALID )
-          {
-            if ( __callbacks->rxHeaderDone != NULL )
-            {
-              __callbacks->rxHeaderDone( );
-            }
-          }
-          if ( ( irqRegs & IRQ_HEADER_ERROR ) == IRQ_HEADER_ERROR )
-          {
-            if ( __callbacks->rxError != NULL )
-            {
-              __callbacks->rxError( IRQ_HEADER_ERROR_CODE );
-            }
-          }
-          break;
-        // MODE_TX indicates an IRQ on the Master side
-        case MODE_TX:
-          if ( ( irqRegs & IRQ_RANGING_MASTER_TIMEOUT ) == IRQ_RANGING_MASTER_TIMEOUT )
-          {
-            if ( __callbacks->rangingDone != NULL )
-            {
-              __callbacks->rangingDone( IRQ_RANGING_MASTER_ERROR_CODE );
-            }
-          }
-          if ( ( irqRegs & IRQ_RANGING_MASTER_RESULT_VALID ) == IRQ_RANGING_MASTER_RESULT_VALID )
-          {
-            if ( __callbacks->rangingDone != NULL )
-            {
-              __callbacks->rangingDone( IRQ_RANGING_MASTER_VALID_CODE );
-            }
-          }
-          break;
-        default:
-          // Unexpected IRQ: silently returns
-          break;
-      }
-      break;
-    default:
-      // Unexpected IRQ: silently returns
-      break;
-  }
-  EXTI_ClearITPendingBit(EXTI_IT_Pin0);
- 
 }

@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\17520\Desktop\LoRaTN\TestAntOnBoard\settings\Lib_Final.Debug.general.xcl" --backend -f "C:\Users\17520\Desktop\LoRaTN\TestAntOnBoard\settings\Lib_Final.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\17520\Desktop\LoRaTN\TestBoard_V2\settings\Lib_Final.Debug.general.xcl" --backend -f "C:\Users\17520\Desktop\LoRaTN\TestBoard_V2\settings\Lib_Final.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\17520\Desktop\LoRaTN\TestAntOnBoard\settings\Lib_Final.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\17520\Desktop\LoRaTN\TestAntOnBoard\settings\Lib_Final.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\common\bin\cspybat" -f "C:\Users\17520\Desktop\LoRaTN\TestBoard_V2\settings\Lib_Final.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\17520\Desktop\LoRaTN\TestBoard_V2\settings\Lib_Final.Debug.driver.xcl" 
 }
