@@ -1372,7 +1372,7 @@ INTERRUPT_HANDLER(EXTI0_IRQHandler, 8)
      it is recommended to set a breakpoint on the following instruction.
   */
     //Uart_SendData8String("Nhay do day");
- // __callbacks->getStatusRegs(1111);
+  //__callbacks->getStatusRegs(1111);
   RadioPacketTypes_t packetType = PACKET_TYPE_NONE;
 
   if ( __PollingMode == true )

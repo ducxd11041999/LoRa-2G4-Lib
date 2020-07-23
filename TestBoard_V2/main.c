@@ -7,7 +7,7 @@
 #define SCK GPIO_Pin_5
 #define NSS GPIO_Pin_4
 
-#define IS_MASTER 0U
+#define IS_MASTER 1U
 
 #define RF_FREQUENCY                                2400000000UL// Hz
 #define TX_OUTPUT_POWER                             5U// dBm
@@ -162,9 +162,9 @@ void LoRa() {
         Radio.GetPayload( Buffer, &BufferSize, BUFFER_SIZE );
         if (BufferSize > 0)
         {
-          Uart_SendData8String("RX");
-          Uart_SendNumber(BufferSize);
-          Uart_SendData8String(" bytes: ");
+            Uart_SendData8String("RX : ");
+          //Uart_SendNumber(BufferSize);
+          //Uart_SendData8String(" bytes: ");
 
           for (int i = 0; i < BufferSize; i++)
           {
