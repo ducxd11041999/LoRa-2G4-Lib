@@ -1,12 +1,12 @@
 #include "Radio.h"
 
-#define IS_MASTER 1
+#define IS_MASTER 0
 
 #define RF_FREQUENCY                                2400000000// Hz
-#define TX_OUTPUT_POWER                             13 // dBm
+#define TX_OUTPUT_POWER                             5 // dBm
 #define RX_TIMEOUT_TICK_SIZE                        RADIO_TICK_SIZE_1000_US
-#define RX_TIMEOUT_VALUE                            1000 // ms
-#define TX_TIMEOUT_VALUE                            10000 // ms
+#define RX_TIMEOUT_VALUE                            4200 // ms
+#define TX_TIMEOUT_VALUE                            2100 // ms
 #define BUFFER_SIZE                                 255
 
 const uint8_t PingMsg[] = "PING";
@@ -68,14 +68,14 @@ void setup() {
   Serial.println( "\n\n\r     SX1280 Ping Pong Demo Application. \n\n\r");
 
   modulationParams.PacketType = PACKET_TYPE_LORA;
-  modulationParams.Params.LoRa.SpreadingFactor = LORA_SF12;
+  modulationParams.Params.LoRa.SpreadingFactor = LORA_SF10;
   modulationParams.Params.LoRa.Bandwidth = LORA_BW_1600;
-  modulationParams.Params.LoRa.CodingRate = LORA_CR_LI_4_7;
+  modulationParams.Params.LoRa.CodingRate = LORA_CR_4_8;
 
   packetParams.PacketType = PACKET_TYPE_LORA;
   packetParams.Params.LoRa.PreambleLength = 12;
   packetParams.Params.LoRa.HeaderType = LORA_PACKET_VARIABLE_LENGTH;
-  packetParams.Params.LoRa.PayloadLength = 10;
+  packetParams.Params.LoRa.PayloadLength = 1;
   packetParams.Params.LoRa.Crc = LORA_CRC_ON;
   packetParams.Params.LoRa.InvertIQ = LORA_IQ_NORMAL;
 
