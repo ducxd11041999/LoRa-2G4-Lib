@@ -1,12 +1,14 @@
 #include "Radio.h"
-
-#define IS_MASTER 0
+#include <Wire.h>
+#include "BME280.h"
+BME280 bme(Wire,0x76);
+#define IS_MASTER 1
 
 #define RF_FREQUENCY                                2400000000// Hz
-#define TX_OUTPUT_POWER                             5 // dBm
+#define TX_OUTPUT_POWER                             13 // dBm
 #define RX_TIMEOUT_TICK_SIZE                        RADIO_TICK_SIZE_1000_US
-#define RX_TIMEOUT_VALUE                            4200 // ms
-#define TX_TIMEOUT_VALUE                            2100 // ms
+#define RX_TIMEOUT_VALUE                            4000 // ms
+#define TX_TIMEOUT_VALUE                            2000 // ms
 #define BUFFER_SIZE                                 255
 
 const uint8_t PingMsg[] = "PING";
@@ -58,6 +60,7 @@ AppStates_t AppState = APP_LOWPOWER;
 uint8_t Buffer[BUFFER_SIZE];
 uint8_t BufferSize = BUFFER_SIZE;
 uint8_t counter = 0;
+uint8_t Pres = 0;
 
 void setup() {
   Serial.begin(9600);
@@ -68,12 +71,12 @@ void setup() {
   Serial.println( "\n\n\r     SX1280 Ping Pong Demo Application. \n\n\r");
 
   modulationParams.PacketType = PACKET_TYPE_LORA;
-  modulationParams.Params.LoRa.SpreadingFactor = LORA_SF10;
+  modulationParams.Params.LoRa.SpreadingFactor = LORA_SF12;
   modulationParams.Params.LoRa.Bandwidth = LORA_BW_1600;
   modulationParams.Params.LoRa.CodingRate = LORA_CR_4_8;
 
   packetParams.PacketType = PACKET_TYPE_LORA;
-  packetParams.Params.LoRa.PreambleLength = 12;
+  packetParams.Params.LoRa.PreambleLength = 15;
   packetParams.Params.LoRa.HeaderType = LORA_PACKET_VARIABLE_LENGTH;
   packetParams.Params.LoRa.PayloadLength = 1;
   packetParams.Params.LoRa.Crc = LORA_CRC_ON;
@@ -103,16 +106,29 @@ void setup() {
     }  );
   }
   AppState = APP_LOWPOWER;
+  if (bme.begin() < 0) {
+    Serial.println("Error communicating with sensor, check wiring and I2C address");
+    while(1){}
+  }
 }
 
 void loop() {
+  
+  //Serial.print("\t");
+  bme.readSensor();
+  //Serial.print(bme.getTemperature_C(),2);
+  Pres = bme.getPressure_Pa();
+  Serial.print(Pres);
+  Serial.print("\n");
+  //Pres = Pres ;
+  //Serial.print(Pres,6);
   if (IS_MASTER)
   {
-    Radio.SendPayload( &counter, 1, ( TickTime_t ) {
+    Radio.SendPayload(&Pres, 8, ( TickTime_t ) {
       RX_TIMEOUT_TICK_SIZE, TX_TIMEOUT_VALUE
     }, 0 );
     
-    if (++counter > 100) counter = 0;
+    //if (++counter > 100) counter = 0;
     
     delay(1000);
   }
