@@ -7,7 +7,7 @@
 #define SCK GPIO_Pin_5
 #define NSS GPIO_Pin_4
 
-#define IS_MASTER 0U
+#define IS_MASTER 1U
 
 #define RF_FREQUENCY                                2400000000UL// Hz
 #define TX_OUTPUT_POWER                             13U// dBm

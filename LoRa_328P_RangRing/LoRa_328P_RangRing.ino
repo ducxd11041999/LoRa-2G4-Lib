@@ -1,7 +1,7 @@
 #include "Radio.h"
 #include "FreqLUT.h"
 
-#define IS_MASTER 0
+#define IS_MASTER 0U
 
 #define RF_FREQUENCY                                2400000000// Hz
 #define TX_OUTPUT_POWER                             13 // dBm
@@ -100,7 +100,7 @@ uint8_t BufferSize = BUFFER_SIZE;
 uint16_t RxIrqMask = IRQ_RX_DONE | IRQ_RX_TX_TIMEOUT;
 uint16_t TxIrqMask = IRQ_TX_DONE | IRQ_RX_TX_TIMEOUT;
 
-void RangingPacketInit(int rangingIndex)
+void RangingPacketInit(int RangRingIndex)
 {
   modulationParams.PacketType = PACKET_TYPE_RANGING;
   modulationParams.Params.LoRa.SpreadingFactor = LORA_SF10;
@@ -121,33 +121,40 @@ void RangingPacketInit(int rangingIndex)
   Radio.SetRfFrequency( Channels[0] );
   Radio.SetTxParams( TX_OUTPUT_POWER, RADIO_RAMP_20_US );
   Radio.SetBufferBaseAddresses( 0x00, 0x00 );
-  Radio.SetRangingCalibration( RangingCalib );
+  Radio.SetRangingCalibration(RangingCalib );
   Radio.SetInterruptMode();
 
   if (IS_MASTER)
   {
-    Master_Init(rangingIndex);
+    Master_Init(RangRingIndex);
   }
   else // SLAVE
   {
-    Slave_Init(rangingIndex);
+    Slave_Init(RangRingIndex);
   }
 }
 
-void Slave_Init(int rangingIndex)
+void Slave_Init(int RangRingIndex)
 {
   Serial.println ("Slave role");
   Radio.SetRangingIdLength(RANGING_IDCHECK_LENGTH_32_BITS);
-  Radio.SetDeviceRangingAddress(rangingAddress[rangingIndex]);
+  Radio.SetDeviceRangingAddress(rangingAddress[RangRingIndex]);
   Radio.SetDioIrqParams( slaveIrqMask, slaveIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
   Radio.SetRx((TickTime_t) {
     RADIO_TICK_SIZE_1000_US, 0xFFFF
   });
 }
 
-void Master_Init(int rangingIndex)
+void Master_Init(int RangRingIndex)
 {
-  Radio.SetRangingRequestAddress(rangingAddress[rangingIndex]);
+  /*Calibration Tunner*/
+//  RangingCalib+=3;
+//  Serial.println(RangingCalib);
+//  if(RangingCalib > 14000){
+//    RangingCalib = 13000;
+//  }
+  /**/
+  Radio.SetRangingRequestAddress(rangingAddress[RangRingIndex]);
   Radio.SetDioIrqParams( masterIrqMask, masterIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
   Radio.SetTx((TickTime_t) {
     RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -155,7 +162,7 @@ void Master_Init(int rangingIndex)
 }
 
 void setup() {
-  Serial.begin(115200);
+  Serial.begin(9600);
   if (IS_MASTER)
   {
     Serial.println("SX1280 MASTER");
@@ -191,8 +198,10 @@ void loop() {
           case IRQ_RANGING_MASTER_VALID_CODE:
           {
             double rangingResult = Radio.GetRangingResult(RANGING_RESULT_RAW);
-            Serial.print("Raw data: ");
-            Serial.println(rangingResult);
+//            Serial.print("Calib : ");
+//            Serial.println(RangingCalib);
+//            Serial.print("Raw data: ");
+//            Serial.println(rangingResult);
             uint32_t result = rangingResult * 100;
             //Send distance
             uint32_t  Payload[4] = {(result >> 24) & 0xFF, (result >> 16) & 0xFF, (result >> 8) & 0xFF, (result) & 0xFF};
@@ -209,13 +218,6 @@ void loop() {
           {};
             break;
         }
-        //if(digitalRead(SX1280_BUSY) == LOW) Serial.println("Kha Zore");
-        //if(digitalRead(SX1280_BUSY) == LOW) Serial.println("Kha Zore");
-        //if(digitalRead(DIO1) == HIGH) Serial.println("High");
-        //if(digitalRead(DIO1) == LOW) Serial.println("LOW");
-        //Serial.println(MasterIrqRangingCode);
-        //Serial.println(IRQ_RANGING_MASTER_VALID_CODE);
-        //Serial.println(IRQ_RANGING_MASTER_ERROR_CODE);
         rangingAddressIndex = rangingAddressIndex + 1 > SLAVE_ADDRESS_END ? SLAVE_ADDRESS_START : rangingAddressIndex + 1;
         Master_Init(rangingAddressIndex);
       }
