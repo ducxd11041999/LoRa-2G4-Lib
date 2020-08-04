@@ -105204,13 +105204,125 @@
     "scope": null
   },
   {
+    "ID": "c:@t0",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "t0",
+    "location": {
+      "column": "8",
+      "line": "12",
+      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
+    },
+    "name": "t0",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@t1",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "t1",
+    "location": {
+      "column": "8",
+      "line": "13",
+      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
+    },
+    "name": "t1",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@t2",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "t2",
+    "location": {
+      "column": "8",
+      "line": "14",
+      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
+    },
+    "name": "t2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@t3",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "t3",
+    "location": {
+      "column": "8",
+      "line": "15",
+      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
+    },
+    "name": "t3",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@t4",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "t4",
+    "location": {
+      "column": "8",
+      "line": "16",
+      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
+    },
+    "name": "t4",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@t5",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "t5",
+    "location": {
+      "column": "8",
+      "line": "17",
+      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
+    },
+    "name": "t5",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@t6",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "t6",
+    "location": {
+      "column": "8",
+      "line": "18",
+      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
+    },
+    "name": "t6",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@t7",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "t7",
+    "location": {
+      "column": "8",
+      "line": "19",
+      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
+    },
+    "name": "t7",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:Radio_Methods.c@__callbacks",
     "What": "Variable",
     "defdec": "Def",
     "display": "__callbacks",
     "location": {
       "column": "26",
-      "line": "12",
+      "line": "23",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__callbacks",
@@ -105224,7 +105336,7 @@
     "display": "__IrqState",
     "location": {
       "column": "13",
-      "line": "13",
+      "line": "24",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__IrqState",
@@ -105238,7 +105350,7 @@
     "display": "__PollingMode",
     "location": {
       "column": "13",
-      "line": "14",
+      "line": "25",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__PollingMode",
@@ -105252,7 +105364,7 @@
     "display": "__OperatingMode",
     "location": {
       "column": "30",
-      "line": "15",
+      "line": "26",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__OperatingMode",
@@ -105266,7 +105378,7 @@
     "display": "__PacketType",
     "location": {
       "column": "27",
-      "line": "16",
+      "line": "27",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__PacketType",
@@ -105280,7 +105392,7 @@
     "display": "__LoRaBandwidth",
     "location": {
       "column": "30",
-      "line": "17",
+      "line": "28",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__LoRaBandwidth",
@@ -105294,7 +105406,7 @@
     "display": "",
     "location": {
       "column": "9",
-      "line": "22",
+      "line": "33",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "members": [
@@ -105305,12 +105417,12 @@
         "display": "Addr",
         "location": {
           "column": "17",
-          "line": "24",
+          "line": "35",
           "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
         },
         "name": "Addr",
         "origin": "project_file",
-        "scope": "_anonymous_Radio_Methods_c_22_9"
+        "scope": "_anonymous_Radio_Methods_c_33_9"
       },
       {
         "ID": "c:@SA@RadioRegisters_t@FI@Value",
@@ -105319,12 +105431,12 @@
         "display": "Value",
         "location": {
           "column": "17",
-          "line": "25",
+          "line": "36",
           "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
         },
         "name": "Value",
         "origin": "project_file",
-        "scope": "_anonymous_Radio_Methods_c_22_9"
+        "scope": "_anonymous_Radio_Methods_c_33_9"
       },
       {
         "ID": "c:@T@RadioRegisters_t",
@@ -105333,12 +105445,12 @@
         "display": "struct RadioRegisters_t",
         "location": {
           "column": "3",
-          "line": "26",
+          "line": "37",
           "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
         },
         "name": "RadioRegisters_t",
         "origin": "project_file",
-        "scope": "_anonymous_Radio_Methods_c_22_9"
+        "scope": "_anonymous_Radio_Methods_c_33_9"
       }
     ],
     "name": "",
@@ -105346,13 +105458,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@766@macro@RADIO_INIT_REGISTERS_VALUE",
+    "ID": "c:Radio_Methods.c@1334@macro@RADIO_INIT_REGISTERS_VALUE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RADIO_INIT_REGISTERS_VALUE",
     "location": {
       "column": "9",
-      "line": "31",
+      "line": "42",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "RADIO_INIT_REGISTERS_VALUE",
@@ -105366,7 +105478,7 @@
     "display": "void Radio_GPIO_Init(void)",
     "location": {
       "column": "6",
-      "line": "38",
+      "line": "49",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "Radio_GPIO_Init",
@@ -105380,7 +105492,7 @@
     "display": "void Radio_SPI_Init(void)",
     "location": {
       "column": "6",
-      "line": "51",
+      "line": "62",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "Radio_SPI_Init",
@@ -105394,7 +105506,7 @@
     "display": "void IoIrqInit(void)",
     "location": {
       "column": "6",
-      "line": "57",
+      "line": "68",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "IoIrqInit",
@@ -105408,7 +105520,7 @@
     "display": "void WaitOnBusy(void)",
     "location": {
       "column": "6",
-      "line": "64",
+      "line": "75",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "WaitOnBusy",
@@ -105422,7 +105534,7 @@
     "display": "void __Init(RadioCallbacks_t *)",
     "location": {
       "column": "6",
-      "line": "70",
+      "line": "81",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__Init",
@@ -105436,7 +105548,7 @@
     "display": "void __SetPollingMode(void)",
     "location": {
       "column": "6",
-      "line": "96",
+      "line": "107",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetPollingMode",
@@ -105450,7 +105562,7 @@
     "display": "void __SetInterruptMode(void)",
     "location": {
       "column": "6",
-      "line": "101",
+      "line": "112",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetInterruptMode",
@@ -105464,7 +105576,7 @@
     "display": "void __SetRegistersDefault(void)",
     "location": {
       "column": "6",
-      "line": "106",
+      "line": "117",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetRegistersDefault",
@@ -105478,7 +105590,7 @@
     "display": "uint16_t __GetFirmwareVersion(void)",
     "location": {
       "column": "10",
-      "line": "115",
+      "line": "126",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__GetFirmwareVersion",
@@ -105486,13 +105598,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@2337@F@__GetFirmwareVersion@highByte",
+    "ID": "c:Radio_Methods.c@2905@F@__GetFirmwareVersion@highByte",
     "What": "Variable",
     "defdec": "Def",
     "display": "highByte",
     "location": {
       "column": "11",
-      "line": "117",
+      "line": "128",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "highByte",
@@ -105500,13 +105612,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@2337@F@__GetFirmwareVersion@lowByte",
+    "ID": "c:Radio_Methods.c@2905@F@__GetFirmwareVersion@lowByte",
     "What": "Variable",
     "defdec": "Dec",
     "display": "lowByte",
     "location": {
       "column": "11",
-      "line": "118",
+      "line": "129",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "lowByte",
@@ -105520,7 +105632,7 @@
     "display": "void __Reset(void)",
     "location": {
       "column": "6",
-      "line": "126",
+      "line": "137",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__Reset",
@@ -105534,7 +105646,7 @@
     "display": "void __Wakeup(void)",
     "location": {
       "column": "6",
-      "line": "137",
+      "line": "148",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__Wakeup",
@@ -105548,7 +105660,7 @@
     "display": "void __WriteCommand(RadioCommands_t, uint8_t *, uint16_t)",
     "location": {
       "column": "6",
-      "line": "148",
+      "line": "159",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__WriteCommand",
@@ -105556,13 +105668,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@3315@F@__WriteCommand@i",
+    "ID": "c:Radio_Methods.c@3883@F@__WriteCommand@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "17",
-      "line": "154",
+      "line": "165",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "i",
@@ -105576,7 +105688,7 @@
     "display": "void __ReadCommand(RadioCommands_t, uint8_t *, uint16_t)",
     "location": {
       "column": "6",
-      "line": "166",
+      "line": "177",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__ReadCommand",
@@ -105584,13 +105696,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@4139@F@__ReadCommand@i",
+    "ID": "c:Radio_Methods.c@4707@F@__ReadCommand@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "19",
-      "line": "181",
+      "line": "192",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "i",
@@ -105604,7 +105716,7 @@
     "display": "void __WriteRegister(uint16_t, uint8_t *, uint16_t)",
     "location": {
       "column": "6",
-      "line": "191",
+      "line": "202",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__WriteRegister",
@@ -105612,13 +105724,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@4749@F@__WriteRegister@i",
+    "ID": "c:Radio_Methods.c@5317@F@__WriteRegister@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "18",
-      "line": "199",
+      "line": "210",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "i",
@@ -105632,7 +105744,7 @@
     "display": "void __WriteRegister_1(uint16_t, uint8_t)",
     "location": {
       "column": "6",
-      "line": "208",
+      "line": "219",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__WriteRegister_1",
@@ -105646,7 +105758,7 @@
     "display": "void __ReadRegister(uint16_t, uint8_t *, uint16_t)",
     "location": {
       "column": "6",
-      "line": "213",
+      "line": "224",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__ReadRegister",
@@ -105654,13 +105766,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@5493@F@__ReadRegister@i",
+    "ID": "c:Radio_Methods.c@6061@F@__ReadRegister@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "18",
-      "line": "222",
+      "line": "233",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "i",
@@ -105674,7 +105786,7 @@
     "display": "uint8_t __ReadRegister_1(uint16_t)",
     "location": {
       "column": "9",
-      "line": "231",
+      "line": "242",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__ReadRegister_1",
@@ -105682,13 +105794,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@5735@F@__ReadRegister_1@reg",
+    "ID": "c:Radio_Methods.c@6303@F@__ReadRegister_1@reg",
     "What": "Variable",
     "defdec": "Def",
     "display": "reg",
     "location": {
       "column": "11",
-      "line": "233",
+      "line": "244",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "reg",
@@ -105702,7 +105814,7 @@
     "display": "void __WriteBuffer(uint8_t, uint8_t *, uint8_t)",
     "location": {
       "column": "6",
-      "line": "238",
+      "line": "249",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__WriteBuffer",
@@ -105710,13 +105822,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@6135@F@__WriteBuffer@i",
+    "ID": "c:Radio_Methods.c@6703@F@__WriteBuffer@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "18",
-      "line": "245",
+      "line": "256",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "i",
@@ -105730,7 +105842,7 @@
     "display": "void __ReadBuffer(uint8_t, uint8_t *, uint8_t)",
     "location": {
       "column": "6",
-      "line": "254",
+      "line": "265",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__ReadBuffer",
@@ -105738,13 +105850,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@6641@F@__ReadBuffer@i",
+    "ID": "c:Radio_Methods.c@7209@F@__ReadBuffer@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "18",
-      "line": "262",
+      "line": "273",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "i",
@@ -105758,7 +105870,7 @@
     "display": "uint8_t __GetDioStatus(void)",
     "location": {
       "column": "9",
-      "line": "271",
+      "line": "282",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__GetDioStatus",
@@ -105766,13 +105878,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@6868@F@__GetDioStatus@result",
+    "ID": "c:Radio_Methods.c@7436@F@__GetDioStatus@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
     "location": {
       "column": "11",
-      "line": "273",
+      "line": "284",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "result",
@@ -105786,7 +105898,7 @@
     "display": "RadioOperatingModes_t __GetOpMode(void)",
     "location": {
       "column": "23",
-      "line": "278",
+      "line": "289",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__GetOpMode",
@@ -105800,7 +105912,7 @@
     "display": "RadioStatus_t __GetStatus(void)",
     "location": {
       "column": "15",
-      "line": "283",
+      "line": "294",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__GetStatus",
@@ -105808,13 +105920,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@7169@F@__GetStatus@stat",
+    "ID": "c:Radio_Methods.c@7737@F@__GetStatus@stat",
     "What": "Variable",
     "defdec": "Def",
     "display": "stat",
     "location": {
       "column": "11",
-      "line": "285",
+      "line": "296",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "stat",
@@ -105822,13 +105934,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@7190@F@__GetStatus@status",
+    "ID": "c:Radio_Methods.c@7758@F@__GetStatus@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
     "location": {
       "column": "17",
-      "line": "286",
+      "line": "297",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "status",
@@ -105842,7 +105954,7 @@
     "display": "void __SetSleep(SleepParams_t)",
     "location": {
       "column": "6",
-      "line": "293",
+      "line": "304",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetSleep",
@@ -105850,13 +105962,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@7376@F@__SetSleep@sleep",
+    "ID": "c:Radio_Methods.c@7944@F@__SetSleep@sleep",
     "What": "Variable",
     "defdec": "Def",
     "display": "sleep",
     "location": {
       "column": "11",
-      "line": "295",
+      "line": "306",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "sleep",
@@ -105870,7 +105982,7 @@
     "display": "void __SetStandby(RadioStandbyModes_t)",
     "location": {
       "column": "6",
-      "line": "304",
+      "line": "315",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetStandby",
@@ -105884,7 +105996,7 @@
     "display": "void __SetFs(void)",
     "location": {
       "column": "6",
-      "line": "317",
+      "line": "328",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetFs",
@@ -105898,7 +106010,7 @@
     "display": "void __SetRangingRole(RadioRangingRoles_t)",
     "location": {
       "column": "6",
-      "line": "328",
+      "line": "339",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetRangingRole",
@@ -105906,13 +106018,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@8255@F@__SetRangingRole@buf",
+    "ID": "c:Radio_Methods.c@8823@F@__SetRangingRole@buf",
     "What": "Variable",
     "defdec": "Def",
     "display": "buf",
     "location": {
       "column": "11",
-      "line": "330",
+      "line": "341",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "buf",
@@ -105926,7 +106038,7 @@
     "display": "void __SetTx(TickTime_t)",
     "location": {
       "column": "6",
-      "line": "336",
+      "line": "347",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetTx",
@@ -105934,13 +106046,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@8393@F@__SetTx@buf",
+    "ID": "c:Radio_Methods.c@8961@F@__SetTx@buf",
     "What": "Variable",
     "defdec": "Def",
     "display": "buf",
     "location": {
       "column": "11",
-      "line": "338",
+      "line": "349",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "buf",
@@ -105954,7 +106066,7 @@
     "display": "void __SetRx(TickTime_t)",
     "location": {
       "column": "6",
-      "line": "355",
+      "line": "366",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetRx",
@@ -105962,13 +106074,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@8950@F@__SetRx@buf",
+    "ID": "c:Radio_Methods.c@9518@F@__SetRx@buf",
     "What": "Variable",
     "defdec": "Def",
     "display": "buf",
     "location": {
       "column": "11",
-      "line": "357",
+      "line": "368",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "buf",
@@ -105982,7 +106094,7 @@
     "display": "void __SetRxDutyCycle(RadioTickSizes_t, uint16_t, uint16_t)",
     "location": {
       "column": "6",
-      "line": "374",
+      "line": "385",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetRxDutyCycle",
@@ -105990,13 +106102,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@9583@F@__SetRxDutyCycle@buf",
+    "ID": "c:Radio_Methods.c@10151@F@__SetRxDutyCycle@buf",
     "What": "Variable",
     "defdec": "Def",
     "display": "buf",
     "location": {
       "column": "11",
-      "line": "376",
+      "line": "387",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "buf",
@@ -106010,7 +106122,7 @@
     "display": "void __SetCad(void)",
     "location": {
       "column": "6",
-      "line": "387",
+      "line": "398",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetCad",
@@ -106024,7 +106136,7 @@
     "display": "void __SetTxContinuousWave(void)",
     "location": {
       "column": "6",
-      "line": "393",
+      "line": "404",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetTxContinuousWave",
@@ -106038,7 +106150,7 @@
     "display": "void __SetTxContinuousPreamble(void)",
     "location": {
       "column": "6",
-      "line": "398",
+      "line": "409",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetTxContinuousPreamble",
@@ -106052,7 +106164,7 @@
     "display": "void __SetPacketType(RadioPacketTypes_t)",
     "location": {
       "column": "6",
-      "line": "403",
+      "line": "414",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetPacketType",
@@ -106066,7 +106178,7 @@
     "display": "RadioPacketTypes_t __GetPacketType(bool)",
     "location": {
       "column": "20",
-      "line": "411",
+      "line": "422",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__GetPacketType",
@@ -106074,13 +106186,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@10553@F@__GetPacketType@packetType",
+    "ID": "c:Radio_Methods.c@11121@F@__GetPacketType@packetType",
     "What": "Variable",
     "defdec": "Def",
     "display": "packetType",
     "location": {
       "column": "22",
-      "line": "413",
+      "line": "424",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "packetType",
@@ -106094,7 +106206,7 @@
     "display": "void __SetRfFrequency(uint32_t)",
     "location": {
       "column": "6",
-      "line": "429",
+      "line": "440",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetRfFrequency",
@@ -106102,13 +106214,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@10935@F@__SetRfFrequency@buf",
+    "ID": "c:Radio_Methods.c@11503@F@__SetRfFrequency@buf",
     "What": "Variable",
     "defdec": "Def",
     "display": "buf",
     "location": {
       "column": "11",
-      "line": "431",
+      "line": "442",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "buf",
@@ -106116,13 +106228,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@10954@F@__SetRfFrequency@freq",
+    "ID": "c:Radio_Methods.c@11522@F@__SetRfFrequency@freq",
     "What": "Variable",
     "defdec": "Def",
     "display": "freq",
     "location": {
       "column": "12",
-      "line": "432",
+      "line": "443",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "freq",
@@ -106136,7 +106248,7 @@
     "display": "void __SetTxParams(int8_t, RadioRampTimes_t)",
     "location": {
       "column": "6",
-      "line": "441",
+      "line": "452",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetTxParams",
@@ -106144,13 +106256,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@11309@F@__SetTxParams@buf",
+    "ID": "c:Radio_Methods.c@11877@F@__SetTxParams@buf",
     "What": "Variable",
     "defdec": "Def",
     "display": "buf",
     "location": {
       "column": "11",
-      "line": "443",
+      "line": "454",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "buf",
@@ -106164,7 +106276,7 @@
     "display": "void __SetCadParams(RadioLoRaCadSymbols_t)",
     "location": {
       "column": "6",
-      "line": "452",
+      "line": "463",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetCadParams",
@@ -106178,7 +106290,7 @@
     "display": "void __SetBufferBaseAddresses(uint8_t, uint8_t)",
     "location": {
       "column": "6",
-      "line": "458",
+      "line": "469",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetBufferBaseAddresses",
@@ -106186,13 +106298,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@11820@F@__SetBufferBaseAddresses@buf",
+    "ID": "c:Radio_Methods.c@12388@F@__SetBufferBaseAddresses@buf",
     "What": "Variable",
     "defdec": "Def",
     "display": "buf",
     "location": {
       "column": "11",
-      "line": "460",
+      "line": "471",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "buf",
@@ -106206,7 +106318,7 @@
     "display": "void __SetModulationParams(ModulationParams_t *)",
     "location": {
       "column": "6",
-      "line": "467",
+      "line": "478",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetModulationParams",
@@ -106214,13 +106326,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@12020@F@__SetModulationParams@buf",
+    "ID": "c:Radio_Methods.c@12588@F@__SetModulationParams@buf",
     "What": "Variable",
     "defdec": "Def",
     "display": "buf",
     "location": {
       "column": "11",
-      "line": "469",
+      "line": "480",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "buf",
@@ -106234,7 +106346,7 @@
     "display": "void __SetPacketParams(PacketParams_t *)",
     "location": {
       "column": "6",
-      "line": "511",
+      "line": "522",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetPacketParams",
@@ -106242,13 +106354,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@13455@F@__SetPacketParams@buf",
+    "ID": "c:Radio_Methods.c@14023@F@__SetPacketParams@buf",
     "What": "Variable",
     "defdec": "Def",
     "display": "buf",
     "location": {
       "column": "11",
-      "line": "513",
+      "line": "524",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "buf",
@@ -106262,7 +106374,7 @@
     "display": "void __GetRxBufferStatus(uint8_t *, uint8_t *)",
     "location": {
       "column": "6",
-      "line": "573",
+      "line": "584",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__GetRxBufferStatus",
@@ -106270,13 +106382,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@15639@F@__GetRxBufferStatus@status",
+    "ID": "c:Radio_Methods.c@16207@F@__GetRxBufferStatus@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
     "location": {
       "column": "11",
-      "line": "575",
+      "line": "586",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "status",
@@ -106290,7 +106402,7 @@
     "display": "void __GetPacketStatus(PacketStatus_t *)",
     "location": {
       "column": "6",
-      "line": "599",
+      "line": "610",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__GetPacketStatus",
@@ -106298,13 +106410,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@16426@F@__GetPacketStatus@status",
+    "ID": "c:Radio_Methods.c@16994@F@__GetPacketStatus@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
     "location": {
       "column": "11",
-      "line": "601",
+      "line": "612",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "status",
@@ -106318,7 +106430,7 @@
     "display": "int8_t __GetRssiInst(void)",
     "location": {
       "column": "8",
-      "line": "675",
+      "line": "686",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__GetRssiInst",
@@ -106326,13 +106438,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@19847@F@__GetRssiInst@raw",
+    "ID": "c:Radio_Methods.c@20415@F@__GetRssiInst@raw",
     "What": "Variable",
     "defdec": "Def",
     "display": "raw",
     "location": {
       "column": "11",
-      "line": "677",
+      "line": "688",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "raw",
@@ -106346,7 +106458,7 @@
     "display": "void __SetDioIrqParams(uint16_t, uint16_t, uint16_t, uint16_t)",
     "location": {
       "column": "6",
-      "line": "684",
+      "line": "695",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetDioIrqParams",
@@ -106354,13 +106466,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@20062@F@__SetDioIrqParams@buf",
+    "ID": "c:Radio_Methods.c@20630@F@__SetDioIrqParams@buf",
     "What": "Variable",
     "defdec": "Def",
     "display": "buf",
     "location": {
       "column": "11",
-      "line": "686",
+      "line": "697",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "buf",
@@ -106374,7 +106486,7 @@
     "display": "uint16_t __GetIrqStatus(void)",
     "location": {
       "column": "10",
-      "line": "699",
+      "line": "710",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__GetIrqStatus",
@@ -106382,13 +106494,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@20577@F@__GetIrqStatus@irqStatus",
+    "ID": "c:Radio_Methods.c@21145@F@__GetIrqStatus@irqStatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "irqStatus",
     "location": {
       "column": "11",
-      "line": "701",
+      "line": "712",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "irqStatus",
@@ -106402,7 +106514,7 @@
     "display": "void __ClearIrqStatus(uint16_t)",
     "location": {
       "column": "6",
-      "line": "706",
+      "line": "717",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__ClearIrqStatus",
@@ -106410,13 +106522,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@20754@F@__ClearIrqStatus@buf",
+    "ID": "c:Radio_Methods.c@21322@F@__ClearIrqStatus@buf",
     "What": "Variable",
     "defdec": "Def",
     "display": "buf",
     "location": {
       "column": "11",
-      "line": "708",
+      "line": "719",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "buf",
@@ -106430,7 +106542,7 @@
     "display": "void __Calibrate(CalibrationParams_t)",
     "location": {
       "column": "6",
-      "line": "715",
+      "line": "726",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__Calibrate",
@@ -106438,13 +106550,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@21006@F@__Calibrate@cal",
+    "ID": "c:Radio_Methods.c@21574@F@__Calibrate@cal",
     "What": "Variable",
     "defdec": "Def",
     "display": "cal",
     "location": {
       "column": "11",
-      "line": "717",
+      "line": "728",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "cal",
@@ -106458,7 +106570,7 @@
     "display": "void __SetRegulatorMode(RadioRegulatorModes_t)",
     "location": {
       "column": "6",
-      "line": "726",
+      "line": "737",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetRegulatorMode",
@@ -106472,7 +106584,7 @@
     "display": "void __SetSaveContext(void)",
     "location": {
       "column": "6",
-      "line": "731",
+      "line": "742",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetSaveContext",
@@ -106486,7 +106598,7 @@
     "display": "void __SetAutoTx(uint16_t)",
     "location": {
       "column": "6",
-      "line": "736",
+      "line": "747",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetAutoTx",
@@ -106494,13 +106606,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@21617@F@__SetAutoTx@compensatedTime",
+    "ID": "c:Radio_Methods.c@22185@F@__SetAutoTx@compensatedTime",
     "What": "Variable",
     "defdec": "Def",
     "display": "compensatedTime",
     "location": {
       "column": "12",
-      "line": "738",
+      "line": "749",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "compensatedTime",
@@ -106508,13 +106620,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@21682@F@__SetAutoTx@buf",
+    "ID": "c:Radio_Methods.c@22250@F@__SetAutoTx@buf",
     "What": "Variable",
     "defdec": "Def",
     "display": "buf",
     "location": {
       "column": "11",
-      "line": "739",
+      "line": "750",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "buf",
@@ -106528,7 +106640,7 @@
     "display": "void __SetAutoFs(bool)",
     "location": {
       "column": "6",
-      "line": "746",
+      "line": "757",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetAutoFs",
@@ -106542,7 +106654,7 @@
     "display": "void __SetLongPreamble(bool)",
     "location": {
       "column": "6",
-      "line": "751",
+      "line": "762",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetLongPreamble",
@@ -106556,7 +106668,7 @@
     "display": "void __SetPayload(uint8_t *, uint8_t, uint8_t)",
     "location": {
       "column": "6",
-      "line": "756",
+      "line": "767",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetPayload",
@@ -106570,7 +106682,7 @@
     "display": "uint8_t __GetPayload(uint8_t *, uint8_t *, uint8_t)",
     "location": {
       "column": "9",
-      "line": "761",
+      "line": "772",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__GetPayload",
@@ -106578,13 +106690,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@22291@F@__GetPayload@offset",
+    "ID": "c:Radio_Methods.c@22859@F@__GetPayload@offset",
     "What": "Variable",
     "defdec": "Def",
     "display": "offset",
     "location": {
       "column": "11",
-      "line": "763",
+      "line": "774",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "offset",
@@ -106598,7 +106710,7 @@
     "display": "void __SendPayload(uint8_t *, uint8_t, TickTime_t, uint8_t)",
     "location": {
       "column": "6",
-      "line": "774",
+      "line": "785",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SendPayload",
@@ -106612,7 +106724,7 @@
     "display": "uint8_t __SetSyncWord(uint8_t, uint8_t *)",
     "location": {
       "column": "9",
-      "line": "780",
+      "line": "791",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetSyncWord",
@@ -106620,13 +106732,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@22691@F@__SetSyncWord@addr",
+    "ID": "c:Radio_Methods.c@23259@F@__SetSyncWord@addr",
     "What": "Variable",
     "defdec": "Def",
     "display": "addr",
     "location": {
       "column": "12",
-      "line": "782",
+      "line": "793",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "addr",
@@ -106634,13 +106746,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@22709@F@__SetSyncWord@syncwordSize",
+    "ID": "c:Radio_Methods.c@23277@F@__SetSyncWord@syncwordSize",
     "What": "Variable",
     "defdec": "Def",
     "display": "syncwordSize",
     "location": {
       "column": "11",
-      "line": "783",
+      "line": "794",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "syncwordSize",
@@ -106654,7 +106766,7 @@
     "display": "void __SetSyncWordErrorTolerance(uint8_t)",
     "location": {
       "column": "6",
-      "line": "843",
+      "line": "854",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetSyncWordErrorTolerance",
@@ -106668,7 +106780,7 @@
     "display": "uint8_t __SetCrcSeed(uint8_t *)",
     "location": {
       "column": "9",
-      "line": "849",
+      "line": "860",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetCrcSeed",
@@ -106676,13 +106788,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@24428@F@__SetCrcSeed@updated",
+    "ID": "c:Radio_Methods.c@24996@F@__SetCrcSeed@updated",
     "What": "Variable",
     "defdec": "Def",
     "display": "updated",
     "location": {
       "column": "11",
-      "line": "851",
+      "line": "862",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "updated",
@@ -106696,7 +106808,7 @@
     "display": "void __SetBleAccessAddress(uint32_t)",
     "location": {
       "column": "6",
-      "line": "871",
+      "line": "882",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetBleAccessAddress",
@@ -106710,7 +106822,7 @@
     "display": "void __SetBleAdvertizerAccessAddress(void)",
     "location": {
       "column": "6",
-      "line": "879",
+      "line": "890",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetBleAdvertizerAccessAddress",
@@ -106724,7 +106836,7 @@
     "display": "void __SetCrcPolynomial(uint16_t)",
     "location": {
       "column": "6",
-      "line": "884",
+      "line": "895",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetCrcPolynomial",
@@ -106732,13 +106844,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@25468@F@__SetCrcPolynomial@val",
+    "ID": "c:Radio_Methods.c@26036@F@__SetCrcPolynomial@val",
     "What": "Variable",
     "defdec": "Def",
     "display": "val",
     "location": {
       "column": "11",
-      "line": "886",
+      "line": "897",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "val",
@@ -106752,7 +106864,7 @@
     "display": "void __SetWhiteningSeed(uint8_t)",
     "location": {
       "column": "6",
-      "line": "902",
+      "line": "913",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetWhiteningSeed",
@@ -106766,7 +106878,7 @@
     "display": "void __SetRangingIdLength(RadioRangingIdCheckLengths_t)",
     "location": {
       "column": "6",
-      "line": "916",
+      "line": "927",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetRangingIdLength",
@@ -106780,7 +106892,7 @@
     "display": "void __SetDeviceRangingAddress(uint32_t)",
     "location": {
       "column": "6",
-      "line": "928",
+      "line": "939",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetDeviceRangingAddress",
@@ -106788,13 +106900,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@26484@F@__SetDeviceRangingAddress@addrArray",
+    "ID": "c:Radio_Methods.c@27052@F@__SetDeviceRangingAddress@addrArray",
     "What": "Variable",
     "defdec": "Def",
     "display": "addrArray",
     "location": {
       "column": "11",
-      "line": "930",
+      "line": "941",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "addrArray",
@@ -106808,7 +106920,7 @@
     "display": "void __SetRangingRequestAddress(uint32_t)",
     "location": {
       "column": "6",
-      "line": "942",
+      "line": "953",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetRangingRequestAddress",
@@ -106816,13 +106928,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@26814@F@__SetRangingRequestAddress@addrArray",
+    "ID": "c:Radio_Methods.c@27382@F@__SetRangingRequestAddress@addrArray",
     "What": "Variable",
     "defdec": "Def",
     "display": "addrArray",
     "location": {
       "column": "11",
-      "line": "944",
+      "line": "955",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "addrArray",
@@ -106836,7 +106948,7 @@
     "display": "int32_t complement2(const uint32_t, const uint8_t)",
     "location": {
       "column": "9",
-      "line": "956",
+      "line": "967",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "complement2",
@@ -106844,13 +106956,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@27159@F@complement2@retVal",
+    "ID": "c:Radio_Methods.c@27727@F@complement2@retVal",
     "What": "Variable",
     "defdec": "Def",
     "display": "retVal",
     "location": {
       "column": "11",
-      "line": "958",
+      "line": "969",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "retVal",
@@ -106864,7 +106976,7 @@
     "display": "int32_t __GetLoRaBandwidth(void)",
     "location": {
       "column": "9",
-      "line": "966",
+      "line": "977",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__GetLoRaBandwidth",
@@ -106872,13 +106984,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@27335@F@__GetLoRaBandwidth@bwValue",
+    "ID": "c:Radio_Methods.c@27903@F@__GetLoRaBandwidth@bwValue",
     "What": "Variable",
     "defdec": "Def",
     "display": "bwValue",
     "location": {
       "column": "11",
-      "line": "968",
+      "line": "979",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "bwValue",
@@ -106892,7 +107004,7 @@
     "display": "double __GetRangingResult(RadioRangingResultTypes_t)",
     "location": {
       "column": "8",
-      "line": "990",
+      "line": "1001",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__GetRangingResult",
@@ -106900,13 +107012,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@27780@F@__GetRangingResult@valLsb",
+    "ID": "c:Radio_Methods.c@28348@F@__GetRangingResult@valLsb",
     "What": "Variable",
     "defdec": "Def",
     "display": "valLsb",
     "location": {
       "column": "12",
-      "line": "992",
+      "line": "1003",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "valLsb",
@@ -106914,16 +107026,44 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@27804@F@__GetRangingResult@val",
+    "ID": "c:Radio_Methods.c@28372@F@__GetRangingResult@val",
     "What": "Variable",
     "defdec": "Def",
     "display": "val",
     "location": {
       "column": "10",
-      "line": "993",
+      "line": "1004",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "val",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Radio_Methods.c@30692@F@__GetRangingResult@rssi",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "rssi",
+    "location": {
+      "column": "12",
+      "line": "1057",
+      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
+    },
+    "name": "rssi",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Radio_Methods.c@30692@F@__GetRangingResult@val2",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "val2",
+    "location": {
+      "column": "36",
+      "line": "1057",
+      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
+    },
+    "name": "val2",
     "origin": "project_file",
     "scope": null
   },
@@ -106934,7 +107074,7 @@
     "display": "void __SetRangingCalibration(uint16_t)",
     "location": {
       "column": "6",
-      "line": "1031",
+      "line": "1071",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__SetRangingCalibration",
@@ -106948,7 +107088,7 @@
     "display": "void __RangingClearFilterResult(void)",
     "location": {
       "column": "6",
-      "line": "1044",
+      "line": "1084",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__RangingClearFilterResult",
@@ -106956,13 +107096,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@29881@F@__RangingClearFilterResult@regVal",
+    "ID": "c:Radio_Methods.c@31674@F@__RangingClearFilterResult@regVal",
     "What": "Variable",
     "defdec": "Def",
     "display": "regVal",
     "location": {
       "column": "11",
-      "line": "1046",
+      "line": "1086",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "regVal",
@@ -106976,7 +107116,7 @@
     "display": "void __RangingSetFilterNumSamples(uint8_t)",
     "location": {
       "column": "6",
-      "line": "1053",
+      "line": "1093",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__RangingSetFilterNumSamples",
@@ -106990,7 +107130,7 @@
     "display": "double __GetFrequencyError(void)",
     "location": {
       "column": "8",
-      "line": "1059",
+      "line": "1099",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__GetFrequencyError",
@@ -106998,13 +107138,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@30419@F@__GetFrequencyError@efeRaw",
+    "ID": "c:Radio_Methods.c@32212@F@__GetFrequencyError@efeRaw",
     "What": "Variable",
     "defdec": "Def",
     "display": "efeRaw",
     "location": {
       "column": "11",
-      "line": "1061",
+      "line": "1101",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "efeRaw",
@@ -107012,13 +107152,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@30447@F@__GetFrequencyError@efe",
+    "ID": "c:Radio_Methods.c@32240@F@__GetFrequencyError@efe",
     "What": "Variable",
     "defdec": "Def",
     "display": "efe",
     "location": {
       "column": "12",
-      "line": "1062",
+      "line": "1102",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "efe",
@@ -107026,13 +107166,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@30468@F@__GetFrequencyError@efeHz",
+    "ID": "c:Radio_Methods.c@32261@F@__GetFrequencyError@efeHz",
     "What": "Variable",
     "defdec": "Def",
     "display": "efeHz",
     "location": {
       "column": "10",
-      "line": "1063",
+      "line": "1103",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "efeHz",
@@ -107046,7 +107186,7 @@
     "display": "void __ProcessIrqs(void)",
     "location": {
       "column": "6",
-      "line": "1088",
+      "line": "1128",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__ProcessIrqs",
@@ -107054,13 +107194,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@31272@F@__ProcessIrqs@packetType",
+    "ID": "c:Radio_Methods.c@33065@F@__ProcessIrqs@packetType",
     "What": "Variable",
     "defdec": "Def",
     "display": "packetType",
     "location": {
       "column": "22",
-      "line": "1090",
+      "line": "1130",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "packetType",
@@ -107068,13 +107208,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@31637@F@__ProcessIrqs@irqRegs",
+    "ID": "c:Radio_Methods.c@33430@F@__ProcessIrqs@irqRegs",
     "What": "Variable",
     "defdec": "Def",
     "display": "irqRegs",
     "location": {
       "column": "12",
-      "line": "1112",
+      "line": "1152",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "irqRegs",
@@ -107088,7 +107228,7 @@
     "display": "void __ForcePreambleLength(RadioPreambleLengths_t)",
     "location": {
       "column": "6",
-      "line": "1364",
+      "line": "1404",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "__ForcePreambleLength",
@@ -107102,7 +107242,7 @@
     "display": "void EXTI0_IRQHandler(void)",
     "location": {
       "column": "1",
-      "line": "1368",
+      "line": "1408",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "EXTI0_IRQHandler",
@@ -107110,13 +107250,13 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@39946@F@EXTI0_IRQHandler@packetType",
+    "ID": "c:Radio_Methods.c@41739@F@EXTI0_IRQHandler@packetType",
     "What": "Variable",
     "defdec": "Def",
     "display": "packetType",
     "location": {
       "column": "22",
-      "line": "1376",
+      "line": "1416",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "packetType",
@@ -107124,44 +107264,16 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.c@40311@F@EXTI0_IRQHandler@irqRegs",
+    "ID": "c:Radio_Methods.c@42104@F@EXTI0_IRQHandler@irqRegs",
     "What": "Variable",
     "defdec": "Def",
     "display": "irqRegs",
     "location": {
       "column": "12",
-      "line": "1398",
+      "line": "1438",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\Radio_Methods.c"
     },
     "name": "irqRegs",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIO_Init_NSS_BUSY_NRESET",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void GPIO_Init_NSS_BUSY_NRESET(void)",
-    "location": {
-      "column": "6",
-      "line": "22",
-      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\LoST_GPIO.c"
-    },
-    "name": "GPIO_Init_NSS_BUSY_NRESET",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIO_digitalRead",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "Status GPIO_digitalRead(GPIO_Pin_TypeDef)",
-    "location": {
-      "column": "8",
-      "line": "40",
-      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\LoST_GPIO.c"
-    },
-    "name": "GPIO_digitalRead",
     "origin": "project_file",
     "scope": null
   },
@@ -107194,16 +107306,30 @@
     "scope": null
   },
   {
-    "ID": "c:@F@initExternal_Interrupt_DIO1",
+    "ID": "c:@F@GPIO_Init_NSS_BUSY_NRESET",
     "What": "Function",
     "defdec": "Def",
-    "display": "void initExternal_Interrupt_DIO1(void)",
+    "display": "void GPIO_Init_NSS_BUSY_NRESET(void)",
     "location": {
       "column": "6",
-      "line": "3",
-      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\LoST_EXT.c"
+      "line": "22",
+      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\LoST_GPIO.c"
     },
-    "name": "initExternal_Interrupt_DIO1",
+    "name": "GPIO_Init_NSS_BUSY_NRESET",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIO_digitalRead",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "Status GPIO_digitalRead(GPIO_Pin_TypeDef)",
+    "location": {
+      "column": "8",
+      "line": "40",
+      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\LoST_GPIO.c"
+    },
+    "name": "GPIO_digitalRead",
     "origin": "project_file",
     "scope": null
   },
@@ -107218,6 +107344,20 @@
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\LoST_Clock.c"
     },
     "name": "initClock",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@initExternal_Interrupt_DIO1",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void initExternal_Interrupt_DIO1(void)",
+    "location": {
+      "column": "6",
+      "line": "3",
+      "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\User\\src\\LoST_EXT.c"
+    },
+    "name": "initExternal_Interrupt_DIO1",
     "origin": "project_file",
     "scope": null
   },
@@ -108932,13 +109072,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@128@macro@RF_FREQUENCY",
+    "ID": "c:main.c@132@macro@RF_FREQUENCY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RF_FREQUENCY",
     "location": {
       "column": "9",
-      "line": "7",
+      "line": "9",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RF_FREQUENCY",
@@ -108946,13 +109086,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@199@macro@TX_OUTPUT_POWER",
+    "ID": "c:main.c@203@macro@TX_OUTPUT_POWER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "TX_OUTPUT_POWER",
     "location": {
       "column": "9",
-      "line": "8",
+      "line": "10",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "TX_OUTPUT_POWER",
@@ -108960,13 +109100,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@262@macro@RX_TIMEOUT_TICK_SIZE",
+    "ID": "c:main.c@266@macro@RX_TIMEOUT_TICK_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RX_TIMEOUT_TICK_SIZE",
     "location": {
       "column": "9",
-      "line": "9",
+      "line": "11",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RX_TIMEOUT_TICK_SIZE",
@@ -108974,13 +109114,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@339@macro@RX_TIMEOUT_VALUE",
+    "ID": "c:main.c@343@macro@RX_TIMEOUT_VALUE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RX_TIMEOUT_VALUE",
     "location": {
       "column": "9",
-      "line": "10",
+      "line": "12",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RX_TIMEOUT_VALUE",
@@ -108988,13 +109128,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@405@macro@TX_TIMEOUT_VALUE",
+    "ID": "c:main.c@409@macro@TX_TIMEOUT_VALUE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "TX_TIMEOUT_VALUE",
     "location": {
       "column": "9",
-      "line": "11",
+      "line": "13",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "TX_TIMEOUT_VALUE",
@@ -109002,13 +109142,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@472@macro@BUFFER_SIZE",
+    "ID": "c:main.c@476@macro@BUFFER_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "BUFFER_SIZE",
     "location": {
       "column": "9",
-      "line": "12",
+      "line": "14",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "BUFFER_SIZE",
@@ -109016,13 +109156,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@531@macro@NO_OF_RANGING",
+    "ID": "c:main.c@535@macro@NO_OF_RANGING",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NO_OF_RANGING",
     "location": {
       "column": "9",
-      "line": "13",
+      "line": "15",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "NO_OF_RANGING",
@@ -109030,13 +109170,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@587@macro@PINGPONGSIZE",
+    "ID": "c:main.c@591@macro@PINGPONGSIZE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PINGPONGSIZE",
     "location": {
       "column": "9",
-      "line": "14",
+      "line": "16",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "PINGPONGSIZE",
@@ -109050,7 +109190,7 @@
     "display": "rangingAddress",
     "location": {
       "column": "16",
-      "line": "15",
+      "line": "17",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rangingAddress",
@@ -109058,13 +109198,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@758@macro@RANGING_ADDRESS_SIZE",
+    "ID": "c:main.c@762@macro@RANGING_ADDRESS_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RANGING_ADDRESS_SIZE",
     "location": {
       "column": "9",
-      "line": "22",
+      "line": "24",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RANGING_ADDRESS_SIZE",
@@ -109072,13 +109212,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@794@macro@SLAVE_ADDRESS_START",
+    "ID": "c:main.c@798@macro@SLAVE_ADDRESS_START",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SLAVE_ADDRESS_START",
     "location": {
       "column": "9",
-      "line": "23",
+      "line": "25",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "SLAVE_ADDRESS_START",
@@ -109086,13 +109226,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@830@macro@SLAVE_ADDRESS_END",
+    "ID": "c:main.c@834@macro@SLAVE_ADDRESS_END",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SLAVE_ADDRESS_END",
     "location": {
       "column": "9",
-      "line": "24",
+      "line": "26",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "SLAVE_ADDRESS_END",
@@ -109106,7 +109246,7 @@
     "display": "masterID",
     "location": {
       "column": "5",
-      "line": "25",
+      "line": "27",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "masterID",
@@ -109120,7 +109260,7 @@
     "display": "rangingAddressIndex",
     "location": {
       "column": "5",
-      "line": "26",
+      "line": "28",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rangingAddressIndex",
@@ -109134,7 +109274,7 @@
     "display": "RangingCalib",
     "location": {
       "column": "10",
-      "line": "27",
+      "line": "29",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RangingCalib",
@@ -109148,7 +109288,7 @@
     "display": "RNG_CALIB_0400",
     "location": {
       "column": "16",
-      "line": "29",
+      "line": "31",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RNG_CALIB_0400",
@@ -109162,7 +109302,7 @@
     "display": "RNG_CALIB_0800",
     "location": {
       "column": "16",
-      "line": "30",
+      "line": "32",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RNG_CALIB_0800",
@@ -109176,7 +109316,7 @@
     "display": "RNG_CALIB_1600",
     "location": {
       "column": "16",
-      "line": "31",
+      "line": "33",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RNG_CALIB_1600",
@@ -109190,7 +109330,7 @@
     "display": "RNG_FGRAD_0400",
     "location": {
       "column": "16",
-      "line": "32",
+      "line": "34",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RNG_FGRAD_0400",
@@ -109204,7 +109344,7 @@
     "display": "RNG_FGRAD_0800",
     "location": {
       "column": "16",
-      "line": "33",
+      "line": "35",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RNG_FGRAD_0800",
@@ -109218,7 +109358,7 @@
     "display": "RNG_FGRAD_1600",
     "location": {
       "column": "16",
-      "line": "34",
+      "line": "36",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RNG_FGRAD_1600",
@@ -109232,7 +109372,7 @@
     "display": "RNG_RATIO_1600",
     "location": {
       "column": "16",
-      "line": "35",
+      "line": "37",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RNG_RATIO_1600",
@@ -109246,7 +109386,7 @@
     "display": "IrqRangingCodeName",
     "location": {
       "column": "13",
-      "line": "36",
+      "line": "38",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "IrqRangingCodeName",
@@ -109266,7 +109406,7 @@
         "display": "APP_IDLE",
         "location": {
           "column": "3",
-          "line": "46",
+          "line": "48",
           "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
         },
         "name": "APP_IDLE",
@@ -109280,7 +109420,7 @@
         "display": "APP_RX",
         "location": {
           "column": "3",
-          "line": "47",
+          "line": "49",
           "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
         },
         "name": "APP_RX",
@@ -109294,7 +109434,7 @@
         "display": "APP_RX_TIMEOUT",
         "location": {
           "column": "3",
-          "line": "48",
+          "line": "50",
           "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
         },
         "name": "APP_RX_TIMEOUT",
@@ -109308,7 +109448,7 @@
         "display": "APP_RX_ERROR",
         "location": {
           "column": "3",
-          "line": "49",
+          "line": "51",
           "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
         },
         "name": "APP_RX_ERROR",
@@ -109322,7 +109462,7 @@
         "display": "APP_TX",
         "location": {
           "column": "3",
-          "line": "50",
+          "line": "52",
           "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
         },
         "name": "APP_TX",
@@ -109336,7 +109476,7 @@
         "display": "APP_TX_TIMEOUT",
         "location": {
           "column": "3",
-          "line": "51",
+          "line": "53",
           "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
         },
         "name": "APP_TX_TIMEOUT",
@@ -109350,7 +109490,7 @@
         "display": "APP_RX_SYNC_WORD",
         "location": {
           "column": "3",
-          "line": "52",
+          "line": "54",
           "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
         },
         "name": "APP_RX_SYNC_WORD",
@@ -109364,7 +109504,7 @@
         "display": "APP_RX_HEADER",
         "location": {
           "column": "3",
-          "line": "53",
+          "line": "55",
           "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
         },
         "name": "APP_RX_HEADER",
@@ -109378,7 +109518,7 @@
         "display": "APP_RANGING",
         "location": {
           "column": "3",
-          "line": "54",
+          "line": "56",
           "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
         },
         "name": "APP_RANGING",
@@ -109392,7 +109532,7 @@
         "display": "APP_CAD",
         "location": {
           "column": "3",
-          "line": "55",
+          "line": "57",
           "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
         },
         "name": "APP_CAD",
@@ -109402,7 +109542,7 @@
     ],
     "location": {
       "column": "9",
-      "line": "44",
+      "line": "46",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "",
@@ -109416,7 +109556,7 @@
     "display": "void txDoneIRQ(void)",
     "location": {
       "column": "6",
-      "line": "58",
+      "line": "60",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "txDoneIRQ",
@@ -109430,7 +109570,7 @@
     "display": "void rxDoneIRQ(void)",
     "location": {
       "column": "6",
-      "line": "59",
+      "line": "61",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rxDoneIRQ",
@@ -109444,7 +109584,7 @@
     "display": "void rxSyncWordDoneIRQ(void)",
     "location": {
       "column": "6",
-      "line": "60",
+      "line": "62",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rxSyncWordDoneIRQ",
@@ -109458,7 +109598,7 @@
     "display": "void rxHeaderDoneIRQ(void)",
     "location": {
       "column": "6",
-      "line": "61",
+      "line": "63",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rxHeaderDoneIRQ",
@@ -109472,7 +109612,7 @@
     "display": "void txTimeoutIRQ(void)",
     "location": {
       "column": "6",
-      "line": "62",
+      "line": "64",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "txTimeoutIRQ",
@@ -109486,7 +109626,7 @@
     "display": "void rxTimeoutIRQ(void)",
     "location": {
       "column": "6",
-      "line": "63",
+      "line": "65",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rxTimeoutIRQ",
@@ -109500,7 +109640,7 @@
     "display": "void rxErrorIRQ(IrqErrorCode_t)",
     "location": {
       "column": "6",
-      "line": "64",
+      "line": "66",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rxErrorIRQ",
@@ -109514,7 +109654,7 @@
     "display": "void rangingDoneIRQ(IrqRangingCode_t)",
     "location": {
       "column": "6",
-      "line": "65",
+      "line": "67",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rangingDoneIRQ",
@@ -109528,7 +109668,7 @@
     "display": "void cadDoneIRQ(bool)",
     "location": {
       "column": "6",
-      "line": "66",
+      "line": "68",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "cadDoneIRQ",
@@ -109542,7 +109682,7 @@
     "display": "void getStatusIRQ(uint32_t)",
     "location": {
       "column": "6",
-      "line": "67",
+      "line": "69",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "getStatusIRQ",
@@ -109556,7 +109696,7 @@
     "display": "Callbacks",
     "location": {
       "column": "18",
-      "line": "68",
+      "line": "70",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "Callbacks",
@@ -109570,7 +109710,7 @@
     "display": "Radio",
     "location": {
       "column": "22",
-      "line": "81",
+      "line": "83",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "Radio",
@@ -109584,7 +109724,7 @@
     "display": "masterIrqMask",
     "location": {
       "column": "10",
-      "line": "85",
+      "line": "87",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "masterIrqMask",
@@ -109598,7 +109738,7 @@
     "display": "slaveIrqMask",
     "location": {
       "column": "10",
-      "line": "86",
+      "line": "88",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "slaveIrqMask",
@@ -109612,7 +109752,7 @@
     "display": "packetParams",
     "location": {
       "column": "16",
-      "line": "89",
+      "line": "91",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "packetParams",
@@ -109626,7 +109766,7 @@
     "display": "packetStatus",
     "location": {
       "column": "16",
-      "line": "90",
+      "line": "92",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "packetStatus",
@@ -109640,7 +109780,7 @@
     "display": "modulationParams",
     "location": {
       "column": "20",
-      "line": "91",
+      "line": "93",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "modulationParams",
@@ -109654,7 +109794,7 @@
     "display": "AppState",
     "location": {
       "column": "22",
-      "line": "93",
+      "line": "95",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "AppState",
@@ -109668,7 +109808,7 @@
     "display": "MasterIrqRangingCode",
     "location": {
       "column": "18",
-      "line": "94",
+      "line": "96",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "MasterIrqRangingCode",
@@ -109682,7 +109822,7 @@
     "display": "Buffer",
     "location": {
       "column": "9",
-      "line": "96",
+      "line": "98",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "Buffer",
@@ -109696,7 +109836,7 @@
     "display": "BufferSize",
     "location": {
       "column": "9",
-      "line": "97",
+      "line": "99",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "BufferSize",
@@ -109710,7 +109850,7 @@
     "display": "void Master_Init(int)",
     "location": {
       "column": "6",
-      "line": "98",
+      "line": "100",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "Master_Init",
@@ -109724,7 +109864,7 @@
     "display": "void Slave_Init(int)",
     "location": {
       "column": "6",
-      "line": "99",
+      "line": "101",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "Slave_Init",
@@ -109738,7 +109878,7 @@
     "display": "void RangingPacketInit(int)",
     "location": {
       "column": "6",
-      "line": "100",
+      "line": "102",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RangingPacketInit",
@@ -109752,7 +109892,7 @@
     "display": "void RangRingFunc(void)",
     "location": {
       "column": "6",
-      "line": "101",
+      "line": "103",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RangRingFunc",
@@ -109766,7 +109906,7 @@
     "display": "void main(void)",
     "location": {
       "column": "6",
-      "line": "102",
+      "line": "104",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "main",
@@ -109780,7 +109920,7 @@
     "display": "void txDoneIRQ(void)",
     "location": {
       "column": "6",
-      "line": "129",
+      "line": "131",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "txDoneIRQ",
@@ -109794,7 +109934,7 @@
     "display": "void rxDoneIRQ(void)",
     "location": {
       "column": "6",
-      "line": "135",
+      "line": "137",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rxDoneIRQ",
@@ -109808,7 +109948,7 @@
     "display": "void rxSyncWordDoneIRQ(void)",
     "location": {
       "column": "6",
-      "line": "140",
+      "line": "142",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rxSyncWordDoneIRQ",
@@ -109822,7 +109962,7 @@
     "display": "void rxHeaderDoneIRQ(void)",
     "location": {
       "column": "6",
-      "line": "145",
+      "line": "147",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rxHeaderDoneIRQ",
@@ -109836,7 +109976,7 @@
     "display": "void txTimeoutIRQ(void)",
     "location": {
       "column": "6",
-      "line": "150",
+      "line": "152",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "txTimeoutIRQ",
@@ -109850,7 +109990,7 @@
     "display": "void rxTimeoutIRQ(void)",
     "location": {
       "column": "6",
-      "line": "155",
+      "line": "157",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rxTimeoutIRQ",
@@ -109864,7 +110004,7 @@
     "display": "void rxErrorIRQ(IrqErrorCode_t)",
     "location": {
       "column": "6",
-      "line": "160",
+      "line": "162",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rxErrorIRQ",
@@ -109878,7 +110018,7 @@
     "display": "void rangingDoneIRQ(IrqRangingCode_t)",
     "location": {
       "column": "6",
-      "line": "165",
+      "line": "167",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rangingDoneIRQ",
@@ -109892,7 +110032,7 @@
     "display": "void cadDoneIRQ(bool)",
     "location": {
       "column": "6",
-      "line": "171",
+      "line": "173",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "cadDoneIRQ",
@@ -109906,7 +110046,7 @@
     "display": "void getStatusIRQ(uint32_t)",
     "location": {
       "column": "6",
-      "line": "175",
+      "line": "177",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "getStatusIRQ",
@@ -109920,7 +110060,7 @@
     "display": "void RangingPacketInit(int)",
     "location": {
       "column": "6",
-      "line": "179",
+      "line": "181",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RangingPacketInit",
@@ -109934,7 +110074,7 @@
     "display": "void Slave_Init(int)",
     "location": {
       "column": "6",
-      "line": "213",
+      "line": "215",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "Slave_Init",
@@ -109948,7 +110088,7 @@
     "display": "void Master_Init(int)",
     "location": {
       "column": "6",
-      "line": "223",
+      "line": "225",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "Master_Init",
@@ -109962,7 +110102,7 @@
     "display": "void RangRingFunc(void)",
     "location": {
       "column": "6",
-      "line": "232",
+      "line": "234",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "RangRingFunc",
@@ -109970,13 +110110,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6803@F@RangRingFunc@rangingResult",
+    "ID": "c:main.c@6807@F@RangRingFunc@rangingResult",
     "What": "Variable",
     "defdec": "Def",
     "display": "rangingResult",
     "location": {
       "column": "20",
-      "line": "247",
+      "line": "249",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "rangingResult",
@@ -109984,13 +110124,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@6986@F@RangRingFunc@result",
+    "ID": "c:main.c@6990@F@RangRingFunc@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
     "location": {
       "column": "22",
-      "line": "250",
+      "line": "252",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "result",
@@ -109998,13 +110138,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@7072@F@RangRingFunc@Payload",
+    "ID": "c:main.c@7076@F@RangRingFunc@Payload",
     "What": "Variable",
     "defdec": "Def",
     "display": "Payload",
     "location": {
       "column": "23",
-      "line": "252",
+      "line": "254",
       "path": "C:\\Users\\17520\\Desktop\\LoRaTN\\LoRa_STM8L_RangRing\\main.c"
     },
     "name": "Payload",

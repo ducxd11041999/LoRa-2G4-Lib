@@ -9,6 +9,17 @@ void delay(uint32_t a){
   }
 }
 
+double t0 =       -0.016432807883697;                         // X0
+double t1 =       0.323147003165358;                          // X1
+double t2 =       0.014922061351196;                          // X1^2
+double t3 =       0.000137832006285;                          // X1^3
+double t4 =       0.536873856625399;                          // X2
+double t5 =       0.040890089178579;                          // X2^2
+double t6 =       -0.001074801048732;                         // X2^3
+double t7 =       0.000009240142234;                          // X2^4
+
+
+
 static RadioCallbacks_t *__callbacks = NULL;
 static bool __IrqState = false;
 static bool __PollingMode = false;
@@ -998,9 +1009,13 @@ double __GetRangingResult(RadioRangingResultTypes_t resultType)
       __SetStandby( STDBY_XOSC );
       __WriteRegister_1( 0x97F, __ReadRegister_1( 0x97F ) | ( 1 << 1 ) ); // enable LORA modem clock
       __WriteRegister_1( REG_LR_RANGINGRESULTCONFIG, ( __ReadRegister_1( REG_LR_RANGINGRESULTCONFIG ) & MASK_RANGINGMUXSEL ) | ( ( ( ( uint8_t )resultType ) & 0x03 ) << 4 ) );
-      valLsb = ( ( (u32)__ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR ) << 16 ) | ( (u32)__ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR + 1 ) << 8 ) | ((u32) __ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR + 2 ) ) );
-      __SetStandby( STDBY_RC );
-
+      valLsb = ( ( (uint32_t)__ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR ) << 16 ) | ( (uint32_t)__ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR + 1 ) << 8 ) | ( (uint32_t)__ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR + 2 ) ) );
+      __SetStandby( STDBY_RC ); 
+      #ifdef DEBUG
+          Uart_SendData8String("Raw ranging value : ");
+          Uart_SendData8Stringln((double) complement2(valLsb,24));
+      #endif
+      
       // Convertion from LSB to distance. For explanation on the formula, refer to Datasheet of SX1280
       switch ( resultType )
       {
@@ -1011,12 +1026,20 @@ double __GetRangingResult(RadioRangingResultTypes_t resultType)
           // The API provide BW in [Hz] so the implemented formula is complement2( register ) / bandwidth[Hz] * A,
           // where A = 150 / (2^12 / 1e6) = 36621.09
           val = ( double )complement2( valLsb, 24 ) / ( double )__GetLoRaBandwidth( ) * 36621.09375;
+          #ifdef DEBUG
+            Uart_SendData8String("After conversion using RAW result ranging value: ");
+            Uart_SendNumber(val);
+          #endif
           break;
 
         case RANGING_RESULT_AVERAGED:
         case RANGING_RESULT_DEBIASED:
-        case RANGING_RESULT_FILTERED:
+        case RANGING_RESULT_FILTERED:          
           val = ( double )valLsb * 20.0 / 100.0;
+          #ifdef DEBUG
+            Uart_SendData8String("After conversion using Filtered result ranging value: ");
+            Uart_SendNumber(val);
+          #endif
           break;
         default:
           val = 0.0;
@@ -1024,6 +1047,23 @@ double __GetRangingResult(RadioRangingResultTypes_t resultType)
       break;
     default:
       break;
+  }
+  #ifdef DEBUG 
+  Uart_SendData8String("Before Short range correction : ");
+  Uart_SendNumber(val);
+  #endif 
+  if (val <= 50)
+  {
+    int8_t rssi = __GetRssiInst(), val2 ;
+    val = t0 + t1 * rssi + t2 * pow(rssi,2) + t3 * pow(rssi, 3) +t4 * val + t5 * pow(val,2) + t6 * pow(val, 3) + t7 * pow(val, 4) ; // calculate according to source code
+    val2 = exp((val + 2.4917)/7.2262); // calculate according to datasheet 
+    #ifdef DEBUG 
+    Uart_SendData8String("After Short range correction : ");
+    Uart_SendNumber(val);
+    Uart_SendData8String(" (fomular from source code) or ");
+    Uart_SendNumber(val2);
+    Uart_SendData8String("(fomular from datasheet)");
+    #endif 
   }
   return val;
 }

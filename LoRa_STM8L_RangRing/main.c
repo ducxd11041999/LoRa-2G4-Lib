@@ -4,6 +4,8 @@
 //#include "FreqLUIT.h"
 #define IS_MASTER 1U
 
+
+
 #define RF_FREQUENCY                                2400000000UL// Hz
 #define TX_OUTPUT_POWER                             13U// dBm
 #define RX_TIMEOUT_TICK_SIZE                        RADIO_TICK_SIZE_1000_US
