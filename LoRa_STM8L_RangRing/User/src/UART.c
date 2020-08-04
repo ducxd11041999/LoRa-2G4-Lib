@@ -41,11 +41,29 @@ void Uart_SendNumber(float x)
   int i=0;
   int n=12;
 
-  n=sprintf (value, "%f",x); //after decimal point 3 numbers of zero
+  n=sprintf (value, "%0.3f",x); //after decimal point 3 numbers of zero
       while(i<n) 
   {
     USART_SendData8(USART1, value[i++]);
     delay(5000);
   }
     
+}
+void Uart_SendNumber1( uint32_t x)
+{
+  char value[10]; //a temp array to hold results of conversion
+  int i = 0; //loop index
+  
+  do
+  {
+    value[i++] = (char)(x%10) + '0'; //convert integer to character
+    x /= 10;
+  } while(x);
+  
+  while(i) //send data
+  {
+    USART_SendData8(USART1, value[--i]);
+    delay(600);
+   
+  }
 }

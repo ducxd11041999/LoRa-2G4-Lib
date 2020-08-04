@@ -1,1 +1,62 @@
-main.pbi: C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\main.c
+main.pbi: C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\main.c \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc\stm8l15x.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_conf.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_adc.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_aes.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_beep.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_clk.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_comp.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_dac.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_dma.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_exti.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_flash.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_gpio.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_i2c.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_irtim.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_itc.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_iwdg.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_lcd.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_pwr.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_rst.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_rtc.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_spi.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_syscfg.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_tim1.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_tim2.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_tim3.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_tim4.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_tim5.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_usart.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_wfe.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc/stm8l15x_wwdg.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\intrinsics.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc\stm8l15x_conf.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\User\inc\Radio.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\User\inc/Radio_Methods.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\User\inc/Header.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\stdbool.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\User\inc/Config.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\User\inc/LoST_GPIO.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc\stm8l15x_gpio.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\User\inc/LoST_Clock.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc\stm8l15x_clk.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\User\inc/LoST_SPI.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc\stm8l15x_spi.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\User\inc/LoST_EXT.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc\stm8l15x_exti.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc\stm8l15x_it.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\User\inc/UART.h \
+  C:\Users\17520\Desktop\LoRaTN\LoRa_STM8L_RangRing\Lib\inc\stm8l15x_usart.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\math.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\ycheck.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\ymath.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\yvals.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\LIB\dlstm8smn.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\DLib_Product.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\xencoding_limits.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\DLib_Threads.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\xtgmath.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\string.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\stm8\inc\c\ysizet.h

@@ -252,6 +252,7 @@ void RangRingFunc(){
             uint32_t  Payload[4] = {(result >> 24) & 0xFF, (result >> 16) & 0xFF, (result >> 8) & 0xFF, (result) & 0xFF};
              Uart_SendData8String("\nRanging result is : \n");
              Uart_SendNumber((Payload[0] + Payload[1] + Payload[2] + Payload[3]) / 10.0);
+             //Uart_SendNumber((u32)(Payload[0] + Payload[1] + Payload[2] + Payload[3]) / 10.0);
           };
           break;
           case IRQ_RANGING_MASTER_ERROR_CODE:
