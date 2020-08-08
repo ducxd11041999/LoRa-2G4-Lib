@@ -92,7 +92,7 @@ uint8_t BufferSize = BUFFER_SIZE;
 uint16_t RxIrqMask = IRQ_RX_DONE | IRQ_RX_TX_TIMEOUT;
 uint16_t TxIrqMask = IRQ_TX_DONE | IRQ_RX_TX_TIMEOUT;
 
-uint16_t CalibVal = 10000;
+uint16_t CalibVal = 13376;
 enum _Role { SLAVE, MASTER } Role =  IS_MASTER;
 uint16_t RangingData[10] = {0};
 
@@ -189,6 +189,7 @@ void Master_Init()
 
 void setup() {
   Serial.begin(115200);
+  Serial.println("Bui Phung Huu Duc");
   if (IS_MASTER)
   {
     Serial.println("SX1280 MASTER");
@@ -212,11 +213,11 @@ void loop() {
     
   if (IS_MASTER)
   {
-    Serial.println("Enter Calibrate value : ");
-    while (!Serial.available()); // waiting for input from uart
-    CalibVal = Serial.parseInt();
-    Serial.print("Calib value is : " );
-    Serial.println(CalibVal,BIN);
+    //Serial.println("Enter Calibrate value : ");
+    //while (!Serial.available()); // waiting for input from uart
+    //CalibVal = Serial.parseInt();
+    //Serial.print("Calib value is : " );
+    //Serial.println(CalibVal,BIN);
     
     uint8_t Payload[4] = {(CalibVal >> 24) & 0xFF , (CalibVal >> 16)&0xFF, (CalibVal >> 8)&0xFF, CalibVal&0xFF};
     for (int i = 0; i < 4; ++i)
