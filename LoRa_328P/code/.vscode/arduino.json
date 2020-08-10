@@ -1,0 +1,8 @@
+{
+    "sketch": "SX1280_C_Lib.ino",
+    "board": "arduino:avr:pro",
+    "configuration": "cpu=8MHzatmega328",
+    "output": "build",
+    "programmer": "AVR ISP",
+    "port": "COM5"
+}

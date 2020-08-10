@@ -4,6 +4,9 @@
         <path>$WS_DIR$\Lib_Final.ewp</path>
     </project>
     <project>
+        <path>$WS_DIR$\..\LoRa_STM8L_RangRing\LoRa_STM_RR.ewp</path>
+    </project>
+    <project>
         <path>D:\DuLieuKhoaLuan\TN_LoRa\LoRa_PingPong_Proj2\Project2.ewp</path>
     </project>
     <batchBuild />

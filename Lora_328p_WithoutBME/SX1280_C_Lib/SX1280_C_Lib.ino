@@ -1,7 +1,4 @@
 #include "Radio.h"
-#include <Wire.h>
-#include "BME280.h"
-BME280 bme(Wire,0x76);
 #define IS_MASTER 0
 
 #define RF_FREQUENCY                                2400000000// Hz
@@ -106,22 +103,9 @@ void setup() {
     }  );
   }
   AppState = APP_LOWPOWER;
-//  if (bme.begin() < 0) {
-//    Serial.println("Error communicating with sensor, check wiring and I2C address");
-//    while(1){}
-//  }
 }
 
 void loop() {
-  
-  //Serial.print("\t");
-//  bme.readSensor();
-//  //Serial.print(bme.getTemperature_C(),2);
-//  Pres = bme.getPressure_Pa();
-//  Serial.print(Pres);
-//  Serial.print("\n");
-  //Pres = Pres ;
-  //Serial.print(Pres,6);
   if (IS_MASTER)
   {
     Radio.SendPayload(&counter, 1, ( TickTime_t ) {
