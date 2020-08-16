@@ -1,6 +1,6 @@
- #include "Radio.h"
+#include "Radio.h"
 
-#define IS_MASTER 1
+#define IS_MASTER 0
 
 #define RF_FREQUENCY                                2400000000// Hz
 #define TX_OUTPUT_POWER                             13 // dBm
@@ -57,8 +57,7 @@ ModulationParams_t modulationParams;
 AppStates_t AppState = APP_LOWPOWER;
 uint8_t Buffer[BUFFER_SIZE];
 uint8_t BufferSize = BUFFER_SIZE;
-uint8_t counter = 0;
-
+uint8_t counter[] = {0, 0, 0};
 void setup() {
   Serial.begin(9600);
   Serial.println("SX1280");
@@ -75,7 +74,7 @@ void setup() {
   packetParams.PacketType = PACKET_TYPE_LORA;
   packetParams.Params.LoRa.PreambleLength = 12;
   packetParams.Params.LoRa.HeaderType = LORA_PACKET_VARIABLE_LENGTH;
-  packetParams.Params.LoRa.PayloadLength = 10;
+  packetParams.Params.LoRa.PayloadLength = 3;
   packetParams.Params.LoRa.Crc = LORA_CRC_ON;
   packetParams.Params.LoRa.InvertIQ = LORA_IQ_NORMAL;
 
@@ -108,12 +107,20 @@ void setup() {
 void loop() {
   if (IS_MASTER)
   {
-    Radio.SendPayload( &counter, 1, ( TickTime_t ) {
+    if (++counter[0] == 60)
+    {
+      counter[0] = 0;
+      if (++counter[1] == 60) {
+        counter[1] = 0;
+        if (++counter[2] == 255) {
+          counter[2] = 255;
+          Serial.print("End Game . . .");
+        }
+      }
+    }
+    Radio.SendPayload(counter, 10, ( TickTime_t ) {
       RX_TIMEOUT_TICK_SIZE, TX_TIMEOUT_VALUE
     }, 0 );
-    
-    if (++counter > 100) counter = 0;
-    
     delay(1000);
   }
   else
@@ -129,12 +136,17 @@ void loop() {
         if (BufferSize > 0)
         {
           Serial.print("RX ");
-          Serial.print(BufferSize);
-          Serial.println(" bytes:");
+//          Serial.print(BufferSize);
+//          Serial.println(" bytes:");
 
-          for (int i = 0; i < BufferSize; i++)
+          for (int i = BufferSize - 1; i >= 0; i--)
           {
-            Serial.println(Buffer[i]);
+            if (i != 0) {
+              Serial.print(Buffer[i]);
+              Serial.print(":");
+            } else {
+              Serial.println(Buffer[i]);
+            }
           }
         }
 
