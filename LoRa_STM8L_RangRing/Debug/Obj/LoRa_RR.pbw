@@ -1,6 +1,6 @@
 [
   {
-    "ID": "c:stm8l15x_rtc.h@1277@macro@__STM8L15x_RTC_H",
+    "ID": "c:stm8l15x_rtc.h@1306@macro@__STM8L15x_RTC_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_RTC_H",
@@ -2662,7 +2662,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@20931@macro@IS_RTC_HOUR_FORMAT",
+    "ID": "c:stm8l15x_rtc.h@21509@macro@IS_RTC_HOUR_FORMAT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_HOUR_FORMAT",
@@ -2676,7 +2676,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@21197@macro@IS_RTC_ASYNCH_PREDIV",
+    "ID": "c:stm8l15x_rtc.h@21782@macro@IS_RTC_ASYNCH_PREDIV",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_ASYNCH_PREDIV",
@@ -2690,7 +2690,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@21376@macro@IS_RTC_SYNCH_PREDIV",
+    "ID": "c:stm8l15x_rtc.h@21967@macro@IS_RTC_SYNCH_PREDIV",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_SYNCH_PREDIV",
@@ -2704,7 +2704,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@21567@macro@IS_RTC_HOUR12_MAX",
+    "ID": "c:stm8l15x_rtc.h@22164@macro@IS_RTC_HOUR12_MAX",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_HOUR12_MAX",
@@ -2718,7 +2718,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@21623@macro@IS_RTC_HOUR12_MIN",
+    "ID": "c:stm8l15x_rtc.h@22221@macro@IS_RTC_HOUR12_MIN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_HOUR12_MIN",
@@ -2732,7 +2732,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@21811@macro@IS_RTC_HOUR24",
+    "ID": "c:stm8l15x_rtc.h@22415@macro@IS_RTC_HOUR24",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_HOUR24",
@@ -2746,7 +2746,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@21977@macro@IS_RTC_MINUTES",
+    "ID": "c:stm8l15x_rtc.h@22587@macro@IS_RTC_MINUTES",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_MINUTES",
@@ -2760,7 +2760,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@22150@macro@IS_RTC_SECONDS",
+    "ID": "c:stm8l15x_rtc.h@22766@macro@IS_RTC_SECONDS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_SECONDS",
@@ -2774,7 +2774,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@22318@macro@IS_RTC_H12",
+    "ID": "c:stm8l15x_rtc.h@22940@macro@IS_RTC_H12",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_H12",
@@ -2788,7 +2788,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@22513@macro@IS_RTC_YEAR",
+    "ID": "c:stm8l15x_rtc.h@23142@macro@IS_RTC_YEAR",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_YEAR",
@@ -2802,7 +2802,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@22675@macro@IS_RTC_MONTH_MAX",
+    "ID": "c:stm8l15x_rtc.h@23310@macro@IS_RTC_MONTH_MAX",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_MONTH_MAX",
@@ -2816,7 +2816,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@22732@macro@IS_RTC_MONTH_MIN",
+    "ID": "c:stm8l15x_rtc.h@23368@macro@IS_RTC_MONTH_MIN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_MONTH_MIN",
@@ -2830,7 +2830,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@22908@macro@IS_RTC_DATE_MAX",
+    "ID": "c:stm8l15x_rtc.h@23550@macro@IS_RTC_DATE_MAX",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_DATE_MAX",
@@ -2844,7 +2844,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@22962@macro@IS_RTC_DATE_MIN",
+    "ID": "c:stm8l15x_rtc.h@23605@macro@IS_RTC_DATE_MIN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_DATE_MIN",
@@ -2858,7 +2858,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@23139@macro@IS_RTC_WEEKDAY",
+    "ID": "c:stm8l15x_rtc.h@23788@macro@IS_RTC_WEEKDAY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_WEEKDAY",
@@ -2872,7 +2872,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@23802@macro@IS_RTC_ALARM_DATEWEEKDAY_SEL",
+    "ID": "c:stm8l15x_rtc.h@24463@macro@IS_RTC_ALARM_DATEWEEKDAY_SEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_ALARM_DATEWEEKDAY_SEL",
@@ -2886,7 +2886,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@24088@macro@IS_RTC_ALARM_MASK",
+    "ID": "c:stm8l15x_rtc.h@24756@macro@IS_RTC_ALARM_MASK",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_ALARM_MASK",
@@ -2900,7 +2900,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@24278@macro@IS_RTC_WAKEUP_CLOCK",
+    "ID": "c:stm8l15x_rtc.h@24952@macro@IS_RTC_WAKEUP_CLOCK",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_WAKEUP_CLOCK",
@@ -2914,7 +2914,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@24893@macro@IS_RTC_OUTPUT_SEL",
+    "ID": "c:stm8l15x_rtc.h@25578@macro@IS_RTC_OUTPUT_SEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_OUTPUT_SEL",
@@ -2928,7 +2928,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@25202@macro@IS_RTC_OUTPUT_POL",
+    "ID": "c:stm8l15x_rtc.h@25894@macro@IS_RTC_OUTPUT_POL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_OUTPUT_POL",
@@ -2942,7 +2942,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@25462@macro@IS_RTC_DAYLIGHT_SAVING",
+    "ID": "c:stm8l15x_rtc.h@26161@macro@IS_RTC_DAYLIGHT_SAVING",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_DAYLIGHT_SAVING",
@@ -2956,7 +2956,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@25742@macro@IS_RTC_STORE_OPERATION",
+    "ID": "c:stm8l15x_rtc.h@26448@macro@IS_RTC_STORE_OPERATION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_STORE_OPERATION",
@@ -2970,7 +2970,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@26028@macro@IS_RTC_FORMAT",
+    "ID": "c:stm8l15x_rtc.h@26742@macro@IS_RTC_FORMAT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_FORMAT",
@@ -2984,7 +2984,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@26266@macro@IS_RTC_GET_FLAG",
+    "ID": "c:stm8l15x_rtc.h@26987@macro@IS_RTC_GET_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_GET_FLAG",
@@ -2998,7 +2998,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@27226@macro@RTC_FLAG_CLRBLE",
+    "ID": "c:stm8l15x_rtc.h@27967@macro@RTC_FLAG_CLRBLE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RTC_FLAG_CLRBLE",
@@ -3012,7 +3012,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@27347@macro@IS_RTC_CLEAR_FLAG",
+    "ID": "c:stm8l15x_rtc.h@28089@macro@IS_RTC_CLEAR_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_CLEAR_FLAG",
@@ -3026,7 +3026,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@27587@macro@IS_RTC_CONFIG_IT",
+    "ID": "c:stm8l15x_rtc.h@28335@macro@IS_RTC_CONFIG_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_CONFIG_IT",
@@ -3040,7 +3040,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@27882@macro@IS_RTC_GET_IT",
+    "ID": "c:stm8l15x_rtc.h@28636@macro@IS_RTC_GET_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_GET_IT",
@@ -3054,7 +3054,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@28158@macro@IS_RTC_CLEAR_IT",
+    "ID": "c:stm8l15x_rtc.h@28920@macro@IS_RTC_CLEAR_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_CLEAR_IT",
@@ -3068,7 +3068,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@28412@macro@IS_RTC_TAMPER_LEVEL",
+    "ID": "c:stm8l15x_rtc.h@29180@macro@IS_RTC_TAMPER_LEVEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_TAMPER_LEVEL",
@@ -3082,7 +3082,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@28663@macro@NOT_CORRECT_TAMPER",
+    "ID": "c:stm8l15x_rtc.h@29438@macro@NOT_CORRECT_TAMPER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "NOT_CORRECT_TAMPER",
@@ -3096,7 +3096,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@28858@macro@IS_RTC_TAMPER",
+    "ID": "c:stm8l15x_rtc.h@29636@macro@IS_RTC_TAMPER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_TAMPER",
@@ -3110,7 +3110,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@29080@macro@IS_RTC_TAMPER_FILTER",
+    "ID": "c:stm8l15x_rtc.h@29864@macro@IS_RTC_TAMPER_FILTER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_TAMPER_FILTER",
@@ -3124,7 +3124,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@29509@macro@IS_RTC_TAMPER_SAMPLING_FREQ",
+    "ID": "c:stm8l15x_rtc.h@30302@macro@IS_RTC_TAMPER_SAMPLING_FREQ",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_TAMPER_SAMPLING_FREQ",
@@ -3138,7 +3138,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@29731@macro@IS_RTC_TAMPER_PINS_PRECHAR_DURATION",
+    "ID": "c:stm8l15x_rtc.h@30531@macro@IS_RTC_TAMPER_PINS_PRECHAR_DURATION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_TAMPER_PINS_PRECHAR_DURATION",
@@ -3152,7 +3152,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@30361@macro@IS_RTC_SMOOTH_CALIB_PERIOD",
+    "ID": "c:stm8l15x_rtc.h@31171@macro@IS_RTC_SMOOTH_CALIB_PERIOD",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_SMOOTH_CALIB_PERIOD",
@@ -3166,7 +3166,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@30749@macro@IS_RTC_SMOOTH_CALIB_PLUS",
+    "ID": "c:stm8l15x_rtc.h@31567@macro@IS_RTC_SMOOTH_CALIB_PLUS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_SMOOTH_CALIB_PLUS",
@@ -3180,7 +3180,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@31052@macro@IS_RTC_SMOOTH_CALIB_MINUS",
+    "ID": "c:stm8l15x_rtc.h@31876@macro@IS_RTC_SMOOTH_CALIB_MINUS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_SMOOTH_CALIB_MINUS",
@@ -3194,7 +3194,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@31231@macro@IS_RTC_OUTPUT_SELECT",
+    "ID": "c:stm8l15x_rtc.h@32061@macro@IS_RTC_OUTPUT_SELECT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_OUTPUT_SELECT",
@@ -3208,7 +3208,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@31566@macro@IS_RTC_CALOUTPUT_SELECT",
+    "ID": "c:stm8l15x_rtc.h@32404@macro@IS_RTC_CALOUTPUT_SELECT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_CALOUTPUT_SELECT",
@@ -3222,7 +3222,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@31875@macro@IS_RTC_ALARM_SS_VALUE",
+    "ID": "c:stm8l15x_rtc.h@32720@macro@IS_RTC_ALARM_SS_VALUE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_ALARM_SS_VALUE",
@@ -3236,7 +3236,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@32048@macro@IS_RTC_ALARM_SS_MASK",
+    "ID": "c:stm8l15x_rtc.h@32899@macro@IS_RTC_ALARM_SS_MASK",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_ALARM_SS_MASK",
@@ -3250,7 +3250,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@32227@macro@IS_RTC_SHIFT_SUBFS",
+    "ID": "c:stm8l15x_rtc.h@33084@macro@IS_RTC_SHIFT_SUBFS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_SHIFT_SUBFS",
@@ -3264,7 +3264,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.h@32399@macro@IS_RTC_SHIFT_ADD1S",
+    "ID": "c:stm8l15x_rtc.h@33262@macro@IS_RTC_SHIFT_ADD1S",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RTC_SHIFT_ADD1S",
@@ -27498,7 +27498,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@1280@macro@__STM8L15x_TIM5_H",
+    "ID": "c:stm8l15x_tim5.h@1310@macro@__STM8L15x_TIM5_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_TIM5_H",
@@ -27570,7 +27570,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@1901@macro@IS_TIM5_FORCED_ACTION",
+    "ID": "c:stm8l15x_tim5.h@1960@macro@IS_TIM5_FORCED_ACTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_FORCED_ACTION",
@@ -27712,7 +27712,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@2790@macro@IS_TIM5_PRESCALER",
+    "ID": "c:stm8l15x_tim5.h@2870@macro@IS_TIM5_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_PRESCALER",
@@ -27826,7 +27826,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@3899@macro@IS_TIM5_OC_MODE",
+    "ID": "c:stm8l15x_tim5.h@4004@macro@IS_TIM5_OC_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_OC_MODE",
@@ -27840,7 +27840,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@4306@macro@IS_TIM5_OCM",
+    "ID": "c:stm8l15x_tim5.h@4418@macro@IS_TIM5_OCM",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_OCM",
@@ -27898,7 +27898,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@5129@macro@IS_TIM5_OPM_MODE",
+    "ID": "c:stm8l15x_tim5.h@5262@macro@IS_TIM5_OPM_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_OPM_MODE",
@@ -27956,7 +27956,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@5472@macro@IS_TIM5_CHANNEL",
+    "ID": "c:stm8l15x_tim5.h@5620@macro@IS_TIM5_CHANNEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_CHANNEL",
@@ -28056,7 +28056,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@6164@macro@IS_TIM5_COUNTER_MODE",
+    "ID": "c:stm8l15x_tim5.h@6330@macro@IS_TIM5_COUNTER_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_COUNTER_MODE",
@@ -28114,7 +28114,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@6852@macro@IS_TIM5_OC_POLARITY",
+    "ID": "c:stm8l15x_tim5.h@7036@macro@IS_TIM5_OC_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_OC_POLARITY",
@@ -28172,7 +28172,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@7341@macro@IS_TIM5_OUTPUT_STATE",
+    "ID": "c:stm8l15x_tim5.h@7540@macro@IS_TIM5_OUTPUT_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_OUTPUT_STATE",
@@ -28230,7 +28230,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@7801@macro@IS_TIM5_BREAK_STATE",
+    "ID": "c:stm8l15x_tim5.h@8016@macro@IS_TIM5_BREAK_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_BREAK_STATE",
@@ -28288,7 +28288,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@8239@macro@IS_TIM5_BREAK_POLARITY",
+    "ID": "c:stm8l15x_tim5.h@8469@macro@IS_TIM5_BREAK_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_BREAK_POLARITY",
@@ -28346,7 +28346,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@8674@macro@IS_TIM5_AUTOMATIC_OUTPUT_STATE",
+    "ID": "c:stm8l15x_tim5.h@8920@macro@IS_TIM5_AUTOMATIC_OUTPUT_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_AUTOMATIC_OUTPUT_STATE",
@@ -28432,7 +28432,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@9207@macro@IS_TIM5_LOCK_LEVEL",
+    "ID": "c:stm8l15x_tim5.h@9471@macro@IS_TIM5_LOCK_LEVEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_LOCK_LEVEL",
@@ -28490,7 +28490,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@9790@macro@IS_TIM5_OSSI_STATE",
+    "ID": "c:stm8l15x_tim5.h@10071@macro@IS_TIM5_OSSI_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_OSSI_STATE",
@@ -28548,7 +28548,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@10206@macro@IS_TIM5_OCIDLE_STATE",
+    "ID": "c:stm8l15x_tim5.h@10503@macro@IS_TIM5_OCIDLE_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_OCIDLE_STATE",
@@ -28606,7 +28606,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@10610@macro@IS_TIM5_IC_POLARITY",
+    "ID": "c:stm8l15x_tim5.h@10923@macro@IS_TIM5_IC_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_IC_POLARITY",
@@ -28678,7 +28678,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@11161@macro@IS_TIM5_IC_SELECTION",
+    "ID": "c:stm8l15x_tim5.h@11491@macro@IS_TIM5_IC_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_IC_SELECTION",
@@ -28764,7 +28764,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@11878@macro@IS_TIM5_IC_PRESCALER",
+    "ID": "c:stm8l15x_tim5.h@12227@macro@IS_TIM5_IC_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_IC_PRESCALER",
@@ -28864,7 +28864,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@12532@macro@IS_TIM5_IT",
+    "ID": "c:stm8l15x_tim5.h@12902@macro@IS_TIM5_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_IT",
@@ -28878,7 +28878,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@12575@macro@IS_TIM5_GET_IT",
+    "ID": "c:stm8l15x_tim5.h@12948@macro@IS_TIM5_GET_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_GET_IT",
@@ -28964,7 +28964,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@13308@macro@IS_TIM5_EXT_PRESCALER",
+    "ID": "c:stm8l15x_tim5.h@13702@macro@IS_TIM5_EXT_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_EXT_PRESCALER",
@@ -29106,7 +29106,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@14462@macro@IS_TIM5_TRIGGER_SELECTION",
+    "ID": "c:stm8l15x_tim5.h@14880@macro@IS_TIM5_TRIGGER_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_TRIGGER_SELECTION",
@@ -29120,7 +29120,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@14900@macro@IS_TIM5_TIX_TRIGGER_SELECTION",
+    "ID": "c:stm8l15x_tim5.h@15329@macro@IS_TIM5_TIX_TRIGGER_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_TIX_TRIGGER_SELECTION",
@@ -29192,7 +29192,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@15529@macro@IS_TIM5_TIXCLK_SOURCE",
+    "ID": "c:stm8l15x_tim5.h@15976@macro@IS_TIM5_TIXCLK_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_TIXCLK_SOURCE",
@@ -29250,7 +29250,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@16058@macro@IS_TIM5_EXT_POLARITY",
+    "ID": "c:stm8l15x_tim5.h@16523@macro@IS_TIM5_EXT_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_EXT_POLARITY",
@@ -29308,7 +29308,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@16526@macro@IS_TIM5_PRESCALER_RELOAD",
+    "ID": "c:stm8l15x_tim5.h@17007@macro@IS_TIM5_PRESCALER_RELOAD",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_PRESCALER_RELOAD",
@@ -29380,7 +29380,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@16980@macro@IS_TIM5_ENCODER_MODE",
+    "ID": "c:stm8l15x_tim5.h@17478@macro@IS_TIM5_ENCODER_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_ENCODER_MODE",
@@ -29480,7 +29480,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@17625@macro@IS_TIM5_EVENT_SOURCE",
+    "ID": "c:stm8l15x_tim5.h@18143@macro@IS_TIM5_EVENT_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_EVENT_SOURCE",
@@ -29538,7 +29538,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@18046@macro@IS_TIM5_UPDATE_SOURCE",
+    "ID": "c:stm8l15x_tim5.h@18579@macro@IS_TIM5_UPDATE_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_UPDATE_SOURCE",
@@ -29652,7 +29652,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@18899@macro@IS_TIM5_TRGO_SOURCE",
+    "ID": "c:stm8l15x_tim5.h@19453@macro@IS_TIM5_TRGO_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_TRGO_SOURCE",
@@ -29738,7 +29738,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@19652@macro@IS_TIM5_SLAVE_MODE",
+    "ID": "c:stm8l15x_tim5.h@20228@macro@IS_TIM5_SLAVE_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_SLAVE_MODE",
@@ -29866,7 +29866,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@20467@macro@IS_TIM5_GET_FLAG",
+    "ID": "c:stm8l15x_tim5.h@21066@macro@IS_TIM5_GET_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_GET_FLAG",
@@ -29880,7 +29880,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@20761@macro@IS_TIM5_CLEAR_FLAG",
+    "ID": "c:stm8l15x_tim5.h@21369@macro@IS_TIM5_CLEAR_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_CLEAR_FLAG",
@@ -29952,7 +29952,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@21198@macro@IS_TIM5_DMA_SOURCE",
+    "ID": "c:stm8l15x_tim5.h@21822@macro@IS_TIM5_DMA_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_DMA_SOURCE",
@@ -29966,7 +29966,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@21662@macro@IS_TIM5_IC_FILTER",
+    "ID": "c:stm8l15x_tim5.h@22308@macro@IS_TIM5_IC_FILTER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_IC_FILTER",
@@ -29980,7 +29980,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.h@21775@macro@IS_TIM5_EXT_FILTER",
+    "ID": "c:stm8l15x_tim5.h@22426@macro@IS_TIM5_EXT_FILTER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM5_EXT_FILTER",
@@ -31506,7 +31506,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@1280@macro@__STM8L15x_TIM1_H",
+    "ID": "c:stm8l15x_tim1.h@1310@macro@__STM8L15x_TIM1_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_TIM1_H",
@@ -34726,7 +34726,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@15932@macro@IS_TIM1_OC_MODE",
+    "ID": "c:stm8l15x_tim1.h@16565@macro@IS_TIM1_OC_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_OC_MODE",
@@ -34740,7 +34740,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@16329@macro@IS_TIM1_OCM",
+    "ID": "c:stm8l15x_tim1.h@16969@macro@IS_TIM1_OCM",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_OCM",
@@ -34754,7 +34754,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@16852@macro@IS_TIM1_OPM_MODE",
+    "ID": "c:stm8l15x_tim1.h@17501@macro@IS_TIM1_OPM_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_OPM_MODE",
@@ -34768,7 +34768,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@16989@macro@IS_TIM1_CHANNEL",
+    "ID": "c:stm8l15x_tim1.h@17641@macro@IS_TIM1_CHANNEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_CHANNEL",
@@ -34782,7 +34782,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@17262@macro@IS_TIM1_PWMI_CHANNEL",
+    "ID": "c:stm8l15x_tim1.h@17919@macro@IS_TIM1_PWMI_CHANNEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_PWMI_CHANNEL",
@@ -34796,7 +34796,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@17407@macro@IS_TIM1_COMPLEMENTARY_CHANNEL",
+    "ID": "c:stm8l15x_tim1.h@18067@macro@IS_TIM1_COMPLEMENTARY_CHANNEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_COMPLEMENTARY_CHANNEL",
@@ -34810,7 +34810,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@17565@macro@IS_TIM1_COUNTER_MODE",
+    "ID": "c:stm8l15x_tim1.h@18229@macro@IS_TIM1_COUNTER_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_COUNTER_MODE",
@@ -34824,7 +34824,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@17965@macro@IS_TIM1_OC_POLARITY",
+    "ID": "c:stm8l15x_tim1.h@18635@macro@IS_TIM1_OC_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_OC_POLARITY",
@@ -34838,7 +34838,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@18123@macro@IS_TIM1_OCN_POLARITY",
+    "ID": "c:stm8l15x_tim1.h@18796@macro@IS_TIM1_OCN_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_OCN_POLARITY",
@@ -34852,7 +34852,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@18285@macro@IS_TIM1_OUTPUT_STATE",
+    "ID": "c:stm8l15x_tim1.h@18961@macro@IS_TIM1_OUTPUT_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_OUTPUT_STATE",
@@ -34866,7 +34866,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@18441@macro@IS_TIM1_OUTPUTN_STATE",
+    "ID": "c:stm8l15x_tim1.h@19120@macro@IS_TIM1_OUTPUTN_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_OUTPUTN_STATE",
@@ -34880,7 +34880,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@18600@macro@IS_TIM1_BREAK_STATE",
+    "ID": "c:stm8l15x_tim1.h@19282@macro@IS_TIM1_BREAK_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_BREAK_STATE",
@@ -34894,7 +34894,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@18752@macro@IS_TIM1_BREAK_POLARITY",
+    "ID": "c:stm8l15x_tim1.h@19437@macro@IS_TIM1_BREAK_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_BREAK_POLARITY",
@@ -34908,7 +34908,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@18884@macro@IS_TIM1_AUTOMATIC_OUTPUT_STATE",
+    "ID": "c:stm8l15x_tim1.h@19572@macro@IS_TIM1_AUTOMATIC_OUTPUT_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_AUTOMATIC_OUTPUT_STATE",
@@ -34922,7 +34922,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@19025@macro@IS_TIM1_LOCK_LEVEL",
+    "ID": "c:stm8l15x_tim1.h@19716@macro@IS_TIM1_LOCK_LEVEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_LOCK_LEVEL",
@@ -34936,7 +34936,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@19304@macro@IS_TIM1_OSSI_STATE",
+    "ID": "c:stm8l15x_tim1.h@20000@macro@IS_TIM1_OSSI_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_OSSI_STATE",
@@ -34950,7 +34950,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@19452@macro@IS_TIM1_OCIDLE_STATE",
+    "ID": "c:stm8l15x_tim1.h@20151@macro@IS_TIM1_OCIDLE_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_OCIDLE_STATE",
@@ -34964,7 +34964,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@19603@macro@IS_TIM1_OCNIDLE_STATE",
+    "ID": "c:stm8l15x_tim1.h@20305@macro@IS_TIM1_OCNIDLE_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_OCNIDLE_STATE",
@@ -34978,7 +34978,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@19758@macro@IS_TIM1_IC_POLARITY",
+    "ID": "c:stm8l15x_tim1.h@20463@macro@IS_TIM1_IC_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_IC_POLARITY",
@@ -34992,7 +34992,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@19922@macro@IS_TIM1_IC_SELECTION",
+    "ID": "c:stm8l15x_tim1.h@20630@macro@IS_TIM1_IC_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_IC_SELECTION",
@@ -35006,7 +35006,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@20110@macro@IS_TIM1_IC_PRESCALER",
+    "ID": "c:stm8l15x_tim1.h@20822@macro@IS_TIM1_IC_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_IC_PRESCALER",
@@ -35020,7 +35020,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@20312@macro@IS_TIM1_OCREFERENCECECLEAR_SOURCE",
+    "ID": "c:stm8l15x_tim1.h@21029@macro@IS_TIM1_OCREFERENCECECLEAR_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_OCREFERENCECECLEAR_SOURCE",
@@ -35034,7 +35034,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@20460@macro@IS_TIM1_IT",
+    "ID": "c:stm8l15x_tim1.h@21180@macro@IS_TIM1_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_IT",
@@ -35048,7 +35048,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@20499@macro@IS_TIM1_GET_IT",
+    "ID": "c:stm8l15x_tim1.h@21221@macro@IS_TIM1_GET_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_GET_IT",
@@ -35062,7 +35062,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@20945@macro@IS_TIM1_EXT_PRESCALER",
+    "ID": "c:stm8l15x_tim1.h@21676@macro@IS_TIM1_EXT_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_EXT_PRESCALER",
@@ -35076,7 +35076,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@21163@macro@IS_TIM1_TRIGGER_SELECTION",
+    "ID": "c:stm8l15x_tim1.h@21899@macro@IS_TIM1_TRIGGER_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_TRIGGER_SELECTION",
@@ -35090,7 +35090,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@21599@macro@IS_TIM1_TIX_TRIGGER_SELECTION",
+    "ID": "c:stm8l15x_tim1.h@22346@macro@IS_TIM1_TIX_TRIGGER_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_TIX_TRIGGER_SELECTION",
@@ -35104,7 +35104,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@21798@macro@IS_TIM1_TIXCLK_SOURCE",
+    "ID": "c:stm8l15x_tim1.h@22550@macro@IS_TIM1_TIXCLK_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_TIXCLK_SOURCE",
@@ -35118,7 +35118,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@22067@macro@IS_TIM1_EXT_POLARITY",
+    "ID": "c:stm8l15x_tim1.h@22823@macro@IS_TIM1_EXT_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_EXT_POLARITY",
@@ -35132,7 +35132,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@22247@macro@IS_TIM1_PRESCALER_RELOAD",
+    "ID": "c:stm8l15x_tim1.h@23006@macro@IS_TIM1_PRESCALER_RELOAD",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_PRESCALER_RELOAD",
@@ -35146,7 +35146,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@22383@macro@IS_TIM1_ENCODER_MODE",
+    "ID": "c:stm8l15x_tim1.h@23145@macro@IS_TIM1_ENCODER_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_ENCODER_MODE",
@@ -35160,7 +35160,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@22603@macro@IS_TIM1_EVENT_SOURCE",
+    "ID": "c:stm8l15x_tim1.h@23369@macro@IS_TIM1_EVENT_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_EVENT_SOURCE",
@@ -35174,7 +35174,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@22660@macro@IS_TIM1_TRGO_SOURCE",
+    "ID": "c:stm8l15x_tim1.h@23428@macro@IS_TIM1_TRGO_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_TRGO_SOURCE",
@@ -35188,7 +35188,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@23287@macro@IS_TIM1_UPDATE_SOURCE",
+    "ID": "c:stm8l15x_tim1.h@24065@macro@IS_TIM1_UPDATE_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_UPDATE_SOURCE",
@@ -35202,7 +35202,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@23451@macro@IS_TIM1_GET_FLAG",
+    "ID": "c:stm8l15x_tim1.h@24232@macro@IS_TIM1_GET_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_GET_FLAG",
@@ -35216,7 +35216,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@24240@macro@IS_TIM1_SLAVE_MODE",
+    "ID": "c:stm8l15x_tim1.h@25035@macro@IS_TIM1_SLAVE_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_SLAVE_MODE",
@@ -35230,7 +35230,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@24531@macro@IS_TIM1_CLEAR_FLAG",
+    "ID": "c:stm8l15x_tim1.h@25331@macro@IS_TIM1_CLEAR_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_CLEAR_FLAG",
@@ -35244,7 +35244,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@24639@macro@IS_TIM1_FORCED_ACTION",
+    "ID": "c:stm8l15x_tim1.h@25441@macro@IS_TIM1_FORCED_ACTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_FORCED_ACTION",
@@ -35258,7 +35258,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@24804@macro@IS_TIM1_DMA_SOURCE",
+    "ID": "c:stm8l15x_tim1.h@25609@macro@IS_TIM1_DMA_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_DMA_SOURCE",
@@ -35272,7 +35272,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@25087@macro@IS_TIM1_DMABase",
+    "ID": "c:stm8l15x_tim1.h@25900@macro@IS_TIM1_DMABase",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_DMABase",
@@ -35286,7 +35286,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@26408@macro@IS_TIM1_DMABurstLength",
+    "ID": "c:stm8l15x_tim1.h@27255@macro@IS_TIM1_DMABurstLength",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_DMABurstLength",
@@ -35300,7 +35300,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@28051@macro@IS_TIM1_EXT_TRG_FILTER",
+    "ID": "c:stm8l15x_tim1.h@28933@macro@IS_TIM1_EXT_TRG_FILTER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_EXT_TRG_FILTER",
@@ -35314,7 +35314,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.h@28148@macro@IS_TIM1_IC_FILTER",
+    "ID": "c:stm8l15x_tim1.h@29033@macro@IS_TIM1_IC_FILTER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM1_IC_FILTER",
@@ -37512,7 +37512,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@1280@macro@__STM8L15x_TIM4_H",
+    "ID": "c:stm8l15x_tim4.h@1310@macro@__STM8L15x_TIM4_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_TIM4_H",
@@ -38276,7 +38276,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@6620@macro@IS_TIM4_Prescaler",
+    "ID": "c:stm8l15x_tim4.h@6850@macro@IS_TIM4_Prescaler",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM4_Prescaler",
@@ -38290,7 +38290,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@7423@macro@IS_TIM4_OPM_MODE",
+    "ID": "c:stm8l15x_tim4.h@7673@macro@IS_TIM4_OPM_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM4_OPM_MODE",
@@ -38304,7 +38304,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@7584@macro@IS_TIM4_Prescaler_RELOAD",
+    "ID": "c:stm8l15x_tim4.h@7841@macro@IS_TIM4_Prescaler_RELOAD",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM4_Prescaler_RELOAD",
@@ -38318,7 +38318,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@7767@macro@IS_TIM4_UPDATE_SOURCE",
+    "ID": "c:stm8l15x_tim4.h@8030@macro@IS_TIM4_UPDATE_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM4_UPDATE_SOURCE",
@@ -38332,7 +38332,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@7942@macro@IS_TIM4_EVENT_SOURCE",
+    "ID": "c:stm8l15x_tim4.h@8211@macro@IS_TIM4_EVENT_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM4_EVENT_SOURCE",
@@ -38346,7 +38346,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@8093@macro@IS_TIM4_TRGO_SOURCE",
+    "ID": "c:stm8l15x_tim4.h@8369@macro@IS_TIM4_TRGO_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM4_TRGO_SOURCE",
@@ -38360,7 +38360,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@8302@macro@IS_TIM4_SLAVE_MODE",
+    "ID": "c:stm8l15x_tim4.h@8585@macro@IS_TIM4_SLAVE_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM4_SLAVE_MODE",
@@ -38374,7 +38374,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@8587@macro@IS_TIM4_GET_FLAG",
+    "ID": "c:stm8l15x_tim4.h@8879@macro@IS_TIM4_GET_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM4_GET_FLAG",
@@ -38388,7 +38388,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@8692@macro@IS_TIM4_CLEAR_FLAG",
+    "ID": "c:stm8l15x_tim4.h@8988@macro@IS_TIM4_CLEAR_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM4_CLEAR_FLAG",
@@ -38402,7 +38402,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@8828@macro@IS_TIM4_IT",
+    "ID": "c:stm8l15x_tim4.h@9129@macro@IS_TIM4_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM4_IT",
@@ -38416,7 +38416,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@8936@macro@IS_TIM4_GET_IT",
+    "ID": "c:stm8l15x_tim4.h@9241@macro@IS_TIM4_GET_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM4_GET_IT",
@@ -38430,7 +38430,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@9077@macro@IS_TIM4_TRIGGER_SELECTION",
+    "ID": "c:stm8l15x_tim4.h@9388@macro@IS_TIM4_TRIGGER_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM4_TRIGGER_SELECTION",
@@ -38444,7 +38444,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.h@9357@macro@IS_TIM4_DMA_SOURCE",
+    "ID": "c:stm8l15x_tim4.h@9678@macro@IS_TIM4_DMA_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM4_DMA_SOURCE",
@@ -39200,7 +39200,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_beep.c@7379@F@BEEP_LSICalibrationConfig@lsifreqkhz",
+    "ID": "c:stm8l15x_beep.c@7587@F@BEEP_LSICalibrationConfig@lsifreqkhz",
     "What": "Variable",
     "defdec": "Def",
     "display": "lsifreqkhz",
@@ -39214,7 +39214,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_beep.c@7402@F@BEEP_LSICalibrationConfig@A",
+    "ID": "c:stm8l15x_beep.c@7611@F@BEEP_LSICalibrationConfig@A",
     "What": "Variable",
     "defdec": "Def",
     "display": "A",
@@ -39228,7 +39228,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@1278@macro@__STM8L15x_CLK_H",
+    "ID": "c:stm8l15x_clk.h@1309@macro@__STM8L15x_CLK_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_CLK_H",
@@ -39300,7 +39300,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@1876@macro@IS_CLK_HSE",
+    "ID": "c:stm8l15x_clk.h@1934@macro@IS_CLK_HSE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_HSE",
@@ -39372,7 +39372,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@2349@macro@IS_CLK_LSE",
+    "ID": "c:stm8l15x_clk.h@2423@macro@IS_CLK_LSE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_LSE",
@@ -39458,7 +39458,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@2923@macro@IS_CLK_SOURCE",
+    "ID": "c:stm8l15x_clk.h@3014@macro@IS_CLK_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_SOURCE",
@@ -39558,7 +39558,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@3622@macro@IS_CLK_OUTPUT",
+    "ID": "c:stm8l15x_clk.h@3732@macro@IS_CLK_OUTPUT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_OUTPUT",
@@ -39686,7 +39686,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@4499@macro@IS_CLK_OUTPUT_DIVIDER",
+    "ID": "c:stm8l15x_clk.h@4631@macro@IS_CLK_OUTPUT_DIVIDER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_OUTPUT_DIVIDER",
@@ -39758,7 +39758,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@5340@macro@IS_CLK_CLOCK_BEEP",
+    "ID": "c:stm8l15x_clk.h@5492@macro@IS_CLK_CLOCK_BEEP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_CLOCK_BEEP",
@@ -39858,7 +39858,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@5989@macro@IS_CLK_CLOCK_RTC",
+    "ID": "c:stm8l15x_clk.h@6159@macro@IS_CLK_CLOCK_RTC",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_CLOCK_RTC",
@@ -39986,7 +39986,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@6885@macro@IS_CLK_CLOCK_RTC_DIV",
+    "ID": "c:stm8l15x_clk.h@7077@macro@IS_CLK_CLOCK_RTC_DIV",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_CLOCK_RTC_DIV",
@@ -40310,7 +40310,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@9421@macro@IS_CLK_PERIPHERAL",
+    "ID": "c:stm8l15x_clk.h@9658@macro@IS_CLK_PERIPHERAL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_PERIPHERAL",
@@ -40452,7 +40452,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@11850@macro@IS_CLK_SYSTEM_DIVIDER",
+    "ID": "c:stm8l15x_clk.h@12126@macro@IS_CLK_SYSTEM_DIVIDER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_SYSTEM_DIVIDER",
@@ -40748,7 +40748,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@14361@macro@IS_CLK_FLAGS",
+    "ID": "c:stm8l15x_clk.h@14687@macro@IS_CLK_FLAGS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_FLAGS",
@@ -40820,7 +40820,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@15831@macro@IS_CLK_IT",
+    "ID": "c:stm8l15x_clk.h@16188@macro@IS_CLK_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_IT",
@@ -40834,7 +40834,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@16002@macro@IS_CLK_CLEAR_IT",
+    "ID": "c:stm8l15x_clk.h@16363@macro@IS_CLK_CLEAR_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_CLEAR_IT",
@@ -40920,7 +40920,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.h@16452@macro@IS_CLK_HALT",
+    "ID": "c:stm8l15x_clk.h@16829@macro@IS_CLK_HALT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_CLK_HALT",
@@ -41662,7 +41662,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@1280@macro@__STM8L15x_TIM2_H",
+    "ID": "c:stm8l15x_tim2.h@1310@macro@__STM8L15x_TIM2_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_TIM2_H",
@@ -43654,7 +43654,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@14497@macro@IS_TIM2_FORCED_ACTION",
+    "ID": "c:stm8l15x_tim2.h@15004@macro@IS_TIM2_FORCED_ACTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_FORCED_ACTION",
@@ -43668,7 +43668,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@14671@macro@IS_TIM2_PRESCALER",
+    "ID": "c:stm8l15x_tim2.h@15185@macro@IS_TIM2_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_PRESCALER",
@@ -43682,7 +43682,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@15112@macro@IS_TIM2_OC_MODE",
+    "ID": "c:stm8l15x_tim2.h@15639@macro@IS_TIM2_OC_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_OC_MODE",
@@ -43696,7 +43696,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@15383@macro@IS_TIM2_OCM",
+    "ID": "c:stm8l15x_tim2.h@15918@macro@IS_TIM2_OCM",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_OCM",
@@ -43710,7 +43710,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@15809@macro@IS_TIM2_OPM_MODE",
+    "ID": "c:stm8l15x_tim2.h@16356@macro@IS_TIM2_OPM_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_OPM_MODE",
@@ -43724,7 +43724,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@15960@macro@IS_TIM2_CHANNEL",
+    "ID": "c:stm8l15x_tim2.h@16514@macro@IS_TIM2_CHANNEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_CHANNEL",
@@ -43738,7 +43738,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@16113@macro@IS_TIM2_COUNTER_MODE",
+    "ID": "c:stm8l15x_tim2.h@16674@macro@IS_TIM2_COUNTER_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_COUNTER_MODE",
@@ -43752,7 +43752,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@16442@macro@IS_TIM2_OC_POLARITY",
+    "ID": "c:stm8l15x_tim2.h@17013@macro@IS_TIM2_OC_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_OC_POLARITY",
@@ -43766,7 +43766,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@16621@macro@IS_TIM2_OUTPUT_STATE",
+    "ID": "c:stm8l15x_tim2.h@17199@macro@IS_TIM2_OUTPUT_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_OUTPUT_STATE",
@@ -43780,7 +43780,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@16798@macro@IS_TIM2_BREAK_STATE",
+    "ID": "c:stm8l15x_tim2.h@17383@macro@IS_TIM2_BREAK_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_BREAK_STATE",
@@ -43794,7 +43794,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@16962@macro@IS_TIM2_BREAK_POLARITY",
+    "ID": "c:stm8l15x_tim2.h@17554@macro@IS_TIM2_BREAK_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_BREAK_POLARITY",
@@ -43808,7 +43808,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@17146@macro@IS_TIM2_AUTOMATIC_OUTPUT_STATE",
+    "ID": "c:stm8l15x_tim2.h@17745@macro@IS_TIM2_AUTOMATIC_OUTPUT_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_AUTOMATIC_OUTPUT_STATE",
@@ -43822,7 +43822,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@17328@macro@IS_TIM2_LOCK_LEVEL",
+    "ID": "c:stm8l15x_tim2.h@17934@macro@IS_TIM2_LOCK_LEVEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_LOCK_LEVEL",
@@ -43836,7 +43836,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@17592@macro@IS_TIM2_OSSI_STATE",
+    "ID": "c:stm8l15x_tim2.h@18207@macro@IS_TIM2_OSSI_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_OSSI_STATE",
@@ -43850,7 +43850,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@17757@macro@IS_TIM2_OCIDLE_STATE",
+    "ID": "c:stm8l15x_tim2.h@18379@macro@IS_TIM2_OCIDLE_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_OCIDLE_STATE",
@@ -43864,7 +43864,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@17922@macro@IS_TIM2_IC_POLARITY",
+    "ID": "c:stm8l15x_tim2.h@18552@macro@IS_TIM2_IC_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_IC_POLARITY",
@@ -43878,7 +43878,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@18098@macro@IS_TIM2_IC_SELECTION",
+    "ID": "c:stm8l15x_tim2.h@18735@macro@IS_TIM2_IC_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_IC_SELECTION",
@@ -43892,7 +43892,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@18334@macro@IS_TIM2_IC_PRESCALER",
+    "ID": "c:stm8l15x_tim2.h@18979@macro@IS_TIM2_IC_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_IC_PRESCALER",
@@ -43906,7 +43906,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@18595@macro@IS_TIM2_IC_FILTER",
+    "ID": "c:stm8l15x_tim2.h@19249@macro@IS_TIM2_IC_FILTER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_IC_FILTER",
@@ -43920,7 +43920,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@18699@macro@IS_TIM2_IT",
+    "ID": "c:stm8l15x_tim2.h@19359@macro@IS_TIM2_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_IT",
@@ -43934,7 +43934,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@18742@macro@IS_TIM2_GET_IT",
+    "ID": "c:stm8l15x_tim2.h@19405@macro@IS_TIM2_GET_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_GET_IT",
@@ -43948,7 +43948,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@18994@macro@IS_TIM2_EXT_PRESCALER",
+    "ID": "c:stm8l15x_tim2.h@19667@macro@IS_TIM2_EXT_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_EXT_PRESCALER",
@@ -43962,7 +43962,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@19263@macro@IS_TIM2_TRIGGER_SELECTION",
+    "ID": "c:stm8l15x_tim2.h@19944@macro@IS_TIM2_TRIGGER_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_TRIGGER_SELECTION",
@@ -43976,7 +43976,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@19701@macro@IS_TIM2_TIX_TRIGGER_SELECTION",
+    "ID": "c:stm8l15x_tim2.h@20393@macro@IS_TIM2_TIX_TRIGGER_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_TIX_TRIGGER_SELECTION",
@@ -43990,7 +43990,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@19962@macro@IS_TIM2_TIXCLK_SOURCE",
+    "ID": "c:stm8l15x_tim2.h@20662@macro@IS_TIM2_TIXCLK_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_TIXCLK_SOURCE",
@@ -44004,7 +44004,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@20212@macro@IS_TIM2_EXT_POLARITY",
+    "ID": "c:stm8l15x_tim2.h@20920@macro@IS_TIM2_EXT_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_EXT_POLARITY",
@@ -44018,7 +44018,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@20414@macro@IS_TIM2_EXT_FILTER",
+    "ID": "c:stm8l15x_tim2.h@21129@macro@IS_TIM2_EXT_FILTER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_EXT_FILTER",
@@ -44032,7 +44032,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@20527@macro@IS_TIM2_PRESCALER_RELOAD",
+    "ID": "c:stm8l15x_tim2.h@21248@macro@IS_TIM2_PRESCALER_RELOAD",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_PRESCALER_RELOAD",
@@ -44046,7 +44046,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@20710@macro@IS_TIM2_ENCODER_MODE",
+    "ID": "c:stm8l15x_tim2.h@21438@macro@IS_TIM2_ENCODER_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_ENCODER_MODE",
@@ -44060,7 +44060,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@20912@macro@IS_TIM2_EVENT_SOURCE",
+    "ID": "c:stm8l15x_tim2.h@21648@macro@IS_TIM2_EVENT_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_EVENT_SOURCE",
@@ -44074,7 +44074,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@21065@macro@IS_TIM2_UPDATE_SOURCE",
+    "ID": "c:stm8l15x_tim2.h@21808@macro@IS_TIM2_UPDATE_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_UPDATE_SOURCE",
@@ -44088,7 +44088,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@21240@macro@IS_TIM2_TRGO_SOURCE",
+    "ID": "c:stm8l15x_tim2.h@21990@macro@IS_TIM2_TRGO_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_TRGO_SOURCE",
@@ -44102,7 +44102,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@21586@macro@IS_TIM2_SLAVE_MODE",
+    "ID": "c:stm8l15x_tim2.h@22346@macro@IS_TIM2_SLAVE_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_SLAVE_MODE",
@@ -44116,7 +44116,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@21828@macro@IS_TIM2_GET_FLAG",
+    "ID": "c:stm8l15x_tim2.h@22596@macro@IS_TIM2_GET_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_GET_FLAG",
@@ -44130,7 +44130,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@22122@macro@IS_TIM2_CLEAR_FLAG",
+    "ID": "c:stm8l15x_tim2.h@22899@macro@IS_TIM2_CLEAR_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_CLEAR_FLAG",
@@ -44144,7 +44144,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.h@22268@macro@IS_TIM2_DMA_SOURCE",
+    "ID": "c:stm8l15x_tim2.h@23052@macro@IS_TIM2_DMA_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM2_DMA_SOURCE",
@@ -45670,7 +45670,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@1280@macro@__STM8L15x_TIM3_H",
+    "ID": "c:stm8l15x_tim3.h@1310@macro@__STM8L15x_TIM3_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_TIM3_H",
@@ -47662,7 +47662,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@14325@macro@IS_TIM3_FORCED_ACTION",
+    "ID": "c:stm8l15x_tim3.h@14832@macro@IS_TIM3_FORCED_ACTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_FORCED_ACTION",
@@ -47676,7 +47676,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@14499@macro@IS_TIM3_PRESCALER",
+    "ID": "c:stm8l15x_tim3.h@15013@macro@IS_TIM3_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_PRESCALER",
@@ -47690,7 +47690,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@14940@macro@IS_TIM3_OC_MODE",
+    "ID": "c:stm8l15x_tim3.h@15467@macro@IS_TIM3_OC_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_OC_MODE",
@@ -47704,7 +47704,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@15211@macro@IS_TIM3_OCM",
+    "ID": "c:stm8l15x_tim3.h@15746@macro@IS_TIM3_OCM",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_OCM",
@@ -47718,7 +47718,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@15639@macro@IS_TIM3_OPM_MODE",
+    "ID": "c:stm8l15x_tim3.h@16186@macro@IS_TIM3_OPM_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_OPM_MODE",
@@ -47732,7 +47732,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@15790@macro@IS_TIM3_CHANNEL",
+    "ID": "c:stm8l15x_tim3.h@16344@macro@IS_TIM3_CHANNEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_CHANNEL",
@@ -47746,7 +47746,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@15943@macro@IS_TIM3_COUNTER_MODE",
+    "ID": "c:stm8l15x_tim3.h@16504@macro@IS_TIM3_COUNTER_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_COUNTER_MODE",
@@ -47760,7 +47760,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@16272@macro@IS_TIM3_OC_POLARITY",
+    "ID": "c:stm8l15x_tim3.h@16843@macro@IS_TIM3_OC_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_OC_POLARITY",
@@ -47774,7 +47774,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@16451@macro@IS_TIM3_OUTPUT_STATE",
+    "ID": "c:stm8l15x_tim3.h@17029@macro@IS_TIM3_OUTPUT_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_OUTPUT_STATE",
@@ -47788,7 +47788,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@16631@macro@IS_TIM3_BREAK_STATE",
+    "ID": "c:stm8l15x_tim3.h@17217@macro@IS_TIM3_BREAK_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_BREAK_STATE",
@@ -47802,7 +47802,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@16795@macro@IS_TIM3_BREAK_POLARITY",
+    "ID": "c:stm8l15x_tim3.h@17388@macro@IS_TIM3_BREAK_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_BREAK_POLARITY",
@@ -47816,7 +47816,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@16979@macro@IS_TIM3_AUTOMATIC_OUTPUT_STATE",
+    "ID": "c:stm8l15x_tim3.h@17579@macro@IS_TIM3_AUTOMATIC_OUTPUT_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_AUTOMATIC_OUTPUT_STATE",
@@ -47830,7 +47830,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@17161@macro@IS_TIM3_LOCK_LEVEL",
+    "ID": "c:stm8l15x_tim3.h@17768@macro@IS_TIM3_LOCK_LEVEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_LOCK_LEVEL",
@@ -47844,7 +47844,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@17425@macro@IS_TIM3_OSSI_STATE",
+    "ID": "c:stm8l15x_tim3.h@18041@macro@IS_TIM3_OSSI_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_OSSI_STATE",
@@ -47858,7 +47858,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@17590@macro@IS_TIM3_OCIDLE_STATE",
+    "ID": "c:stm8l15x_tim3.h@18213@macro@IS_TIM3_OCIDLE_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_OCIDLE_STATE",
@@ -47872,7 +47872,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@17755@macro@IS_TIM3_IC_POLARITY",
+    "ID": "c:stm8l15x_tim3.h@18386@macro@IS_TIM3_IC_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_IC_POLARITY",
@@ -47886,7 +47886,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@17931@macro@IS_TIM3_IC_SELECTION",
+    "ID": "c:stm8l15x_tim3.h@18569@macro@IS_TIM3_IC_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_IC_SELECTION",
@@ -47900,7 +47900,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@18168@macro@IS_TIM3_IC_PRESCALER",
+    "ID": "c:stm8l15x_tim3.h@18815@macro@IS_TIM3_IC_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_IC_PRESCALER",
@@ -47914,7 +47914,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@18429@macro@IS_TIM3_IC_FILTER",
+    "ID": "c:stm8l15x_tim3.h@19085@macro@IS_TIM3_IC_FILTER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_IC_FILTER",
@@ -47928,7 +47928,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@18533@macro@IS_TIM3_IT",
+    "ID": "c:stm8l15x_tim3.h@19195@macro@IS_TIM3_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_IT",
@@ -47942,7 +47942,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@18576@macro@IS_TIM3_GET_IT",
+    "ID": "c:stm8l15x_tim3.h@19241@macro@IS_TIM3_GET_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_GET_IT",
@@ -47956,7 +47956,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@18828@macro@IS_TIM3_EXT_PRESCALER",
+    "ID": "c:stm8l15x_tim3.h@19503@macro@IS_TIM3_EXT_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_EXT_PRESCALER",
@@ -47970,7 +47970,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@19098@macro@IS_TIM3_TRIGGER_SELECTION",
+    "ID": "c:stm8l15x_tim3.h@19782@macro@IS_TIM3_TRIGGER_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_TRIGGER_SELECTION",
@@ -47984,7 +47984,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@19536@macro@IS_TIM3_TIX_TRIGGER_SELECTION",
+    "ID": "c:stm8l15x_tim3.h@20231@macro@IS_TIM3_TIX_TRIGGER_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_TIX_TRIGGER_SELECTION",
@@ -47998,7 +47998,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@19797@macro@IS_TIM3_TIXCLK_SOURCE",
+    "ID": "c:stm8l15x_tim3.h@20500@macro@IS_TIM3_TIXCLK_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_TIXCLK_SOURCE",
@@ -48012,7 +48012,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@20047@macro@IS_TIM3_EXT_POLARITY",
+    "ID": "c:stm8l15x_tim3.h@20758@macro@IS_TIM3_EXT_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_EXT_POLARITY",
@@ -48026,7 +48026,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@20249@macro@IS_TIM3_EXT_FILTER",
+    "ID": "c:stm8l15x_tim3.h@20967@macro@IS_TIM3_EXT_FILTER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_EXT_FILTER",
@@ -48040,7 +48040,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@20362@macro@IS_TIM3_PRESCALER_RELOAD",
+    "ID": "c:stm8l15x_tim3.h@21086@macro@IS_TIM3_PRESCALER_RELOAD",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_PRESCALER_RELOAD",
@@ -48054,7 +48054,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@20545@macro@IS_TIM3_ENCODER_MODE",
+    "ID": "c:stm8l15x_tim3.h@21276@macro@IS_TIM3_ENCODER_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_ENCODER_MODE",
@@ -48068,7 +48068,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@20747@macro@IS_TIM3_EVENT_SOURCE",
+    "ID": "c:stm8l15x_tim3.h@21486@macro@IS_TIM3_EVENT_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_EVENT_SOURCE",
@@ -48082,7 +48082,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@20895@macro@IS_TIM3_UPDATE_SOURCE",
+    "ID": "c:stm8l15x_tim3.h@21640@macro@IS_TIM3_UPDATE_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_UPDATE_SOURCE",
@@ -48096,7 +48096,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@21070@macro@IS_TIM3_TRGO_SOURCE",
+    "ID": "c:stm8l15x_tim3.h@21822@macro@IS_TIM3_TRGO_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_TRGO_SOURCE",
@@ -48110,7 +48110,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@21416@macro@IS_TIM3_SLAVE_MODE",
+    "ID": "c:stm8l15x_tim3.h@22178@macro@IS_TIM3_SLAVE_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_SLAVE_MODE",
@@ -48124,7 +48124,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@21658@macro@IS_TIM3_GET_FLAG",
+    "ID": "c:stm8l15x_tim3.h@22428@macro@IS_TIM3_GET_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_GET_FLAG",
@@ -48138,7 +48138,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@21952@macro@IS_TIM3_CLEAR_FLAG",
+    "ID": "c:stm8l15x_tim3.h@22731@macro@IS_TIM3_CLEAR_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_CLEAR_FLAG",
@@ -48152,7 +48152,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.h@22098@macro@IS_TIM3_DMA_SOURCE",
+    "ID": "c:stm8l15x_tim3.h@22884@macro@IS_TIM3_DMA_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_TIM3_DMA_SOURCE",
@@ -49678,7 +49678,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_pwr.h@1277@macro@__STM8L15x_PWR_H",
+    "ID": "c:stm8l15x_pwr.h@1307@macro@__STM8L15x_PWR_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_PWR_H",
@@ -49820,7 +49820,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_pwr.h@2274@macro@IS_PWR_PVD_LEVEL",
+    "ID": "c:stm8l15x_pwr.h@2338@macro@IS_PWR_PVD_LEVEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_PWR_PVD_LEVEL",
@@ -49892,7 +49892,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_pwr.h@3125@macro@IS_PWR_FLAG",
+    "ID": "c:stm8l15x_pwr.h@3211@macro@IS_PWR_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_PWR_FLAG",
@@ -50256,7 +50256,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_comp.c@10608@F@COMP_GetOutputLevel@compout",
+    "ID": "c:stm8l15x_comp.c@10860@F@COMP_GetOutputLevel@compout",
     "What": "Variable",
     "defdec": "Def",
     "display": "compout",
@@ -50354,7 +50354,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_comp.c@19587@F@COMP_GetFlagStatus@bitstatus",
+    "ID": "c:stm8l15x_comp.c@20152@F@COMP_GetFlagStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -50396,7 +50396,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_comp.c@21628@F@COMP_GetITStatus@bitstatus",
+    "ID": "c:stm8l15x_comp.c@22265@F@COMP_GetITStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -50410,7 +50410,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_comp.c@21658@F@COMP_GetITStatus@itstatus",
+    "ID": "c:stm8l15x_comp.c@22296@F@COMP_GetITStatus@itstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "itstatus",
@@ -50424,7 +50424,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_comp.c@21658@F@COMP_GetITStatus@itenable",
+    "ID": "c:stm8l15x_comp.c@22296@F@COMP_GetITStatus@itenable",
     "What": "Variable",
     "defdec": "Dec",
     "display": "itenable",
@@ -50452,7 +50452,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_comp.h@1280@macro@__STM8L15x_COMP_H",
+    "ID": "c:stm8l15x_comp.h@1310@macro@__STM8L15x_COMP_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_COMP_H",
@@ -50510,7 +50510,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_comp.h@1869@macro@IS_COMP_ALL_PERIPH",
+    "ID": "c:stm8l15x_comp.h@1928@macro@IS_COMP_ALL_PERIPH",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_COMP_ALL_PERIPH",
@@ -50582,7 +50582,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_comp.h@2355@macro@IS_COMP_EDGE",
+    "ID": "c:stm8l15x_comp.h@2430@macro@IS_COMP_EDGE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_COMP_EDGE",
@@ -50710,7 +50710,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_comp.h@3442@macro@IS_COMP_INVERTING_INPUT",
+    "ID": "c:stm8l15x_comp.h@3538@macro@IS_COMP_INVERTING_INPUT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_COMP_INVERTING_INPUT",
@@ -50796,7 +50796,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_comp.h@4582@macro@IS_COMP_OUTPUT",
+    "ID": "c:stm8l15x_comp.h@4700@macro@IS_COMP_OUTPUT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_COMP_OUTPUT",
@@ -50854,7 +50854,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_comp.h@5122@macro@IS_COMP_SPEED",
+    "ID": "c:stm8l15x_comp.h@5257@macro@IS_COMP_SPEED",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_COMP_SPEED",
@@ -50940,7 +50940,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_comp.h@5750@macro@IS_COMP_TRIGGERGROUP",
+    "ID": "c:stm8l15x_comp.h@5902@macro@IS_COMP_TRIGGERGROUP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_COMP_TRIGGERGROUP",
@@ -51012,7 +51012,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_comp.h@7405@macro@IS_COMP_TRIGGERPIN",
+    "ID": "c:stm8l15x_comp.h@7586@macro@IS_COMP_TRIGGERPIN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_COMP_TRIGGERPIN",
@@ -51462,7 +51462,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@1279@macro@__STM8L15x_I2C_H",
+    "ID": "c:stm8l15x_i2c.h@1309@macro@__STM8L15x_I2C_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_I2C_H",
@@ -52900,7 +52900,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@17702@macro@I2C_MAX_STANDARD_FREQ",
+    "ID": "c:stm8l15x_i2c.h@18168@macro@I2C_MAX_STANDARD_FREQ",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "I2C_MAX_STANDARD_FREQ",
@@ -52914,7 +52914,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@17751@macro@I2C_MAX_FAST_FREQ",
+    "ID": "c:stm8l15x_i2c.h@18218@macro@I2C_MAX_FAST_FREQ",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "I2C_MAX_FAST_FREQ",
@@ -52928,7 +52928,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@18133@macro@IS_I2C_MODE",
+    "ID": "c:stm8l15x_i2c.h@18618@macro@IS_I2C_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_MODE",
@@ -52942,7 +52942,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@18407@macro@IS_I2C_DUTY_CYCLE",
+    "ID": "c:stm8l15x_i2c.h@18899@macro@IS_I2C_DUTY_CYCLE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_DUTY_CYCLE",
@@ -52956,7 +52956,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@18649@macro@IS_I2C_ACK_STATE",
+    "ID": "c:stm8l15x_i2c.h@19147@macro@IS_I2C_ACK_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_ACK_STATE",
@@ -52970,7 +52970,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@18881@macro@IS_I2C_ACK_POSITION",
+    "ID": "c:stm8l15x_i2c.h@19384@macro@IS_I2C_ACK_POSITION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_ACK_POSITION",
@@ -52984,7 +52984,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@19140@macro@IS_I2C_PEC_POSITION",
+    "ID": "c:stm8l15x_i2c.h@19649@macro@IS_I2C_PEC_POSITION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_PEC_POSITION",
@@ -52998,7 +52998,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@19402@macro@IS_I2C_ACKNOWLEDGE_ADDRESS",
+    "ID": "c:stm8l15x_i2c.h@19917@macro@IS_I2C_ACKNOWLEDGE_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_ACKNOWLEDGE_ADDRESS",
@@ -53012,7 +53012,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@19660@macro@IS_I2C_SMBUS_ALERT",
+    "ID": "c:stm8l15x_i2c.h@20181@macro@IS_I2C_SMBUS_ALERT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_SMBUS_ALERT",
@@ -53026,7 +53026,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@19909@macro@IS_I2C_DIRECTION",
+    "ID": "c:stm8l15x_i2c.h@20436@macro@IS_I2C_DIRECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_DIRECTION",
@@ -53040,7 +53040,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@20137@macro@IS_I2C_GET_FLAG",
+    "ID": "c:stm8l15x_i2c.h@20670@macro@IS_I2C_GET_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_GET_FLAG",
@@ -53054,7 +53054,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@21711@macro@IS_I2C_CLEAR_FLAG",
+    "ID": "c:stm8l15x_i2c.h@22270@macro@IS_I2C_CLEAR_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_CLEAR_FLAG",
@@ -53068,7 +53068,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@21959@macro@IS_I2C_CONFIG_IT",
+    "ID": "c:stm8l15x_i2c.h@22524@macro@IS_I2C_CONFIG_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_CONFIG_IT",
@@ -53082,7 +53082,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@22198@macro@IS_I2C_CLEAR_IT",
+    "ID": "c:stm8l15x_i2c.h@22769@macro@IS_I2C_CLEAR_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_CLEAR_IT",
@@ -53096,7 +53096,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@22408@macro@IS_I2C_GET_IT",
+    "ID": "c:stm8l15x_i2c.h@22984@macro@IS_I2C_GET_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_GET_IT",
@@ -53110,7 +53110,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@23353@macro@IS_I2C_EVENT",
+    "ID": "c:stm8l15x_i2c.h@23947@macro@IS_I2C_EVENT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_EVENT",
@@ -53124,7 +53124,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@25218@macro@IS_I2C_REGISTER",
+    "ID": "c:stm8l15x_i2c.h@25835@macro@IS_I2C_REGISTER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_REGISTER",
@@ -53138,7 +53138,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@26349@macro@IS_I2C_OWN_ADDRESS",
+    "ID": "c:stm8l15x_i2c.h@26983@macro@IS_I2C_OWN_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_OWN_ADDRESS",
@@ -53152,7 +53152,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@26537@macro@IS_I2C_ADDRESS",
+    "ID": "c:stm8l15x_i2c.h@27177@macro@IS_I2C_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_ADDRESS",
@@ -53166,7 +53166,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.h@26737@macro@IS_I2C_OUTPUT_CLOCK_FREQ",
+    "ID": "c:stm8l15x_i2c.h@27382@macro@IS_I2C_OUTPUT_CLOCK_FREQ",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_I2C_OUTPUT_CLOCK_FREQ",
@@ -54076,7 +54076,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@1277@macro@__STM8L15x_LCD_H",
+    "ID": "c:stm8l15x_lcd.h@1307@macro@__STM8L15x_LCD_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_LCD_H",
@@ -54176,7 +54176,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@2033@macro@IS_LCD_DUTY",
+    "ID": "c:stm8l15x_lcd.h@2095@macro@IS_LCD_DUTY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LCD_DUTY",
@@ -54248,7 +54248,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@2563@macro@IS_LCD_BIAS",
+    "ID": "c:stm8l15x_lcd.h@2642@macro@IS_LCD_BIAS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LCD_BIAS",
@@ -54502,7 +54502,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@4152@macro@IS_LCD_CLOCK_PRESCALER",
+    "ID": "c:stm8l15x_lcd.h@4262@macro@IS_LCD_CLOCK_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LCD_CLOCK_PRESCALER",
@@ -54756,7 +54756,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@6822@macro@IS_LCD_CLOCK_DIVIDER",
+    "ID": "c:stm8l15x_lcd.h@6976@macro@IS_LCD_CLOCK_DIVIDER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LCD_CLOCK_DIVIDER",
@@ -54898,7 +54898,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@9078@macro@IS_LCD_CONTRAST",
+    "ID": "c:stm8l15x_lcd.h@9268@macro@IS_LCD_CONTRAST",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LCD_CONTRAST",
@@ -54956,7 +54956,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@10071@macro@IS_LCD_VOLTAGE_SOURCE",
+    "ID": "c:stm8l15x_lcd.h@10283@macro@IS_LCD_VOLTAGE_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LCD_VOLTAGE_SOURCE",
@@ -55098,7 +55098,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@11127@macro@IS_LCD_PULSE_DURATION",
+    "ID": "c:stm8l15x_lcd.h@11361@macro@IS_LCD_PULSE_DURATION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LCD_PULSE_DURATION",
@@ -55240,7 +55240,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@12370@macro@IS_LCD_DEAD_TIME",
+    "ID": "c:stm8l15x_lcd.h@12632@macro@IS_LCD_DEAD_TIME",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LCD_DEAD_TIME",
@@ -55326,7 +55326,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@13336@macro@IS_LCD_BLINK_MODE",
+    "ID": "c:stm8l15x_lcd.h@13621@macro@IS_LCD_BLINK_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LCD_BLINK_MODE",
@@ -55468,7 +55468,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@14528@macro@IS_LCD_BLINK_FREQUENCY",
+    "ID": "c:stm8l15x_lcd.h@14837@macro@IS_LCD_BLINK_FREQUENCY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LCD_BLINK_FREQUENCY",
@@ -55806,7 +55806,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@16713@macro@IS_LCD_RAM_REGISTER",
+    "ID": "c:stm8l15x_lcd.h@17062@macro@IS_LCD_RAM_REGISTER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LCD_RAM_REGISTER",
@@ -55920,7 +55920,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@19025@macro@IS_LCD_PORT_MASK",
+    "ID": "c:stm8l15x_lcd.h@19413@macro@IS_LCD_PORT_MASK",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LCD_PORT_MASK",
@@ -55978,7 +55978,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@19795@macro@IS_LCD_PAGE_SELECT",
+    "ID": "c:stm8l15x_lcd.h@20202@macro@IS_LCD_PAGE_SELECT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LCD_PAGE_SELECT",
@@ -55992,7 +55992,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@20168@macro@LCD_Contrast_2V6",
+    "ID": "c:stm8l15x_lcd.h@20591@macro@LCD_Contrast_2V6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LCD_Contrast_2V6",
@@ -56006,7 +56006,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@20227@macro@LCD_Contrast_2V7",
+    "ID": "c:stm8l15x_lcd.h@20651@macro@LCD_Contrast_2V7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LCD_Contrast_2V7",
@@ -56020,7 +56020,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@20286@macro@LCD_Contrast_2V8",
+    "ID": "c:stm8l15x_lcd.h@20711@macro@LCD_Contrast_2V8",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LCD_Contrast_2V8",
@@ -56034,7 +56034,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@20345@macro@LCD_Contrast_2V9",
+    "ID": "c:stm8l15x_lcd.h@20771@macro@LCD_Contrast_2V9",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LCD_Contrast_2V9",
@@ -56048,7 +56048,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@20404@macro@LCD_Contrast_3V0",
+    "ID": "c:stm8l15x_lcd.h@20831@macro@LCD_Contrast_3V0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LCD_Contrast_3V0",
@@ -56062,7 +56062,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@20463@macro@LCD_Contrast_3V1",
+    "ID": "c:stm8l15x_lcd.h@20891@macro@LCD_Contrast_3V1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LCD_Contrast_3V1",
@@ -56076,7 +56076,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@20522@macro@LCD_Contrast_3V2",
+    "ID": "c:stm8l15x_lcd.h@20951@macro@LCD_Contrast_3V2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LCD_Contrast_3V2",
@@ -56090,7 +56090,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.h@20581@macro@LCD_Contrast_3V3",
+    "ID": "c:stm8l15x_lcd.h@21011@macro@LCD_Contrast_3V3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LCD_Contrast_3V3",
@@ -56552,7 +56552,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@1277@macro@__STM8L15x_DAC_H",
+    "ID": "c:stm8l15x_dac.h@1307@macro@__STM8L15x_DAC_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_DAC_H",
@@ -56652,7 +56652,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@2085@macro@IS_DAC_TRIGGER",
+    "ID": "c:stm8l15x_dac.h@2146@macro@IS_DAC_TRIGGER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DAC_TRIGGER",
@@ -56724,7 +56724,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@2753@macro@IS_DAC_ALIGN",
+    "ID": "c:stm8l15x_dac.h@2833@macro@IS_DAC_ALIGN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DAC_ALIGN",
@@ -56782,7 +56782,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@3179@macro@IS_DAC_CHANNEL",
+    "ID": "c:stm8l15x_dac.h@3275@macro@IS_DAC_CHANNEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DAC_CHANNEL",
@@ -56840,7 +56840,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@3587@macro@IS_DAC_WAVE",
+    "ID": "c:stm8l15x_dac.h@3700@macro@IS_DAC_WAVE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DAC_WAVE",
@@ -56898,7 +56898,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@3974@macro@IS_DAC_OUTPUT_BUFFER_STATE",
+    "ID": "c:stm8l15x_dac.h@4102@macro@IS_DAC_OUTPUT_BUFFER_STATE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DAC_OUTPUT_BUFFER_STATE",
@@ -56942,7 +56942,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@4311@macro@IS_DAC_IT",
+    "ID": "c:stm8l15x_dac.h@4453@macro@IS_DAC_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DAC_IT",
@@ -56986,7 +56986,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@4525@macro@IS_DAC_GET_FLAG",
+    "ID": "c:stm8l15x_dac.h@4680@macro@IS_DAC_GET_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DAC_GET_FLAG",
@@ -57000,7 +57000,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@4585@macro@IS_DAC_FLAG",
+    "ID": "c:stm8l15x_dac.h@4741@macro@IS_DAC_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DAC_FLAG",
@@ -57198,7 +57198,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@5721@macro@IS_DAC_LFSR_UNMASK_TRIANGLE_AMPLITUDE",
+    "ID": "c:stm8l15x_dac.h@5903@macro@IS_DAC_LFSR_UNMASK_TRIANGLE_AMPLITUDE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DAC_LFSR_UNMASK_TRIANGLE_AMPLITUDE",
@@ -57396,7 +57396,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@7243@macro@IS_DAC_DATA_08R",
+    "ID": "c:stm8l15x_dac.h@7464@macro@IS_DAC_DATA_08R",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DAC_DATA_08R",
@@ -57410,7 +57410,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@7360@macro@CR1_Offset",
+    "ID": "c:stm8l15x_dac.h@7589@macro@CR1_Offset",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "CR1_Offset",
@@ -57424,7 +57424,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@7403@macro@CR2_Offset",
+    "ID": "c:stm8l15x_dac.h@7633@macro@CR2_Offset",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "CR2_Offset",
@@ -57438,7 +57438,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@7446@macro@DCH1RDHRH_Offset",
+    "ID": "c:stm8l15x_dac.h@7677@macro@DCH1RDHRH_Offset",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DCH1RDHRH_Offset",
@@ -57452,7 +57452,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@7489@macro@CH1RDHRH_Offset",
+    "ID": "c:stm8l15x_dac.h@7721@macro@CH1RDHRH_Offset",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "CH1RDHRH_Offset",
@@ -57466,7 +57466,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@7532@macro@CH2RDHRH_Offset",
+    "ID": "c:stm8l15x_dac.h@7765@macro@CH2RDHRH_Offset",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "CH2RDHRH_Offset",
@@ -57480,7 +57480,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@7630@macro@DAC_TriangleWaveAmplitude",
+    "ID": "c:stm8l15x_dac.h@7871@macro@DAC_TriangleWaveAmplitude",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DAC_TriangleWaveAmplitude",
@@ -57494,7 +57494,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.h@7694@macro@DAC_NoiseWaveLFSR",
+    "ID": "c:stm8l15x_dac.h@7936@macro@DAC_NoiseWaveLFSR",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DAC_NoiseWaveLFSR",
@@ -58012,7 +58012,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_itc.h@1277@macro@__STM8L15x_ITC_H",
+    "ID": "c:stm8l15x_itc.h@1307@macro@__STM8L15x_ITC_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_ITC_H",
@@ -58448,7 +58448,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_itc.h@7249@macro@IS_ITC_IRQ",
+    "ID": "c:stm8l15x_itc.h@7362@macro@IS_ITC_IRQ",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ITC_IRQ",
@@ -58534,7 +58534,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_itc.h@12605@macro@IS_ITC_PRIORITY",
+    "ID": "c:stm8l15x_itc.h@12820@macro@IS_ITC_PRIORITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ITC_PRIORITY",
@@ -58548,7 +58548,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_itc.h@13006@macro@CPU_SOFT_INT_DISABLED",
+    "ID": "c:stm8l15x_itc.h@13240@macro@CPU_SOFT_INT_DISABLED",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "CPU_SOFT_INT_DISABLED",
@@ -58562,7 +58562,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_itc.h@13252@macro@IS_ITC_INTERRUPTS_DISABLED",
+    "ID": "c:stm8l15x_itc.h@13497@macro@IS_ITC_INTERRUPTS_DISABLED",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ITC_INTERRUPTS_DISABLED",
@@ -58870,7 +58870,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.c@25739@F@ADC_ChannelCmd@regindex",
+    "ID": "c:stm8l15x_adc.c@26323@F@ADC_ChannelCmd@regindex",
     "What": "Variable",
     "defdec": "Def",
     "display": "regindex",
@@ -58912,7 +58912,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.c@30582@F@ADC_SchmittTriggerConfig@regindex",
+    "ID": "c:stm8l15x_adc.c@31275@F@ADC_SchmittTriggerConfig@regindex",
     "What": "Variable",
     "defdec": "Def",
     "display": "regindex",
@@ -58940,7 +58940,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.c@31271@F@ADC_GetConversionValue@tmpreg",
+    "ID": "c:stm8l15x_adc.c@31989@F@ADC_GetConversionValue@tmpreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg",
@@ -58996,7 +58996,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.c@36183@F@ADC_GetFlagStatus@flagstatus",
+    "ID": "c:stm8l15x_adc.c@37043@F@ADC_GetFlagStatus@flagstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "flagstatus",
@@ -59038,7 +59038,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.c@37824@F@ADC_GetITStatus@itstatus",
+    "ID": "c:stm8l15x_adc.c@38738@F@ADC_GetITStatus@itstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "itstatus",
@@ -59052,7 +59052,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.c@37853@F@ADC_GetITStatus@itmask",
+    "ID": "c:stm8l15x_adc.c@38768@F@ADC_GetITStatus@itmask",
     "What": "Variable",
     "defdec": "Def",
     "display": "itmask",
@@ -59066,7 +59066,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.c@37853@F@ADC_GetITStatus@enablestatus",
+    "ID": "c:stm8l15x_adc.c@38768@F@ADC_GetITStatus@enablestatus",
     "What": "Variable",
     "defdec": "Dec",
     "display": "enablestatus",
@@ -59094,7 +59094,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.c@39118@F@ADC_ClearITPendingBit@itmask",
+    "ID": "c:stm8l15x_adc.c@40075@F@ADC_ClearITPendingBit@itmask",
     "What": "Variable",
     "defdec": "Def",
     "display": "itmask",
@@ -59290,7 +59290,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.c@20025@F@CLK_GetClockFreq@clockfrequency",
+    "ID": "c:stm8l15x_clk.c@20504@F@CLK_GetClockFreq@clockfrequency",
     "What": "Variable",
     "defdec": "Def",
     "display": "clockfrequency",
@@ -59304,7 +59304,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.c@20056@F@CLK_GetClockFreq@sourcefrequency",
+    "ID": "c:stm8l15x_clk.c@20536@F@CLK_GetClockFreq@sourcefrequency",
     "What": "Variable",
     "defdec": "Def",
     "display": "sourcefrequency",
@@ -59318,7 +59318,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.c@20088@F@CLK_GetClockFreq@clocksource",
+    "ID": "c:stm8l15x_clk.c@20569@F@CLK_GetClockFreq@clocksource",
     "What": "Variable",
     "defdec": "Def",
     "display": "clocksource",
@@ -59332,7 +59332,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.c@20151@F@CLK_GetClockFreq@tmp",
+    "ID": "c:stm8l15x_clk.c@20633@F@CLK_GetClockFreq@tmp",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmp",
@@ -59346,7 +59346,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.c@20151@F@CLK_GetClockFreq@presc",
+    "ID": "c:stm8l15x_clk.c@20633@F@CLK_GetClockFreq@presc",
     "What": "Variable",
     "defdec": "Dec",
     "display": "presc",
@@ -59430,7 +59430,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.c@27380@F@CLK_PeripheralClockConfig@reg",
+    "ID": "c:stm8l15x_clk.c@28058@F@CLK_PeripheralClockConfig@reg",
     "What": "Variable",
     "defdec": "Def",
     "display": "reg",
@@ -59528,7 +59528,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.c@35491@F@CLK_GetFlagStatus@reg",
+    "ID": "c:stm8l15x_clk.c@36437@F@CLK_GetFlagStatus@reg",
     "What": "Variable",
     "defdec": "Def",
     "display": "reg",
@@ -59542,7 +59542,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.c@35510@F@CLK_GetFlagStatus@pos",
+    "ID": "c:stm8l15x_clk.c@36457@F@CLK_GetFlagStatus@pos",
     "What": "Variable",
     "defdec": "Def",
     "display": "pos",
@@ -59556,7 +59556,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.c@35529@F@CLK_GetFlagStatus@bitstatus",
+    "ID": "c:stm8l15x_clk.c@36477@F@CLK_GetFlagStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -59598,7 +59598,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_clk.c@37573@F@CLK_GetITStatus@bitstatus",
+    "ID": "c:stm8l15x_clk.c@38607@F@CLK_GetITStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -59654,7 +59654,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@9195@F@DAC_Init@tmpreg",
+    "ID": "c:stm8l15x_dac.c@9406@F@DAC_Init@tmpreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg",
@@ -59668,7 +59668,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@9217@F@DAC_Init@tmpreg2",
+    "ID": "c:stm8l15x_dac.c@9429@F@DAC_Init@tmpreg2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg2",
@@ -59696,7 +59696,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@10720@F@DAC_Cmd@cr1addr",
+    "ID": "c:stm8l15x_dac.c@10975@F@DAC_Cmd@cr1addr",
     "What": "Variable",
     "defdec": "Def",
     "display": "cr1addr",
@@ -59752,7 +59752,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@13796@F@DAC_WaveGenerationCmd@tmpreg",
+    "ID": "c:stm8l15x_dac.c@14141@F@DAC_WaveGenerationCmd@tmpreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg",
@@ -59780,7 +59780,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@15772@F@DAC_SetNoiseWaveLFSR@tmpreg",
+    "ID": "c:stm8l15x_dac.c@16161@F@DAC_SetNoiseWaveLFSR@tmpreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg",
@@ -59794,7 +59794,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@15794@F@DAC_SetNoiseWaveLFSR@cr2addr",
+    "ID": "c:stm8l15x_dac.c@16184@F@DAC_SetNoiseWaveLFSR@cr2addr",
     "What": "Variable",
     "defdec": "Def",
     "display": "cr2addr",
@@ -59822,7 +59822,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@17876@F@DAC_SetTriangleWaveAmplitude@tmpreg",
+    "ID": "c:stm8l15x_dac.c@18304@F@DAC_SetTriangleWaveAmplitude@tmpreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg",
@@ -59836,7 +59836,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@17898@F@DAC_SetTriangleWaveAmplitude@cr2addr",
+    "ID": "c:stm8l15x_dac.c@18327@F@DAC_SetTriangleWaveAmplitude@cr2addr",
     "What": "Variable",
     "defdec": "Def",
     "display": "cr2addr",
@@ -59892,7 +59892,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@21647@F@DAC_SetDualChannelData@dchxrdhrhaddr",
+    "ID": "c:stm8l15x_dac.c@22170@F@DAC_SetDualChannelData@dchxrdhrhaddr",
     "What": "Variable",
     "defdec": "Def",
     "display": "dchxrdhrhaddr",
@@ -59920,7 +59920,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@22953@F@DAC_GetDataOutputValue@outputdata",
+    "ID": "c:stm8l15x_dac.c@23513@F@DAC_GetDataOutputValue@outputdata",
     "What": "Variable",
     "defdec": "Def",
     "display": "outputdata",
@@ -59934,7 +59934,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@22980@F@DAC_GetDataOutputValue@tmp",
+    "ID": "c:stm8l15x_dac.c@23541@F@DAC_GetDataOutputValue@tmp",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmp",
@@ -59962,7 +59962,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@24638@F@DAC_DMACmd@cr2addr",
+    "ID": "c:stm8l15x_dac.c@25252@F@DAC_DMACmd@cr2addr",
     "What": "Variable",
     "defdec": "Def",
     "display": "cr2addr",
@@ -59990,7 +59990,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@26479@F@DAC_ITConfig@cr2addr",
+    "ID": "c:stm8l15x_dac.c@27147@F@DAC_ITConfig@cr2addr",
     "What": "Variable",
     "defdec": "Def",
     "display": "cr2addr",
@@ -60018,7 +60018,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@27803@F@DAC_GetFlagStatus@flagstatus",
+    "ID": "c:stm8l15x_dac.c@28508@F@DAC_GetFlagStatus@flagstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "flagstatus",
@@ -60032,7 +60032,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@27836@F@DAC_GetFlagStatus@flag",
+    "ID": "c:stm8l15x_dac.c@28542@F@DAC_GetFlagStatus@flag",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag",
@@ -60060,7 +60060,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@28869@F@DAC_ClearFlag@flag",
+    "ID": "c:stm8l15x_dac.c@29612@F@DAC_ClearFlag@flag",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag",
@@ -60088,7 +60088,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@29952@F@DAC_GetITStatus@itstatus",
+    "ID": "c:stm8l15x_dac.c@30723@F@DAC_GetITStatus@itstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "itstatus",
@@ -60102,7 +60102,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@29981@F@DAC_GetITStatus@enablestatus",
+    "ID": "c:stm8l15x_dac.c@30753@F@DAC_GetITStatus@enablestatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "enablestatus",
@@ -60116,7 +60116,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@30009@F@DAC_GetITStatus@flagstatus",
+    "ID": "c:stm8l15x_dac.c@30782@F@DAC_GetITStatus@flagstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "flagstatus",
@@ -60130,7 +60130,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dac.c@30035@F@DAC_GetITStatus@tempreg",
+    "ID": "c:stm8l15x_dac.c@30809@F@DAC_GetITStatus@tempreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tempreg",
@@ -60158,7 +60158,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@1278@macro@__STM8L15x_DMA_H",
+    "ID": "c:stm8l15x_dma.h@1307@macro@__STM8L15x_DMA_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_DMA_H",
@@ -60230,7 +60230,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@2031@macro@IS_DMA_DIR",
+    "ID": "c:stm8l15x_dma.h@2089@macro@IS_DMA_DIR",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DMA_DIR",
@@ -60288,7 +60288,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@2458@macro@IS_DMA_MODE",
+    "ID": "c:stm8l15x_dma.h@2532@macro@IS_DMA_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DMA_MODE",
@@ -60346,7 +60346,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@2874@macro@IS_DMA_MEMORY_INC_MODE",
+    "ID": "c:stm8l15x_dma.h@2963@macro@IS_DMA_MEMORY_INC_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DMA_MEMORY_INC_MODE",
@@ -60432,7 +60432,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@3434@macro@IS_DMA_PRIORITY",
+    "ID": "c:stm8l15x_dma.h@3540@macro@IS_DMA_PRIORITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DMA_PRIORITY",
@@ -60490,7 +60490,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@4009@macro@IS_DMA_DATA_SIZE",
+    "ID": "c:stm8l15x_dma.h@4132@macro@IS_DMA_DATA_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DMA_DATA_SIZE",
@@ -60814,7 +60814,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@6039@macro@IS_DMA_GET_FLAG",
+    "ID": "c:stm8l15x_dma.h@6201@macro@IS_DMA_GET_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DMA_GET_FLAG",
@@ -60828,7 +60828,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@7357@macro@IS_DMA_CLEAR_FLAG",
+    "ID": "c:stm8l15x_dma.h@7541@macro@IS_DMA_CLEAR_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DMA_CLEAR_FLAG",
@@ -60886,7 +60886,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@8431@macro@IS_DMA_CONFIG_ITX",
+    "ID": "c:stm8l15x_dma.h@8640@macro@IS_DMA_CONFIG_ITX",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DMA_CONFIG_ITX",
@@ -61028,7 +61028,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@9314@macro@IS_DMA_CLEAR_IT",
+    "ID": "c:stm8l15x_dma.h@9545@macro@IS_DMA_CLEAR_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DMA_CLEAR_IT",
@@ -61042,7 +61042,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@10039@macro@IS_DMA_GET_IT",
+    "ID": "c:stm8l15x_dma.h@10283@macro@IS_DMA_GET_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DMA_GET_IT",
@@ -61056,7 +61056,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@10746@macro@IS_DMA_CHANNEL",
+    "ID": "c:stm8l15x_dma.h@11014@macro@IS_DMA_CHANNEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DMA_CHANNEL",
@@ -61070,7 +61070,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@11145@macro@IS_DMA_BUFFER_SIZE",
+    "ID": "c:stm8l15x_dma.h@11425@macro@IS_DMA_BUFFER_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DMA_BUFFER_SIZE",
@@ -61084,7 +61084,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.h@11258@macro@IS_DMA_TIMEOUT",
+    "ID": "c:stm8l15x_dma.h@11547@macro@IS_DMA_TIMEOUT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_DMA_TIMEOUT",
@@ -61462,7 +61462,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@1277@macro@__STM8L15x_SPI_H",
+    "ID": "c:stm8l15x_spi.h@1307@macro@__STM8L15x_SPI_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_SPI_H",
@@ -62256,7 +62256,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@6739@macro@IS_SPI_DATA_DIRECTION",
+    "ID": "c:stm8l15x_spi.h@6977@macro@IS_SPI_DATA_DIRECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_DATA_DIRECTION",
@@ -62270,7 +62270,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@7179@macro@IS_SPI_DIRECTION",
+    "ID": "c:stm8l15x_spi.h@7425@macro@IS_SPI_DIRECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_DIRECTION",
@@ -62284,7 +62284,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@7432@macro@IS_SPI_SLAVEMANAGEMENT",
+    "ID": "c:stm8l15x_spi.h@7684@macro@IS_SPI_SLAVEMANAGEMENT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_SLAVEMANAGEMENT",
@@ -62298,7 +62298,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@7701@macro@IS_SPI_CRC_POLYNOMIAL",
+    "ID": "c:stm8l15x_spi.h@7961@macro@IS_SPI_CRC_POLYNOMIAL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_CRC_POLYNOMIAL",
@@ -62312,7 +62312,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@7873@macro@IS_SPI_MODE",
+    "ID": "c:stm8l15x_spi.h@8138@macro@IS_SPI_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_MODE",
@@ -62326,7 +62326,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@8087@macro@IS_SPI_BAUDRATE_PRESCALER",
+    "ID": "c:stm8l15x_spi.h@8358@macro@IS_SPI_BAUDRATE_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_BAUDRATE_PRESCALER",
@@ -62340,7 +62340,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@8925@macro@IS_SPI_POLARITY",
+    "ID": "c:stm8l15x_spi.h@9208@macro@IS_SPI_POLARITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_POLARITY",
@@ -62354,7 +62354,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@9148@macro@IS_SPI_PHASE",
+    "ID": "c:stm8l15x_spi.h@9437@macro@IS_SPI_PHASE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_PHASE",
@@ -62368,7 +62368,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@9396@macro@IS_SPI_FIRSTBIT",
+    "ID": "c:stm8l15x_spi.h@9692@macro@IS_SPI_FIRSTBIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_FIRSTBIT",
@@ -62382,7 +62382,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@9622@macro@IS_SPI_CRC",
+    "ID": "c:stm8l15x_spi.h@9924@macro@IS_SPI_CRC",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_CRC",
@@ -62396,7 +62396,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@9827@macro@IS_SPI_DMAREQ",
+    "ID": "c:stm8l15x_spi.h@10135@macro@IS_SPI_DMAREQ",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_DMAREQ",
@@ -62410,7 +62410,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@10025@macro@IS_SPI_FLAG",
+    "ID": "c:stm8l15x_spi.h@10338@macro@IS_SPI_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_FLAG",
@@ -62424,7 +62424,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@10590@macro@IS_SPI_CLEAR_FLAG",
+    "ID": "c:stm8l15x_spi.h@10915@macro@IS_SPI_CLEAR_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_CLEAR_FLAG",
@@ -62438,7 +62438,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@10853@macro@IS_SPI_CONFIG_IT",
+    "ID": "c:stm8l15x_spi.h@11185@macro@IS_SPI_CONFIG_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_CONFIG_IT",
@@ -62452,7 +62452,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@11271@macro@IS_SPI_GET_IT",
+    "ID": "c:stm8l15x_spi.h@11612@macro@IS_SPI_GET_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_GET_IT",
@@ -62466,7 +62466,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.h@11884@macro@IS_SPI_CLEAR_IT",
+    "ID": "c:stm8l15x_spi.h@12236@macro@IS_SPI_CLEAR_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_SPI_CLEAR_IT",
@@ -62984,7 +62984,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@1278@macro@__STM8L15x_ADC_H",
+    "ID": "c:stm8l15x_adc.h@1308@macro@__STM8L15x_ADC_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_ADC_H",
@@ -63534,7 +63534,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@4401@macro@IS_ADC_CONVERSION_MODE",
+    "ID": "c:stm8l15x_adc.h@4511@macro@IS_ADC_CONVERSION_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ADC_CONVERSION_MODE",
@@ -63620,7 +63620,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@4936@macro@IS_ADC_RESOLUTION",
+    "ID": "c:stm8l15x_adc.h@5063@macro@IS_ADC_RESOLUTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ADC_RESOLUTION",
@@ -63678,7 +63678,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@5529@macro@IS_ADC_PRESCALER",
+    "ID": "c:stm8l15x_adc.h@5673@macro@IS_ADC_PRESCALER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ADC_PRESCALER",
@@ -63750,7 +63750,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@6123@macro@IS_ADC_EXT_TRG_SENSITIVITY",
+    "ID": "c:stm8l15x_adc.h@6283@macro@IS_ADC_EXT_TRG_SENSITIVITY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ADC_EXT_TRG_SENSITIVITY",
@@ -63836,7 +63836,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@6921@macro@IS_ADC_EXT_EVENT_SELECTION",
+    "ID": "c:stm8l15x_adc.h@7099@macro@IS_ADC_EXT_EVENT_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ADC_EXT_EVENT_SELECTION",
@@ -63894,7 +63894,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@7685@macro@IS_ADC_GROUP",
+    "ID": "c:stm8l15x_adc.h@7881@macro@IS_ADC_GROUP",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ADC_GROUP",
@@ -64036,7 +64036,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@8591@macro@IS_ADC_SAMPLING_TIME_CYCLES",
+    "ID": "c:stm8l15x_adc.h@8808@macro@IS_ADC_SAMPLING_TIME_CYCLES",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ADC_SAMPLING_TIME_CYCLES",
@@ -64486,7 +64486,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@12259@macro@IS_ADC_ANALOGWATCHDOG_SELECTION",
+    "ID": "c:stm8l15x_adc.h@12527@macro@IS_ADC_ANALOGWATCHDOG_SELECTION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ADC_ANALOGWATCHDOG_SELECTION",
@@ -64558,7 +64558,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@12623@macro@IS_ADC_IT",
+    "ID": "c:stm8l15x_adc.h@12906@macro@IS_ADC_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ADC_IT",
@@ -64572,7 +64572,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@12698@macro@IS_ADC_GET_IT",
+    "ID": "c:stm8l15x_adc.h@12982@macro@IS_ADC_GET_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ADC_GET_IT",
@@ -64644,7 +64644,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@13108@macro@IS_ADC_CLEAR_FLAG",
+    "ID": "c:stm8l15x_adc.h@13408@macro@IS_ADC_CLEAR_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ADC_CLEAR_FLAG",
@@ -64658,7 +64658,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@13197@macro@IS_ADC_GET_FLAG",
+    "ID": "c:stm8l15x_adc.h@13498@macro@IS_ADC_GET_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ADC_GET_FLAG",
@@ -64672,7 +64672,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_adc.h@13587@macro@IS_ADC_THRESHOLD",
+    "ID": "c:stm8l15x_adc.h@13902@macro@IS_ADC_THRESHOLD",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_ADC_THRESHOLD",
@@ -65246,7 +65246,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@1283@macro@__STM8L15x_FLASH_H",
+    "ID": "c:stm8l15x_flash.h@1313@macro@__STM8L15x_FLASH_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_FLASH_H",
@@ -65260,7 +65260,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@1640@macro@FLASH_PROGRAM_START_PHYSICAL_ADDRESS",
+    "ID": "c:stm8l15x_flash.h@1688@macro@FLASH_PROGRAM_START_PHYSICAL_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_PROGRAM_START_PHYSICAL_ADDRESS",
@@ -65274,7 +65274,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@1745@macro@FLASH_DATA_EEPROM_START_PHYSICAL_ADDRESS",
+    "ID": "c:stm8l15x_flash.h@1794@macro@FLASH_DATA_EEPROM_START_PHYSICAL_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_DATA_EEPROM_START_PHYSICAL_ADDRESS",
@@ -65288,7 +65288,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@2803@macro@FLASH_PROGRAM_END_PHYSICAL_ADDRESS",
+    "ID": "c:stm8l15x_flash.h@2865@macro@FLASH_PROGRAM_END_PHYSICAL_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_PROGRAM_END_PHYSICAL_ADDRESS",
@@ -65302,7 +65302,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@2905@macro@FLASH_DATA_EEPROM_END_PHYSICAL_ADDRESS",
+    "ID": "c:stm8l15x_flash.h@2968@macro@FLASH_DATA_EEPROM_END_PHYSICAL_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_DATA_EEPROM_END_PHYSICAL_ADDRESS",
@@ -65316,7 +65316,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@3013@macro@FLASH_PROGRAM_BLOCKS_NUMBER",
+    "ID": "c:stm8l15x_flash.h@3077@macro@FLASH_PROGRAM_BLOCKS_NUMBER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_PROGRAM_BLOCKS_NUMBER",
@@ -65330,7 +65330,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@3132@macro@FLASH_DATA_EEPROM_BLOCKS_NUMBER",
+    "ID": "c:stm8l15x_flash.h@3197@macro@FLASH_DATA_EEPROM_BLOCKS_NUMBER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_DATA_EEPROM_BLOCKS_NUMBER",
@@ -65344,7 +65344,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@3250@macro@FLASH_BLOCK_SIZE",
+    "ID": "c:stm8l15x_flash.h@3316@macro@FLASH_BLOCK_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_BLOCK_SIZE",
@@ -65358,7 +65358,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@4347@macro@FLASH_OPTION_BYTES_START_PHYSICAL_ADDRESS",
+    "ID": "c:stm8l15x_flash.h@4427@macro@FLASH_OPTION_BYTES_START_PHYSICAL_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_OPTION_BYTES_START_PHYSICAL_ADDRESS",
@@ -65372,7 +65372,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@4457@macro@FLASH_OPTION_BYTES_END_PHYSICAL_ADDRESS",
+    "ID": "c:stm8l15x_flash.h@4538@macro@FLASH_OPTION_BYTES_END_PHYSICAL_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_OPTION_BYTES_END_PHYSICAL_ADDRESS",
@@ -65386,7 +65386,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@4565@macro@FLASH_RASS_KEY1",
+    "ID": "c:stm8l15x_flash.h@4647@macro@FLASH_RASS_KEY1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_RASS_KEY1",
@@ -65400,7 +65400,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@4662@macro@FLASH_RASS_KEY2",
+    "ID": "c:stm8l15x_flash.h@4745@macro@FLASH_RASS_KEY2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_RASS_KEY2",
@@ -65414,7 +65414,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@4760@macro@FLASH_READOUTPROTECTION_KEY",
+    "ID": "c:stm8l15x_flash.h@4844@macro@FLASH_READOUTPROTECTION_KEY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_READOUTPROTECTION_KEY",
@@ -65820,7 +65820,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@8240@macro@IS_FLASH_PROGRAM_ADDRESS",
+    "ID": "c:stm8l15x_flash.h@8451@macro@IS_FLASH_PROGRAM_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_FLASH_PROGRAM_ADDRESS",
@@ -65834,7 +65834,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@8537@macro@IS_FLASH_DATA_EEPROM_ADDRESS",
+    "ID": "c:stm8l15x_flash.h@8757@macro@IS_FLASH_DATA_EEPROM_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_FLASH_DATA_EEPROM_ADDRESS",
@@ -65848,7 +65848,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@8861@macro@IS_FLASH_ADDRESS",
+    "ID": "c:stm8l15x_flash.h@9088@macro@IS_FLASH_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_FLASH_ADDRESS",
@@ -65862,7 +65862,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@9298@macro@IS_OPTION_BYTE_ADDRESS",
+    "ID": "c:stm8l15x_flash.h@9532@macro@IS_OPTION_BYTE_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_OPTION_BYTE_ADDRESS",
@@ -65876,7 +65876,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@9600@macro@IS_FLASH_PROGRAM_BLOCK_NUMBER",
+    "ID": "c:stm8l15x_flash.h@9841@macro@IS_FLASH_PROGRAM_BLOCK_NUMBER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_FLASH_PROGRAM_BLOCK_NUMBER",
@@ -65890,7 +65890,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@9836@macro@IS_FLASH_DATA_EEPROM_BLOCK_NUMBER",
+    "ID": "c:stm8l15x_flash.h@10083@macro@IS_FLASH_DATA_EEPROM_BLOCK_NUMBER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_FLASH_DATA_EEPROM_BLOCK_NUMBER",
@@ -65904,7 +65904,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@10073@macro@IS_FLASH_MEMORY_TYPE",
+    "ID": "c:stm8l15x_flash.h@10326@macro@IS_FLASH_MEMORY_TYPE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_FLASH_MEMORY_TYPE",
@@ -65918,7 +65918,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@10373@macro@IS_FLASH_PROGRAM_MODE",
+    "ID": "c:stm8l15x_flash.h@10633@macro@IS_FLASH_PROGRAM_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_FLASH_PROGRAM_MODE",
@@ -65932,7 +65932,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@10622@macro@IS_FLASH_PROGRAM_TIME",
+    "ID": "c:stm8l15x_flash.h@10888@macro@IS_FLASH_PROGRAM_TIME",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_FLASH_PROGRAM_TIME",
@@ -65946,7 +65946,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@10865@macro@IS_FLASH_POWER",
+    "ID": "c:stm8l15x_flash.h@11137@macro@IS_FLASH_POWER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_FLASH_POWER",
@@ -65960,7 +65960,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@11107@macro@IS_FLASH_POWERSTATUS",
+    "ID": "c:stm8l15x_flash.h@11385@macro@IS_FLASH_POWERSTATUS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_FLASH_POWERSTATUS",
@@ -65974,7 +65974,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.h@11487@macro@IS_FLASH_FLAGS",
+    "ID": "c:stm8l15x_flash.h@11773@macro@IS_FLASH_FLAGS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_FLASH_FLAGS",
@@ -66604,7 +66604,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_exti.h@1280@macro@__STM8L15x_EXTI_H",
+    "ID": "c:stm8l15x_exti.h@1310@macro@__STM8L15x_EXTI_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_EXTI_H",
@@ -67314,7 +67314,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_exti.h@6195@macro@IS_EXTI_TRIGGER",
+    "ID": "c:stm8l15x_exti.h@6389@macro@IS_EXTI_TRIGGER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_EXTI_TRIGGER",
@@ -67328,7 +67328,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_exti.h@6543@macro@IS_EXTI_HALFPORT",
+    "ID": "c:stm8l15x_exti.h@6747@macro@IS_EXTI_HALFPORT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_EXTI_HALFPORT",
@@ -67342,7 +67342,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_exti.h@7199@macro@IS_EXTI_PORT",
+    "ID": "c:stm8l15x_exti.h@7420@macro@IS_EXTI_PORT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_EXTI_PORT",
@@ -67356,7 +67356,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_exti.h@7638@macro@IS_EXTI_PINNUM",
+    "ID": "c:stm8l15x_exti.h@7869@macro@IS_EXTI_PINNUM",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_EXTI_PINNUM",
@@ -67370,7 +67370,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_exti.h@8024@macro@IS_EXTI_ITPENDINGBIT",
+    "ID": "c:stm8l15x_exti.h@8268@macro@IS_EXTI_ITPENDINGBIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_EXTI_ITPENDINGBIT",
@@ -69638,7 +69638,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_aes.c@9816@F@AES_GetFlagStatus@status",
+    "ID": "c:stm8l15x_aes.c@10124@F@AES_GetFlagStatus@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -69680,7 +69680,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_aes.c@12086@F@AES_GetITStatus@itstatus",
+    "ID": "c:stm8l15x_aes.c@12479@F@AES_GetITStatus@itstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "itstatus",
@@ -69694,7 +69694,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_aes.c@12115@F@AES_GetITStatus@cciebitstatus",
+    "ID": "c:stm8l15x_aes.c@12509@F@AES_GetITStatus@cciebitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "cciebitstatus",
@@ -69708,7 +69708,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_aes.c@12115@F@AES_GetITStatus@ccfbitstatus",
+    "ID": "c:stm8l15x_aes.c@12509@F@AES_GetITStatus@ccfbitstatus",
     "What": "Variable",
     "defdec": "Dec",
     "display": "ccfbitstatus",
@@ -69736,7 +69736,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_syscfg.h@1286@macro@__STM8L15x_SYSCFG_H",
+    "ID": "c:stm8l15x_syscfg.h@1316@macro@__STM8L15x_SYSCFG_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_SYSCFG_H",
@@ -71234,7 +71234,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_syscfg.h@12274@macro@IS_RI_INPUTCAPTURE",
+    "ID": "c:stm8l15x_syscfg.h@12540@macro@IS_RI_INPUTCAPTURE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RI_INPUTCAPTURE",
@@ -71248,7 +71248,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_syscfg.h@12558@macro@IS_RI_INPUTCAPTUREROUTING",
+    "ID": "c:stm8l15x_syscfg.h@12831@macro@IS_RI_INPUTCAPTUREROUTING",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RI_INPUTCAPTUREROUTING",
@@ -71262,7 +71262,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_syscfg.h@14014@macro@IS_RI_ANALOGSWITCH",
+    "ID": "c:stm8l15x_syscfg.h@14315@macro@IS_RI_ANALOGSWITCH",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RI_ANALOGSWITCH",
@@ -71276,7 +71276,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_syscfg.h@14834@macro@IS_RI_IOSWITCH",
+    "ID": "c:stm8l15x_syscfg.h@15153@macro@IS_RI_IOSWITCH",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RI_IOSWITCH",
@@ -71290,7 +71290,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_syscfg.h@17080@macro@IS_RI_RESISTOR",
+    "ID": "c:stm8l15x_syscfg.h@17432@macro@IS_RI_RESISTOR",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RI_RESISTOR",
@@ -71304,7 +71304,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_syscfg.h@17529@macro@IS_REMAP_PIN",
+    "ID": "c:stm8l15x_syscfg.h@17889@macro@IS_REMAP_PIN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_REMAP_PIN",
@@ -71318,7 +71318,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_syscfg.h@18968@macro@IS_REMAP_DMACHANNEL",
+    "ID": "c:stm8l15x_syscfg.h@19354@macro@IS_REMAP_DMACHANNEL",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_REMAP_DMACHANNEL",
@@ -71556,7 +71556,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_gpio.h@1280@macro@__STM8L15x_GPIO_H",
+    "ID": "c:stm8l15x_gpio.h@1310@macro@__STM8L15x_GPIO_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_GPIO_H",
@@ -71924,7 +71924,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_gpio.h@4494@macro@IS_GPIO_MODE",
+    "ID": "c:stm8l15x_gpio.h@4620@macro@IS_GPIO_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_GPIO_MODE",
@@ -71938,7 +71938,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_gpio.h@5206@macro@IS_GPIO_PIN",
+    "ID": "c:stm8l15x_gpio.h@5350@macro@IS_GPIO_PIN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_GPIO_PIN",
@@ -72288,7 +72288,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_aes.h@1279@macro@__STM8L15x_AES_H",
+    "ID": "c:stm8l15x_aes.h@1309@macro@__STM8L15x_AES_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_AES_H",
@@ -72374,7 +72374,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_aes.h@2065@macro@IS_AES_MODE",
+    "ID": "c:stm8l15x_aes.h@2125@macro@IS_AES_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_AES_MODE",
@@ -72446,7 +72446,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_aes.h@2682@macro@IS_AES_FLAG",
+    "ID": "c:stm8l15x_aes.h@2760@macro@IS_AES_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_AES_FLAG",
@@ -72504,7 +72504,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_aes.h@3114@macro@IS_AES_IT",
+    "ID": "c:stm8l15x_aes.h@3209@macro@IS_AES_IT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_AES_IT",
@@ -72562,7 +72562,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_aes.h@3512@macro@IS_AES_DMATRANSFER",
+    "ID": "c:stm8l15x_aes.h@3624@macro@IS_AES_DMATRANSFER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_AES_DMATRANSFER",
@@ -72940,7 +72940,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_irtim.h@1283@macro@__STM8L15x_IRTIM_H",
+    "ID": "c:stm8l15x_irtim.h@1313@macro@__STM8L15x_IRTIM_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_IRTIM_H",
@@ -73094,7 +73094,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_conf.h@1241@macro@__STM8L15x_CONF_H",
+    "ID": "c:stm8l15x_conf.h@1270@macro@__STM8L15x_CONF_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_CONF_H",
@@ -73108,7 +73108,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_conf.h@3179@macro@assert_param",
+    "ID": "c:stm8l15x_conf.h@3264@macro@assert_param",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "assert_param",
@@ -73122,7 +73122,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_iwdg.h@1277@macro@__STM8L15x_IWDG_H",
+    "ID": "c:stm8l15x_iwdg.h@1306@macro@__STM8L15x_IWDG_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_IWDG_H",
@@ -73136,7 +73136,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_iwdg.h@1755@macro@IWDG_KEY_REFRESH",
+    "ID": "c:stm8l15x_iwdg.h@1807@macro@IWDG_KEY_REFRESH",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IWDG_KEY_REFRESH",
@@ -73150,7 +73150,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_iwdg.h@1982@macro@IWDG_KEY_ENABLE",
+    "ID": "c:stm8l15x_iwdg.h@2043@macro@IWDG_KEY_ENABLE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IWDG_KEY_ENABLE",
@@ -73208,7 +73208,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_iwdg.h@2569@macro@IS_IWDG_WRITE_ACCESS_MODE",
+    "ID": "c:stm8l15x_iwdg.h@2654@macro@IS_IWDG_WRITE_ACCESS_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_IWDG_WRITE_ACCESS_MODE",
@@ -73336,7 +73336,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_iwdg.h@3410@macro@IS_IWDG_PRESCALER_VALUE",
+    "ID": "c:stm8l15x_iwdg.h@3514@macro@IS_IWDG_PRESCALER_VALUE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_IWDG_PRESCALER_VALUE",
@@ -73490,7 +73490,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_wfe.h@1277@macro@__STM8L15x_WFE_H",
+    "ID": "c:stm8l15x_wfe.h@1307@macro@__STM8L15x_WFE_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_WFE_H",
@@ -73954,7 +73954,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_wfe.h@4821@macro@IS_WFE_SOURCE",
+    "ID": "c:stm8l15x_wfe.h@4915@macro@IS_WFE_SOURCE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_WFE_SOURCE",
@@ -74248,7 +74248,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_beep.h@1280@macro@__STM8L15x_BEEP_H",
+    "ID": "c:stm8l15x_beep.h@1310@macro@__STM8L15x_BEEP_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_BEEP_H",
@@ -74320,7 +74320,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_beep.h@1967@macro@IS_BEEP_FREQUENCY",
+    "ID": "c:stm8l15x_beep.h@2024@macro@IS_BEEP_FREQUENCY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_BEEP_FREQUENCY",
@@ -74334,7 +74334,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_beep.h@2347@macro@BEEP_CALIBRATION_DEFAULT",
+    "ID": "c:stm8l15x_beep.h@2421@macro@BEEP_CALIBRATION_DEFAULT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "BEEP_CALIBRATION_DEFAULT",
@@ -74348,7 +74348,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_beep.h@2448@macro@LSI_FREQUENCY_MIN",
+    "ID": "c:stm8l15x_beep.h@2523@macro@LSI_FREQUENCY_MIN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LSI_FREQUENCY_MIN",
@@ -74362,7 +74362,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_beep.h@2533@macro@LSI_FREQUENCY_MAX",
+    "ID": "c:stm8l15x_beep.h@2609@macro@LSI_FREQUENCY_MAX",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LSI_FREQUENCY_MAX",
@@ -74376,7 +74376,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_beep.h@2764@macro@IS_LSI_FREQUENCY",
+    "ID": "c:stm8l15x_beep.h@2850@macro@IS_LSI_FREQUENCY",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_LSI_FREQUENCY",
@@ -74530,7 +74530,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rst.h@1277@macro@__STM8L15x_RST_H",
+    "ID": "c:stm8l15x_rst.h@1307@macro@__STM8L15x_RST_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_RST_H",
@@ -74644,7 +74644,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rst.h@2170@macro@IS_RST_FLAG",
+    "ID": "c:stm8l15x_rst.h@2231@macro@IS_RST_FLAG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_RST_FLAG",
@@ -74742,7 +74742,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_wwdg.h@1280@macro@__STM8L15x_WWDG_H",
+    "ID": "c:stm8l15x_wwdg.h@1310@macro@__STM8L15x_WWDG_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_WWDG_H",
@@ -74756,7 +74756,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_wwdg.h@1848@macro@IS_WWDG_WINDOW_LIMIT_VALUE",
+    "ID": "c:stm8l15x_wwdg.h@1902@macro@IS_WWDG_WINDOW_LIMIT_VALUE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_WWDG_WINDOW_LIMIT_VALUE",
@@ -74770,7 +74770,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_wwdg.h@1993@macro@IS_WWDG_COUNTER_VALUE",
+    "ID": "c:stm8l15x_wwdg.h@2056@macro@IS_WWDG_COUNTER_VALUE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "IS_WWDG_COUNTER_VALUE",
@@ -75092,7 +75092,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.c@21771@F@DMA_GetFlagStatus@flagstatus",
+    "ID": "c:stm8l15x_dma.c@22302@F@DMA_GetFlagStatus@flagstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "flagstatus",
@@ -75106,7 +75106,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.c@21804@F@DMA_GetFlagStatus@DMA_Channelx",
+    "ID": "c:stm8l15x_dma.c@22336@F@DMA_GetFlagStatus@DMA_Channelx",
     "What": "Variable",
     "defdec": "Def",
     "display": "DMA_Channelx",
@@ -75120,7 +75120,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.c@21858@F@DMA_GetFlagStatus@tmpgir1",
+    "ID": "c:stm8l15x_dma.c@22391@F@DMA_GetFlagStatus@tmpgir1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpgir1",
@@ -75134,7 +75134,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.c@21881@F@DMA_GetFlagStatus@tmpgcsr",
+    "ID": "c:stm8l15x_dma.c@22415@F@DMA_GetFlagStatus@tmpgcsr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpgcsr",
@@ -75162,7 +75162,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.c@24070@F@DMA_ClearFlag@DMA_Channelx",
+    "ID": "c:stm8l15x_dma.c@24668@F@DMA_ClearFlag@DMA_Channelx",
     "What": "Variable",
     "defdec": "Def",
     "display": "DMA_Channelx",
@@ -75190,7 +75190,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.c@25730@F@DMA_GetITStatus@itstatus",
+    "ID": "c:stm8l15x_dma.c@26377@F@DMA_GetITStatus@itstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "itstatus",
@@ -75204,7 +75204,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.c@25759@F@DMA_GetITStatus@tmpreg",
+    "ID": "c:stm8l15x_dma.c@26407@F@DMA_GetITStatus@tmpreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg",
@@ -75218,7 +75218,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.c@25781@F@DMA_GetITStatus@tmp2",
+    "ID": "c:stm8l15x_dma.c@26430@F@DMA_GetITStatus@tmp2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmp2",
@@ -75232,7 +75232,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.c@25801@F@DMA_GetITStatus@DMA_Channelx",
+    "ID": "c:stm8l15x_dma.c@26451@F@DMA_GetITStatus@DMA_Channelx",
     "What": "Variable",
     "defdec": "Def",
     "display": "DMA_Channelx",
@@ -75260,7 +75260,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_dma.c@27582@F@DMA_ClearITPendingBit@DMA_Channelx",
+    "ID": "c:stm8l15x_dma.c@28287@F@DMA_ClearITPendingBit@DMA_Channelx",
     "What": "Variable",
     "defdec": "Def",
     "display": "DMA_Channelx",
@@ -75274,7 +75274,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.c@6759@macro@FLASH_CLEAR_BYTE",
+    "ID": "c:stm8l15x_flash.c@6887@macro@FLASH_CLEAR_BYTE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_CLEAR_BYTE",
@@ -75288,7 +75288,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.c@6802@macro@FLASH_SET_BYTE",
+    "ID": "c:stm8l15x_flash.c@6931@macro@FLASH_SET_BYTE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLASH_SET_BYTE",
@@ -75302,7 +75302,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.c@6845@macro@OPERATION_TIMEOUT",
+    "ID": "c:stm8l15x_flash.c@6975@macro@OPERATION_TIMEOUT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "OPERATION_TIMEOUT",
@@ -75498,7 +75498,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.c@17535@F@FLASH_GetReadOutProtectionStatus@state",
+    "ID": "c:stm8l15x_flash.c@17998@F@FLASH_GetReadOutProtectionStatus@state",
     "What": "Variable",
     "defdec": "Def",
     "display": "state",
@@ -75526,7 +75526,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.c@17985@F@FLASH_GetBootSize@temp",
+    "ID": "c:stm8l15x_flash.c@18471@F@FLASH_GetBootSize@temp",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp",
@@ -75554,7 +75554,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.c@18402@F@FLASH_GetCodeSize@temp",
+    "ID": "c:stm8l15x_flash.c@18911@F@FLASH_GetCodeSize@temp",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp",
@@ -75596,7 +75596,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.c@20339@F@FLASH_GetFlagStatus@status",
+    "ID": "c:stm8l15x_flash.c@20916@F@FLASH_GetFlagStatus@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -75652,7 +75652,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.c@29055@F@FLASH_ProgramBlock@Count",
+    "ID": "c:stm8l15x_flash.c@29822@F@FLASH_ProgramBlock@Count",
     "What": "Variable",
     "defdec": "Def",
     "display": "Count",
@@ -75666,7 +75666,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.c@29077@F@FLASH_ProgramBlock@startaddress",
+    "ID": "c:stm8l15x_flash.c@29845@F@FLASH_ProgramBlock@startaddress",
     "What": "Variable",
     "defdec": "Def",
     "display": "startaddress",
@@ -75694,7 +75694,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.c@30686@F@FLASH_EraseBlock@startaddress",
+    "ID": "c:stm8l15x_flash.c@31504@F@FLASH_EraseBlock@startaddress",
     "What": "Variable",
     "defdec": "Def",
     "display": "startaddress",
@@ -75708,7 +75708,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.c@30881@F@FLASH_EraseBlock@pwFlash",
+    "ID": "c:stm8l15x_flash.c@31702@F@FLASH_EraseBlock@pwFlash",
     "What": "Variable",
     "defdec": "Def",
     "display": "pwFlash",
@@ -75736,7 +75736,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.c@32895@F@FLASH_WaitForLastOperation@timeout",
+    "ID": "c:stm8l15x_flash.c@33771@F@FLASH_WaitForLastOperation@timeout",
     "What": "Variable",
     "defdec": "Def",
     "display": "timeout",
@@ -75750,7 +75750,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_flash.c@32935@F@FLASH_WaitForLastOperation@flagstatus",
+    "ID": "c:stm8l15x_flash.c@33812@F@FLASH_WaitForLastOperation@flagstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "flagstatus",
@@ -75764,7 +75764,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@4302@macro@REGISTER_Mask",
+    "ID": "c:stm8l15x_i2c.c@4401@macro@REGISTER_Mask",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "REGISTER_Mask",
@@ -75778,7 +75778,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@4357@macro@REGISTER_SR1_Index",
+    "ID": "c:stm8l15x_i2c.c@4457@macro@REGISTER_SR1_Index",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "REGISTER_SR1_Index",
@@ -75792,7 +75792,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@4412@macro@REGISTER_SR2_Index",
+    "ID": "c:stm8l15x_i2c.c@4513@macro@REGISTER_SR2_Index",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "REGISTER_SR2_Index",
@@ -75806,7 +75806,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@4499@macro@ITEN_Mask",
+    "ID": "c:stm8l15x_i2c.c@4602@macro@ITEN_Mask",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "ITEN_Mask",
@@ -75820,7 +75820,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@4574@macro@FLAG_Mask",
+    "ID": "c:stm8l15x_i2c.c@4679@macro@FLAG_Mask",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FLAG_Mask",
@@ -75834,7 +75834,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@4649@macro@OAR1_ADD0_Set",
+    "ID": "c:stm8l15x_i2c.c@4756@macro@OAR1_ADD0_Set",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "OAR1_ADD0_Set",
@@ -75848,7 +75848,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@4701@macro@OAR1_ADD0_Reset",
+    "ID": "c:stm8l15x_i2c.c@4809@macro@OAR1_ADD0_Reset",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "OAR1_ADD0_Reset",
@@ -75890,7 +75890,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@8074@F@I2C_Init@result",
+    "ID": "c:stm8l15x_i2c.c@8261@F@I2C_Init@result",
     "What": "Variable",
     "defdec": "Def",
     "display": "result",
@@ -75904,7 +75904,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@8102@F@I2C_Init@tmpval",
+    "ID": "c:stm8l15x_i2c.c@8290@F@I2C_Init@tmpval",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpval",
@@ -75918,7 +75918,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@8125@F@I2C_Init@tmpccrh",
+    "ID": "c:stm8l15x_i2c.c@8314@F@I2C_Init@tmpccrh",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccrh",
@@ -75932,7 +75932,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@8148@F@I2C_Init@input_clock",
+    "ID": "c:stm8l15x_i2c.c@8338@F@I2C_Init@input_clock",
     "What": "Variable",
     "defdec": "Def",
     "display": "input_clock",
@@ -76072,7 +76072,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@16935@F@I2C_OwnAddress2Config@tmpreg",
+    "ID": "c:stm8l15x_i2c.c@17430@F@I2C_OwnAddress2Config@tmpreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg",
@@ -76296,7 +76296,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@34104@F@I2C_ReadRegister@tmp",
+    "ID": "c:stm8l15x_i2c.c@35099@F@I2C_ReadRegister@tmp",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmp",
@@ -76324,7 +76324,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@36219@F@I2C_CheckEvent@lastevent",
+    "ID": "c:stm8l15x_i2c.c@37264@F@I2C_CheckEvent@lastevent",
     "What": "Variable",
     "defdec": "Def",
     "display": "lastevent",
@@ -76338,7 +76338,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@36253@F@I2C_CheckEvent@flag1",
+    "ID": "c:stm8l15x_i2c.c@37299@F@I2C_CheckEvent@flag1",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag1",
@@ -76352,7 +76352,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@36278@F@I2C_CheckEvent@flag2",
+    "ID": "c:stm8l15x_i2c.c@37325@F@I2C_CheckEvent@flag2",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag2",
@@ -76366,7 +76366,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@36302@F@I2C_CheckEvent@status",
+    "ID": "c:stm8l15x_i2c.c@37350@F@I2C_CheckEvent@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -76394,7 +76394,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@37545@F@I2C_GetLastEvent@lastevent",
+    "ID": "c:stm8l15x_i2c.c@38641@F@I2C_GetLastEvent@lastevent",
     "What": "Variable",
     "defdec": "Def",
     "display": "lastevent",
@@ -76408,7 +76408,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@37576@F@I2C_GetLastEvent@flag1",
+    "ID": "c:stm8l15x_i2c.c@38673@F@I2C_GetLastEvent@flag1",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag1",
@@ -76422,7 +76422,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@37598@F@I2C_GetLastEvent@flag2",
+    "ID": "c:stm8l15x_i2c.c@38696@F@I2C_GetLastEvent@flag2",
     "What": "Variable",
     "defdec": "Def",
     "display": "flag2",
@@ -76450,7 +76450,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@39970@F@I2C_GetFlagStatus@tempreg",
+    "ID": "c:stm8l15x_i2c.c@41123@F@I2C_GetFlagStatus@tempreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tempreg",
@@ -76464,7 +76464,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@39993@F@I2C_GetFlagStatus@regindex",
+    "ID": "c:stm8l15x_i2c.c@41147@F@I2C_GetFlagStatus@regindex",
     "What": "Variable",
     "defdec": "Def",
     "display": "regindex",
@@ -76478,7 +76478,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@40017@F@I2C_GetFlagStatus@bitstatus",
+    "ID": "c:stm8l15x_i2c.c@41172@F@I2C_GetFlagStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -76506,7 +76506,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@42798@F@I2C_ClearFlag@flagpos",
+    "ID": "c:stm8l15x_i2c.c@44028@F@I2C_ClearFlag@flagpos",
     "What": "Variable",
     "defdec": "Def",
     "display": "flagpos",
@@ -76534,7 +76534,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@44488@F@I2C_GetITStatus@bitstatus",
+    "ID": "c:stm8l15x_i2c.c@45753@F@I2C_GetITStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -76548,7 +76548,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@44518@F@I2C_GetITStatus@enablestatus",
+    "ID": "c:stm8l15x_i2c.c@45784@F@I2C_GetITStatus@enablestatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "enablestatus",
@@ -76562,7 +76562,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@44551@F@I2C_GetITStatus@tempregister",
+    "ID": "c:stm8l15x_i2c.c@45818@F@I2C_GetITStatus@tempregister",
     "What": "Variable",
     "defdec": "Def",
     "display": "tempregister",
@@ -76590,7 +76590,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_i2c.c@47496@F@I2C_ClearITPendingBit@flagpos",
+    "ID": "c:stm8l15x_i2c.c@48837@F@I2C_ClearITPendingBit@flagpos",
     "What": "Variable",
     "defdec": "Def",
     "display": "flagpos",
@@ -76688,7 +76688,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_exti.c@15059@F@EXTI_GetPinSensitivity@value",
+    "ID": "c:stm8l15x_exti.c@15436@F@EXTI_GetPinSensitivity@value",
     "What": "Variable",
     "defdec": "Def",
     "display": "value",
@@ -76716,7 +76716,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_exti.c@16788@F@EXTI_GetPortSensitivity@portsensitivity",
+    "ID": "c:stm8l15x_exti.c@17216@F@EXTI_GetPortSensitivity@portsensitivity",
     "What": "Variable",
     "defdec": "Def",
     "display": "portsensitivity",
@@ -76744,7 +76744,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_exti.c@18723@F@EXTI_GetITStatus@status",
+    "ID": "c:stm8l15x_exti.c@19211@F@EXTI_GetITStatus@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -76772,7 +76772,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_exti.c@20016@F@EXTI_ClearITPendingBit@tempvalue",
+    "ID": "c:stm8l15x_exti.c@20541@F@EXTI_ClearITPendingBit@tempvalue",
     "What": "Variable",
     "defdec": "Def",
     "display": "tempvalue",
@@ -91190,7 +91190,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_it.h@1257@macro@__STM8L15x_IT_H",
+    "ID": "c:stm8l15x_it.h@1286@macro@__STM8L15x_IT_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__STM8L15x_IT_H",
@@ -92016,7 +92016,7 @@
     "scope": null
   },
   {
-    "ID": "c:Radio_Methods.h@36@macro@__RADIO_METHODS_H__",
+    "ID": "c:Radio_Methods.h@37@macro@__RADIO_METHODS_H__",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__RADIO_METHODS_H__",
@@ -95950,7 +95950,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.c@5376@F@LCD_DeInit@counter",
+    "ID": "c:stm8l15x_lcd.c@5498@F@LCD_DeInit@counter",
     "What": "Variable",
     "defdec": "Def",
     "display": "counter",
@@ -96132,7 +96132,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.c@22621@F@LCD_GetFlagStatus@status",
+    "ID": "c:stm8l15x_lcd.c@23168@F@LCD_GetFlagStatus@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -96174,7 +96174,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.c@23358@F@LCD_GetITStatus@pendingbitstatus",
+    "ID": "c:stm8l15x_lcd.c@23941@F@LCD_GetITStatus@pendingbitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "pendingbitstatus",
@@ -96188,7 +96188,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_lcd.c@23395@F@LCD_GetITStatus@enablestatus",
+    "ID": "c:stm8l15x_lcd.c@23979@F@LCD_GetITStatus@enablestatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "enablestatus",
@@ -96272,7 +96272,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_itc.c@3819@F@ITC_GetSoftwarePriority@Value",
+    "ID": "c:stm8l15x_itc.c@3934@F@ITC_GetSoftwarePriority@Value",
     "What": "Variable",
     "defdec": "Def",
     "display": "Value",
@@ -96286,7 +96286,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_itc.c@3840@F@ITC_GetSoftwarePriority@Mask",
+    "ID": "c:stm8l15x_itc.c@3956@F@ITC_GetSoftwarePriority@Mask",
     "What": "Variable",
     "defdec": "Def",
     "display": "Mask",
@@ -96314,7 +96314,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_itc.c@8647@F@ITC_SetSoftwarePriority@Mask",
+    "ID": "c:stm8l15x_itc.c@8898@F@ITC_SetSoftwarePriority@Mask",
     "What": "Variable",
     "defdec": "Def",
     "display": "Mask",
@@ -96328,7 +96328,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_itc.c@8667@F@ITC_SetSoftwarePriority@NewPriority",
+    "ID": "c:stm8l15x_itc.c@8919@F@ITC_SetSoftwarePriority@NewPriority",
     "What": "Variable",
     "defdec": "Def",
     "display": "NewPriority",
@@ -96440,7 +96440,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_pwr.c@8904@F@PWR_GetFlagStatus@bitstatus",
+    "ID": "c:stm8l15x_pwr.c@9166@F@PWR_GetFlagStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -96482,7 +96482,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_pwr.c@9783@F@PWR_PVDGetITStatus@bitstatus",
+    "ID": "c:stm8l15x_pwr.c@10095@F@PWR_PVDGetITStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -96496,7 +96496,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_pwr.c@9814@F@PWR_PVDGetITStatus@PVD_itStatus",
+    "ID": "c:stm8l15x_pwr.c@10128@F@PWR_PVDGetITStatus@PVD_itStatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "PVD_itStatus",
@@ -96510,7 +96510,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_pwr.c@9814@F@PWR_PVDGetITStatus@PVD_itEnable",
+    "ID": "c:stm8l15x_pwr.c@10128@F@PWR_PVDGetITStatus@PVD_itEnable",
     "What": "Variable",
     "defdec": "Dec",
     "display": "PVD_itEnable",
@@ -96538,7 +96538,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rst.c@2551@macro@RST_CR_MASK",
+    "ID": "c:stm8l15x_rst.c@2615@macro@RST_CR_MASK",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RST_CR_MASK",
@@ -96664,7 +96664,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@7917@macro@INIT_TIMEOUT",
+    "ID": "c:stm8l15x_rtc.c@8073@macro@INIT_TIMEOUT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "INIT_TIMEOUT",
@@ -96678,7 +96678,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@7963@macro@RSF_TIMEOUT",
+    "ID": "c:stm8l15x_rtc.c@8120@macro@RSF_TIMEOUT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RSF_TIMEOUT",
@@ -96692,7 +96692,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@8009@macro@INITF_TIMEOUT",
+    "ID": "c:stm8l15x_rtc.c@8167@macro@INITF_TIMEOUT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "INITF_TIMEOUT",
@@ -96706,7 +96706,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@8055@macro@WUTWF_TIMEOUT",
+    "ID": "c:stm8l15x_rtc.c@8214@macro@WUTWF_TIMEOUT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "WUTWF_TIMEOUT",
@@ -96720,7 +96720,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@8101@macro@ALRAWF_TIMEOUT",
+    "ID": "c:stm8l15x_rtc.c@8261@macro@ALRAWF_TIMEOUT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "ALRAWF_TIMEOUT",
@@ -96734,7 +96734,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@8147@macro@RECALPF_TIMEOUT",
+    "ID": "c:stm8l15x_rtc.c@8308@macro@RECALPF_TIMEOUT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RECALPF_TIMEOUT",
@@ -96748,7 +96748,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@8193@macro@SHPF_TIMEOUT",
+    "ID": "c:stm8l15x_rtc.c@8355@macro@SHPF_TIMEOUT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SHPF_TIMEOUT",
@@ -96762,7 +96762,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@8240@macro@TEN_VALUE_BCD",
+    "ID": "c:stm8l15x_rtc.c@8404@macro@TEN_VALUE_BCD",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "TEN_VALUE_BCD",
@@ -96776,7 +96776,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@8283@macro@TEN_VALUE_BIN",
+    "ID": "c:stm8l15x_rtc.c@8448@macro@TEN_VALUE_BIN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "TEN_VALUE_BIN",
@@ -96832,7 +96832,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@11097@F@RTC_DeInit@status",
+    "ID": "c:stm8l15x_rtc.c@11330@F@RTC_DeInit@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -96846,7 +96846,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@11127@F@RTC_DeInit@wutwfcount",
+    "ID": "c:stm8l15x_rtc.c@11361@F@RTC_DeInit@wutwfcount",
     "What": "Variable",
     "defdec": "Def",
     "display": "wutwfcount",
@@ -96860,7 +96860,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@11154@F@RTC_DeInit@recalpfcount",
+    "ID": "c:stm8l15x_rtc.c@11389@F@RTC_DeInit@recalpfcount",
     "What": "Variable",
     "defdec": "Def",
     "display": "recalpfcount",
@@ -96888,7 +96888,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@14545@F@RTC_Init@status",
+    "ID": "c:stm8l15x_rtc.c@14905@F@RTC_Init@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -96944,7 +96944,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@17448@F@RTC_EnterInitMode@status",
+    "ID": "c:stm8l15x_rtc.c@17907@F@RTC_EnterInitMode@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -96958,7 +96958,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@17478@F@RTC_EnterInitMode@initfcount",
+    "ID": "c:stm8l15x_rtc.c@17938@F@RTC_EnterInitMode@initfcount",
     "What": "Variable",
     "defdec": "Def",
     "display": "initfcount",
@@ -97000,7 +97000,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@19769@F@RTC_WaitForSynchro@rsfcount",
+    "ID": "c:stm8l15x_rtc.c@20297@F@RTC_WaitForSynchro@rsfcount",
     "What": "Variable",
     "defdec": "Def",
     "display": "rsfcount",
@@ -97014,7 +97014,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@19794@F@RTC_WaitForSynchro@status",
+    "ID": "c:stm8l15x_rtc.c@20323@F@RTC_WaitForSynchro@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -97070,7 +97070,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@23169@F@RTC_SetTime@status",
+    "ID": "c:stm8l15x_rtc.c@23830@F@RTC_SetTime@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -97084,7 +97084,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@23199@F@RTC_SetTime@temp",
+    "ID": "c:stm8l15x_rtc.c@23861@F@RTC_SetTime@temp",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp",
@@ -97126,7 +97126,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@27144@F@RTC_GetTime@tmpreg",
+    "ID": "c:stm8l15x_rtc.c@27944@F@RTC_GetTime@tmpreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg",
@@ -97154,7 +97154,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@28651@F@RTC_GetSubSecond@ssrhreg",
+    "ID": "c:stm8l15x_rtc.c@29497@F@RTC_GetSubSecond@ssrhreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "ssrhreg",
@@ -97168,7 +97168,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@28651@F@RTC_GetSubSecond@ssrlreg",
+    "ID": "c:stm8l15x_rtc.c@29497@F@RTC_GetSubSecond@ssrlreg",
     "What": "Variable",
     "defdec": "Dec",
     "display": "ssrlreg",
@@ -97182,7 +97182,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@28687@F@RTC_GetSubSecond@ssrreg",
+    "ID": "c:stm8l15x_rtc.c@29534@F@RTC_GetSubSecond@ssrreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "ssrreg",
@@ -97210,7 +97210,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@29909@F@RTC_SetDate@status",
+    "ID": "c:stm8l15x_rtc.c@30787@F@RTC_SetDate@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -97252,7 +97252,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@33799@F@RTC_GetDate@tmpreg",
+    "ID": "c:stm8l15x_rtc.c@34789@F@RTC_GetDate@tmpreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg",
@@ -97280,7 +97280,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@35874@F@RTC_SetAlarm@tmpreg1",
+    "ID": "c:stm8l15x_rtc.c@36920@F@RTC_SetAlarm@tmpreg1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg1",
@@ -97294,7 +97294,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@35897@F@RTC_SetAlarm@tmpreg2",
+    "ID": "c:stm8l15x_rtc.c@36944@F@RTC_SetAlarm@tmpreg2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg2",
@@ -97308,7 +97308,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@35920@F@RTC_SetAlarm@tmpreg3",
+    "ID": "c:stm8l15x_rtc.c@36968@F@RTC_SetAlarm@tmpreg3",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg3",
@@ -97322,7 +97322,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@35943@F@RTC_SetAlarm@tmpreg4",
+    "ID": "c:stm8l15x_rtc.c@36992@F@RTC_SetAlarm@tmpreg4",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg4",
@@ -97364,7 +97364,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@41660@F@RTC_GetAlarm@tmpreg1",
+    "ID": "c:stm8l15x_rtc.c@42850@F@RTC_GetAlarm@tmpreg1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg1",
@@ -97378,7 +97378,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@41683@F@RTC_GetAlarm@tmpreg2",
+    "ID": "c:stm8l15x_rtc.c@42874@F@RTC_GetAlarm@tmpreg2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg2",
@@ -97392,7 +97392,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@41706@F@RTC_GetAlarm@tmpreg3",
+    "ID": "c:stm8l15x_rtc.c@42898@F@RTC_GetAlarm@tmpreg3",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg3",
@@ -97406,7 +97406,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@41729@F@RTC_GetAlarm@tmpreg4",
+    "ID": "c:stm8l15x_rtc.c@42922@F@RTC_GetAlarm@tmpreg4",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg4",
@@ -97420,7 +97420,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@41752@F@RTC_GetAlarm@alarmmask",
+    "ID": "c:stm8l15x_rtc.c@42946@F@RTC_GetAlarm@alarmmask",
     "What": "Variable",
     "defdec": "Def",
     "display": "alarmmask",
@@ -97448,7 +97448,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@44236@F@RTC_AlarmCmd@alrawfcount",
+    "ID": "c:stm8l15x_rtc.c@45479@F@RTC_AlarmCmd@alrawfcount",
     "What": "Variable",
     "defdec": "Def",
     "display": "alrawfcount",
@@ -97462,7 +97462,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@44269@F@RTC_AlarmCmd@status",
+    "ID": "c:stm8l15x_rtc.c@45513@F@RTC_AlarmCmd@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -97476,7 +97476,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@44299@F@RTC_AlarmCmd@temp1",
+    "ID": "c:stm8l15x_rtc.c@45544@F@RTC_AlarmCmd@temp1",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp1",
@@ -97504,7 +97504,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@45883@F@RTC_AlarmSubSecondConfig@alarmstatus",
+    "ID": "c:stm8l15x_rtc.c@47183@F@RTC_AlarmSubSecondConfig@alarmstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "alarmstatus",
@@ -97518,7 +97518,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@45910@F@RTC_AlarmSubSecondConfig@status",
+    "ID": "c:stm8l15x_rtc.c@47211@F@RTC_AlarmSubSecondConfig@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -97574,7 +97574,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@49235@F@RTC_GetWakeUpCounter@tmpreg",
+    "ID": "c:stm8l15x_rtc.c@50656@F@RTC_GetWakeUpCounter@tmpreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg",
@@ -97602,7 +97602,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@49829@F@RTC_WakeUpCmd@status",
+    "ID": "c:stm8l15x_rtc.c@51270@F@RTC_WakeUpCmd@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -97616,7 +97616,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@49859@F@RTC_WakeUpCmd@wutwfcount",
+    "ID": "c:stm8l15x_rtc.c@51301@F@RTC_WakeUpCmd@wutwfcount",
     "What": "Variable",
     "defdec": "Def",
     "display": "wutwfcount",
@@ -97686,7 +97686,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@55512@F@RTC_SynchroShiftConfig@shiftrhreg",
+    "ID": "c:stm8l15x_rtc.c@57153@F@RTC_SynchroShiftConfig@shiftrhreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "shiftrhreg",
@@ -97700,7 +97700,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@55538@F@RTC_SynchroShiftConfig@status",
+    "ID": "c:stm8l15x_rtc.c@57180@F@RTC_SynchroShiftConfig@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -97714,7 +97714,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@55568@F@RTC_SynchroShiftConfig@shpfcount",
+    "ID": "c:stm8l15x_rtc.c@57211@F@RTC_SynchroShiftConfig@shpfcount",
     "What": "Variable",
     "defdec": "Def",
     "display": "shpfcount",
@@ -97742,7 +97742,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@58062@F@RTC_SmoothCalibConfig@status",
+    "ID": "c:stm8l15x_rtc.c@59783@F@RTC_SmoothCalibConfig@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -97756,7 +97756,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@58092@F@RTC_SmoothCalibConfig@recalpfcount",
+    "ID": "c:stm8l15x_rtc.c@59814@F@RTC_SmoothCalibConfig@recalpfcount",
     "What": "Variable",
     "defdec": "Def",
     "display": "recalpfcount",
@@ -97896,7 +97896,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@68891@F@RTC_GetFlagStatus@flagstatus",
+    "ID": "c:stm8l15x_rtc.c@70982@F@RTC_GetFlagStatus@flagstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "flagstatus",
@@ -97910,7 +97910,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@68924@F@RTC_GetFlagStatus@tmpreg1",
+    "ID": "c:stm8l15x_rtc.c@71016@F@RTC_GetFlagStatus@tmpreg1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg1",
@@ -97924,7 +97924,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@68948@F@RTC_GetFlagStatus@tmpreg2",
+    "ID": "c:stm8l15x_rtc.c@71041@F@RTC_GetFlagStatus@tmpreg2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg2",
@@ -97966,7 +97966,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@70264@F@RTC_GetITStatus@itstatus",
+    "ID": "c:stm8l15x_rtc.c@72403@F@RTC_GetITStatus@itstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "itstatus",
@@ -97980,7 +97980,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@70293@F@RTC_GetITStatus@enablestatus",
+    "ID": "c:stm8l15x_rtc.c@72433@F@RTC_GetITStatus@enablestatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "enablestatus",
@@ -97994,7 +97994,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@70293@F@RTC_GetITStatus@tmpreg",
+    "ID": "c:stm8l15x_rtc.c@72433@F@RTC_GetITStatus@tmpreg",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpreg",
@@ -98036,7 +98036,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@71556@F@ByteToBcd2@bcdhigh",
+    "ID": "c:stm8l15x_rtc.c@73759@F@ByteToBcd2@bcdhigh",
     "What": "Variable",
     "defdec": "Def",
     "display": "bcdhigh",
@@ -98064,7 +98064,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_rtc.c@71872@F@Bcd2ToByte@tmp",
+    "ID": "c:stm8l15x_rtc.c@74093@F@Bcd2ToByte@tmp",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmp",
@@ -98120,7 +98120,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_syscfg.c@8076@F@SYSCFG_RIAnalogSwitchConfig@AnalogSwitchRegister",
+    "ID": "c:stm8l15x_syscfg.c@8262@F@SYSCFG_RIAnalogSwitchConfig@AnalogSwitchRegister",
     "What": "Variable",
     "defdec": "Def",
     "display": "AnalogSwitchRegister",
@@ -98134,7 +98134,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_syscfg.c@8076@F@SYSCFG_RIAnalogSwitchConfig@AnalogSwitchIndex",
+    "ID": "c:stm8l15x_syscfg.c@8262@F@SYSCFG_RIAnalogSwitchConfig@AnalogSwitchIndex",
     "What": "Variable",
     "defdec": "Dec",
     "display": "AnalogSwitchIndex",
@@ -98162,7 +98162,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_syscfg.c@9583@F@SYSCFG_RIIOSwitchConfig@IOSwitchRegister",
+    "ID": "c:stm8l15x_syscfg.c@9819@F@SYSCFG_RIIOSwitchConfig@IOSwitchRegister",
     "What": "Variable",
     "defdec": "Def",
     "display": "IOSwitchRegister",
@@ -98176,7 +98176,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_syscfg.c@9583@F@SYSCFG_RIIOSwitchConfig@IOSwitchIndex",
+    "ID": "c:stm8l15x_syscfg.c@9819@F@SYSCFG_RIIOSwitchConfig@IOSwitchIndex",
     "What": "Variable",
     "defdec": "Dec",
     "display": "IOSwitchIndex",
@@ -98232,7 +98232,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_syscfg.c@16009@F@SYSCFG_REMAPPinConfig@regindex",
+    "ID": "c:stm8l15x_syscfg.c@16421@F@SYSCFG_REMAPPinConfig@regindex",
     "What": "Variable",
     "defdec": "Def",
     "display": "regindex",
@@ -98414,7 +98414,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@13896@F@TIM1_GetCounter@tmpcntr",
+    "ID": "c:stm8l15x_tim1.c@14243@F@TIM1_GetCounter@tmpcntr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcntr",
@@ -98428,7 +98428,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@13920@F@TIM1_GetCounter@tmpcntrl",
+    "ID": "c:stm8l15x_tim1.c@14268@F@TIM1_GetCounter@tmpcntrl",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcntrl",
@@ -98442,7 +98442,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@13920@F@TIM1_GetCounter@tmpcntrh",
+    "ID": "c:stm8l15x_tim1.c@14268@F@TIM1_GetCounter@tmpcntrh",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpcntrh",
@@ -98470,7 +98470,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@14310@F@TIM1_GetPrescaler@tmpreg",
+    "ID": "c:stm8l15x_tim1.c@14677@F@TIM1_GetPrescaler@tmpreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg",
@@ -99072,7 +99072,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@64665@F@TIM1_PWMIConfig@icpolarity",
+    "ID": "c:stm8l15x_tim1.c@66403@F@TIM1_PWMIConfig@icpolarity",
     "What": "Variable",
     "defdec": "Def",
     "display": "icpolarity",
@@ -99086,7 +99086,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@64728@F@TIM1_PWMIConfig@icselection",
+    "ID": "c:stm8l15x_tim1.c@66467@F@TIM1_PWMIConfig@icselection",
     "What": "Variable",
     "defdec": "Def",
     "display": "icselection",
@@ -99114,7 +99114,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@66439@F@TIM1_GetCapture1@tmpccr1",
+    "ID": "c:stm8l15x_tim1.c@68245@F@TIM1_GetCapture1@tmpccr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr1",
@@ -99128,7 +99128,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@66463@F@TIM1_GetCapture1@tmpccr1l",
+    "ID": "c:stm8l15x_tim1.c@68270@F@TIM1_GetCapture1@tmpccr1l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr1l",
@@ -99142,7 +99142,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@66463@F@TIM1_GetCapture1@tmpccr1h",
+    "ID": "c:stm8l15x_tim1.c@68270@F@TIM1_GetCapture1@tmpccr1h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpccr1h",
@@ -99170,7 +99170,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@66908@F@TIM1_GetCapture2@tmpccr2",
+    "ID": "c:stm8l15x_tim1.c@68735@F@TIM1_GetCapture2@tmpccr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr2",
@@ -99184,7 +99184,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@66932@F@TIM1_GetCapture2@tmpccr2l",
+    "ID": "c:stm8l15x_tim1.c@68760@F@TIM1_GetCapture2@tmpccr2l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr2l",
@@ -99198,7 +99198,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@66932@F@TIM1_GetCapture2@tmpccr2h",
+    "ID": "c:stm8l15x_tim1.c@68760@F@TIM1_GetCapture2@tmpccr2h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpccr2h",
@@ -99226,7 +99226,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@67376@F@TIM1_GetCapture3@tmpccr3",
+    "ID": "c:stm8l15x_tim1.c@69223@F@TIM1_GetCapture3@tmpccr3",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr3",
@@ -99240,7 +99240,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@67400@F@TIM1_GetCapture3@tmpccr3l",
+    "ID": "c:stm8l15x_tim1.c@69248@F@TIM1_GetCapture3@tmpccr3l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr3l",
@@ -99254,7 +99254,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@67400@F@TIM1_GetCapture3@tmpccr3h",
+    "ID": "c:stm8l15x_tim1.c@69248@F@TIM1_GetCapture3@tmpccr3h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpccr3h",
@@ -99282,7 +99282,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@67844@F@TIM1_GetCapture4@tmpccr4",
+    "ID": "c:stm8l15x_tim1.c@69711@F@TIM1_GetCapture4@tmpccr4",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr4",
@@ -99296,7 +99296,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@67868@F@TIM1_GetCapture4@tmpccr4l",
+    "ID": "c:stm8l15x_tim1.c@69736@F@TIM1_GetCapture4@tmpccr4l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr4l",
@@ -99310,7 +99310,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@67868@F@TIM1_GetCapture4@tmpccr4h",
+    "ID": "c:stm8l15x_tim1.c@69736@F@TIM1_GetCapture4@tmpccr4h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpccr4h",
@@ -99422,7 +99422,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@75488@F@TIM1_GetFlagStatus@bitstatus",
+    "ID": "c:stm8l15x_tim1.c@77538@F@TIM1_GetFlagStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -99436,7 +99436,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@75520@F@TIM1_GetFlagStatus@tim1_flag_l",
+    "ID": "c:stm8l15x_tim1.c@77571@F@TIM1_GetFlagStatus@tim1_flag_l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tim1_flag_l",
@@ -99450,7 +99450,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@75520@F@TIM1_GetFlagStatus@tim1_flag_h",
+    "ID": "c:stm8l15x_tim1.c@77571@F@TIM1_GetFlagStatus@tim1_flag_h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tim1_flag_h",
@@ -99492,7 +99492,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@78021@F@TIM1_GetITStatus@bitstatus",
+    "ID": "c:stm8l15x_tim1.c@80136@F@TIM1_GetITStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -99506,7 +99506,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@78052@F@TIM1_GetITStatus@TIM1_itStatus",
+    "ID": "c:stm8l15x_tim1.c@80169@F@TIM1_GetITStatus@TIM1_itStatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "TIM1_itStatus",
@@ -99520,7 +99520,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim1.c@78052@F@TIM1_GetITStatus@TIM1_itEnable",
+    "ID": "c:stm8l15x_tim1.c@80169@F@TIM1_GetITStatus@TIM1_itEnable",
     "What": "Variable",
     "defdec": "Dec",
     "display": "TIM1_itEnable",
@@ -99884,7 +99884,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@12939@F@TIM2_CounterModeConfig@tmpcr1",
+    "ID": "c:stm8l15x_tim2.c@13246@F@TIM2_CounterModeConfig@tmpcr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcr1",
@@ -99940,7 +99940,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@14148@F@TIM2_GetCounter@tmpcnt",
+    "ID": "c:stm8l15x_tim2.c@14505@F@TIM2_GetCounter@tmpcnt",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcnt",
@@ -99954,7 +99954,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@14171@F@TIM2_GetCounter@tmpcntrl",
+    "ID": "c:stm8l15x_tim2.c@14529@F@TIM2_GetCounter@tmpcntrl",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcntrl",
@@ -99968,7 +99968,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@14171@F@TIM2_GetCounter@tmpcntrh",
+    "ID": "c:stm8l15x_tim2.c@14529@F@TIM2_GetCounter@tmpcntrh",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpcntrh",
@@ -100080,7 +100080,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@21944@F@TIM2_OC1Init@tmpccmr1",
+    "ID": "c:stm8l15x_tim2.c@22527@F@TIM2_OC1Init@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -100108,7 +100108,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@24911@F@TIM2_OC2Init@tmpccmr2",
+    "ID": "c:stm8l15x_tim2.c@25580@F@TIM2_OC2Init@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -100206,7 +100206,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@32416@F@TIM2_ForcedOC1Config@tmpccmr1",
+    "ID": "c:stm8l15x_tim2.c@33300@F@TIM2_ForcedOC1Config@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -100234,7 +100234,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@33234@F@TIM2_ForcedOC2Config@tmpccmr2",
+    "ID": "c:stm8l15x_tim2.c@34144@F@TIM2_ForcedOC2Config@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -100374,7 +100374,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@44727@F@TIM2_PWMIConfig@icpolarity",
+    "ID": "c:stm8l15x_tim2.c@45967@F@TIM2_PWMIConfig@icpolarity",
     "What": "Variable",
     "defdec": "Def",
     "display": "icpolarity",
@@ -100388,7 +100388,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@44774@F@TIM2_PWMIConfig@icselection",
+    "ID": "c:stm8l15x_tim2.c@46015@F@TIM2_PWMIConfig@icselection",
     "What": "Variable",
     "defdec": "Def",
     "display": "icselection",
@@ -100416,7 +100416,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@46386@F@TIM2_GetCapture1@tmpccr1",
+    "ID": "c:stm8l15x_tim2.c@47691@F@TIM2_GetCapture1@tmpccr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr1",
@@ -100430,7 +100430,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@46410@F@TIM2_GetCapture1@tmpccr1l",
+    "ID": "c:stm8l15x_tim2.c@47716@F@TIM2_GetCapture1@tmpccr1l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr1l",
@@ -100444,7 +100444,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@46410@F@TIM2_GetCapture1@tmpccr1h",
+    "ID": "c:stm8l15x_tim2.c@47716@F@TIM2_GetCapture1@tmpccr1h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpccr1h",
@@ -100472,7 +100472,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@46807@F@TIM2_GetCapture2@tmpccr2",
+    "ID": "c:stm8l15x_tim2.c@48131@F@TIM2_GetCapture2@tmpccr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr2",
@@ -100486,7 +100486,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@46831@F@TIM2_GetCapture2@tmpccr2l",
+    "ID": "c:stm8l15x_tim2.c@48156@F@TIM2_GetCapture2@tmpccr2l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr2l",
@@ -100500,7 +100500,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@46831@F@TIM2_GetCapture2@tmpccr2h",
+    "ID": "c:stm8l15x_tim2.c@48156@F@TIM2_GetCapture2@tmpccr2h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpccr2h",
@@ -100528,7 +100528,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@47737@F@TIM2_SetIC1Prescaler@tmpccmr1",
+    "ID": "c:stm8l15x_tim2.c@49085@F@TIM2_SetIC1Prescaler@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -100556,7 +100556,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@48715@F@TIM2_SetIC2Prescaler@tmpccmr2",
+    "ID": "c:stm8l15x_tim2.c@50091@F@TIM2_SetIC2Prescaler@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -100612,7 +100612,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@51952@F@TIM2_GetFlagStatus@bitstatus",
+    "ID": "c:stm8l15x_tim2.c@53426@F@TIM2_GetFlagStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -100626,7 +100626,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@51984@F@TIM2_GetFlagStatus@tim2_flag_l",
+    "ID": "c:stm8l15x_tim2.c@53459@F@TIM2_GetFlagStatus@tim2_flag_l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tim2_flag_l",
@@ -100640,7 +100640,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@51984@F@TIM2_GetFlagStatus@tim2_flag_h",
+    "ID": "c:stm8l15x_tim2.c@53459@F@TIM2_GetFlagStatus@tim2_flag_h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tim2_flag_h",
@@ -100682,7 +100682,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@53776@F@TIM2_GetITStatus@bitstatus",
+    "ID": "c:stm8l15x_tim2.c@55303@F@TIM2_GetITStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -100696,7 +100696,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@53807@F@TIM2_GetITStatus@TIM2_itStatus",
+    "ID": "c:stm8l15x_tim2.c@55336@F@TIM2_GetITStatus@TIM2_itStatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "TIM2_itStatus",
@@ -100710,7 +100710,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@53807@F@TIM2_GetITStatus@TIM2_itEnable",
+    "ID": "c:stm8l15x_tim2.c@55336@F@TIM2_GetITStatus@TIM2_itEnable",
     "What": "Variable",
     "defdec": "Dec",
     "display": "TIM2_itEnable",
@@ -100836,7 +100836,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@64273@F@TIM2_SelectInputTrigger@tmpsmcr",
+    "ID": "c:stm8l15x_tim2.c@66073@F@TIM2_SelectInputTrigger@tmpsmcr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpsmcr",
@@ -100864,7 +100864,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@65393@F@TIM2_SelectOutputTrigger@tmpcr2",
+    "ID": "c:stm8l15x_tim2.c@67221@F@TIM2_SelectOutputTrigger@tmpcr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcr2",
@@ -100892,7 +100892,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@66244@F@TIM2_SelectSlaveMode@tmpsmcr",
+    "ID": "c:stm8l15x_tim2.c@68100@F@TIM2_SelectSlaveMode@tmpsmcr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpsmcr",
@@ -100948,7 +100948,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@70266@F@TIM2_EncoderInterfaceConfig@tmpsmcr",
+    "ID": "c:stm8l15x_tim2.c@72227@F@TIM2_EncoderInterfaceConfig@tmpsmcr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpsmcr",
@@ -100962,7 +100962,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@70289@F@TIM2_EncoderInterfaceConfig@tmpccmr1",
+    "ID": "c:stm8l15x_tim2.c@72251@F@TIM2_EncoderInterfaceConfig@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -100976,7 +100976,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@70313@F@TIM2_EncoderInterfaceConfig@tmpccmr2",
+    "ID": "c:stm8l15x_tim2.c@72276@F@TIM2_EncoderInterfaceConfig@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -101018,7 +101018,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@72969@F@TI1_Config@tmpccmr1",
+    "ID": "c:stm8l15x_tim2.c@75022@F@TI1_Config@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -101032,7 +101032,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@72993@F@TI1_Config@tmpicpolarity",
+    "ID": "c:stm8l15x_tim2.c@75047@F@TI1_Config@tmpicpolarity",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpicpolarity",
@@ -101060,7 +101060,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@74868@F@TI2_Config@tmpccmr2",
+    "ID": "c:stm8l15x_tim2.c@76972@F@TI2_Config@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -101074,7 +101074,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim2.c@74892@F@TI2_Config@tmpicpolarity",
+    "ID": "c:stm8l15x_tim2.c@76997@F@TI2_Config@tmpicpolarity",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpicpolarity",
@@ -101228,7 +101228,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.c@18694@F@SPI_GetCRC@crcreg",
+    "ID": "c:stm8l15x_spi.c@19148@F@SPI_GetCRC@crcreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "crcreg",
@@ -101298,7 +101298,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.c@25039@F@SPI_ITConfig@itpos",
+    "ID": "c:stm8l15x_spi.c@25666@F@SPI_ITConfig@itpos",
     "What": "Variable",
     "defdec": "Def",
     "display": "itpos",
@@ -101326,7 +101326,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.c@26215@F@SPI_GetFlagStatus@status",
+    "ID": "c:stm8l15x_spi.c@26877@F@SPI_GetFlagStatus@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -101368,7 +101368,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.c@28164@F@SPI_GetITStatus@pendingbitstatus",
+    "ID": "c:stm8l15x_spi.c@28882@F@SPI_GetITStatus@pendingbitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "pendingbitstatus",
@@ -101382,7 +101382,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.c@28201@F@SPI_GetITStatus@itpos",
+    "ID": "c:stm8l15x_spi.c@28920@F@SPI_GetITStatus@itpos",
     "What": "Variable",
     "defdec": "Def",
     "display": "itpos",
@@ -101396,7 +101396,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.c@28222@F@SPI_GetITStatus@itmask1",
+    "ID": "c:stm8l15x_spi.c@28942@F@SPI_GetITStatus@itmask1",
     "What": "Variable",
     "defdec": "Def",
     "display": "itmask1",
@@ -101410,7 +101410,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.c@28245@F@SPI_GetITStatus@itmask2",
+    "ID": "c:stm8l15x_spi.c@28966@F@SPI_GetITStatus@itmask2",
     "What": "Variable",
     "defdec": "Def",
     "display": "itmask2",
@@ -101424,7 +101424,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.c@28268@F@SPI_GetITStatus@enablestatus",
+    "ID": "c:stm8l15x_spi.c@28990@F@SPI_GetITStatus@enablestatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "enablestatus",
@@ -101452,7 +101452,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_spi.c@29897@F@SPI_ClearITPendingBit@itpos",
+    "ID": "c:stm8l15x_spi.c@30662@F@SPI_ClearITPendingBit@itpos",
     "What": "Variable",
     "defdec": "Def",
     "display": "itpos",
@@ -101550,7 +101550,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@12939@F@TIM3_CounterModeConfig@tmpcr1",
+    "ID": "c:stm8l15x_tim3.c@13246@F@TIM3_CounterModeConfig@tmpcr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcr1",
@@ -101606,7 +101606,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@14148@F@TIM3_GetCounter@tmpcnt",
+    "ID": "c:stm8l15x_tim3.c@14505@F@TIM3_GetCounter@tmpcnt",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcnt",
@@ -101620,7 +101620,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@14171@F@TIM3_GetCounter@tmpcntrl",
+    "ID": "c:stm8l15x_tim3.c@14529@F@TIM3_GetCounter@tmpcntrl",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcntrl",
@@ -101634,7 +101634,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@14171@F@TIM3_GetCounter@tmpcntrh",
+    "ID": "c:stm8l15x_tim3.c@14529@F@TIM3_GetCounter@tmpcntrh",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpcntrh",
@@ -101746,7 +101746,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@21944@F@TIM3_OC1Init@tmpccmr1",
+    "ID": "c:stm8l15x_tim3.c@22527@F@TIM3_OC1Init@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -101774,7 +101774,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@24911@F@TIM3_OC2Init@tmpccmr2",
+    "ID": "c:stm8l15x_tim3.c@25580@F@TIM3_OC2Init@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -101872,7 +101872,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@32416@F@TIM3_ForcedOC1Config@tmpccmr1",
+    "ID": "c:stm8l15x_tim3.c@33300@F@TIM3_ForcedOC1Config@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -101900,7 +101900,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@33234@F@TIM3_ForcedOC2Config@tmpccmr2",
+    "ID": "c:stm8l15x_tim3.c@34144@F@TIM3_ForcedOC2Config@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -102040,7 +102040,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@44727@F@TIM3_PWMIConfig@icpolarity",
+    "ID": "c:stm8l15x_tim3.c@45967@F@TIM3_PWMIConfig@icpolarity",
     "What": "Variable",
     "defdec": "Def",
     "display": "icpolarity",
@@ -102054,7 +102054,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@44774@F@TIM3_PWMIConfig@icselection",
+    "ID": "c:stm8l15x_tim3.c@46015@F@TIM3_PWMIConfig@icselection",
     "What": "Variable",
     "defdec": "Def",
     "display": "icselection",
@@ -102082,7 +102082,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@46386@F@TIM3_GetCapture1@tmpccr1",
+    "ID": "c:stm8l15x_tim3.c@47691@F@TIM3_GetCapture1@tmpccr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr1",
@@ -102096,7 +102096,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@46410@F@TIM3_GetCapture1@tmpccr1l",
+    "ID": "c:stm8l15x_tim3.c@47716@F@TIM3_GetCapture1@tmpccr1l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr1l",
@@ -102110,7 +102110,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@46410@F@TIM3_GetCapture1@tmpccr1h",
+    "ID": "c:stm8l15x_tim3.c@47716@F@TIM3_GetCapture1@tmpccr1h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpccr1h",
@@ -102138,7 +102138,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@46807@F@TIM3_GetCapture2@tmpccr2",
+    "ID": "c:stm8l15x_tim3.c@48131@F@TIM3_GetCapture2@tmpccr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr2",
@@ -102152,7 +102152,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@46831@F@TIM3_GetCapture2@tmpccr2l",
+    "ID": "c:stm8l15x_tim3.c@48156@F@TIM3_GetCapture2@tmpccr2l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr2l",
@@ -102166,7 +102166,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@46831@F@TIM3_GetCapture2@tmpccr2h",
+    "ID": "c:stm8l15x_tim3.c@48156@F@TIM3_GetCapture2@tmpccr2h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpccr2h",
@@ -102194,7 +102194,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@47737@F@TIM3_SetIC1Prescaler@tmpccmr1",
+    "ID": "c:stm8l15x_tim3.c@49085@F@TIM3_SetIC1Prescaler@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -102222,7 +102222,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@48715@F@TIM3_SetIC2Prescaler@tmpccmr2",
+    "ID": "c:stm8l15x_tim3.c@50091@F@TIM3_SetIC2Prescaler@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -102278,7 +102278,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@51952@F@TIM3_GetFlagStatus@bitstatus",
+    "ID": "c:stm8l15x_tim3.c@53426@F@TIM3_GetFlagStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -102292,7 +102292,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@51984@F@TIM3_GetFlagStatus@tim3_flag_l",
+    "ID": "c:stm8l15x_tim3.c@53459@F@TIM3_GetFlagStatus@tim3_flag_l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tim3_flag_l",
@@ -102306,7 +102306,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@51984@F@TIM3_GetFlagStatus@tim3_flag_h",
+    "ID": "c:stm8l15x_tim3.c@53459@F@TIM3_GetFlagStatus@tim3_flag_h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tim3_flag_h",
@@ -102348,7 +102348,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@53776@F@TIM3_GetITStatus@bitstatus",
+    "ID": "c:stm8l15x_tim3.c@55303@F@TIM3_GetITStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -102362,7 +102362,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@53807@F@TIM3_GetITStatus@TIM3_itStatus",
+    "ID": "c:stm8l15x_tim3.c@55336@F@TIM3_GetITStatus@TIM3_itStatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "TIM3_itStatus",
@@ -102376,7 +102376,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@53807@F@TIM3_GetITStatus@TIM3_itEnable",
+    "ID": "c:stm8l15x_tim3.c@55336@F@TIM3_GetITStatus@TIM3_itEnable",
     "What": "Variable",
     "defdec": "Dec",
     "display": "TIM3_itEnable",
@@ -102502,7 +102502,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@64273@F@TIM3_SelectInputTrigger@tmpsmcr",
+    "ID": "c:stm8l15x_tim3.c@66073@F@TIM3_SelectInputTrigger@tmpsmcr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpsmcr",
@@ -102530,7 +102530,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@65393@F@TIM3_SelectOutputTrigger@tmpcr2",
+    "ID": "c:stm8l15x_tim3.c@67221@F@TIM3_SelectOutputTrigger@tmpcr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcr2",
@@ -102558,7 +102558,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@66244@F@TIM3_SelectSlaveMode@tmpsmcr",
+    "ID": "c:stm8l15x_tim3.c@68100@F@TIM3_SelectSlaveMode@tmpsmcr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpsmcr",
@@ -102614,7 +102614,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@70266@F@TIM3_EncoderInterfaceConfig@tmpsmcr",
+    "ID": "c:stm8l15x_tim3.c@72227@F@TIM3_EncoderInterfaceConfig@tmpsmcr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpsmcr",
@@ -102628,7 +102628,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@70289@F@TIM3_EncoderInterfaceConfig@tmpccmr1",
+    "ID": "c:stm8l15x_tim3.c@72251@F@TIM3_EncoderInterfaceConfig@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -102642,7 +102642,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@70313@F@TIM3_EncoderInterfaceConfig@tmpccmr2",
+    "ID": "c:stm8l15x_tim3.c@72276@F@TIM3_EncoderInterfaceConfig@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -102684,7 +102684,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@72969@F@TI1_Config@tmpccmr1",
+    "ID": "c:stm8l15x_tim3.c@75022@F@TI1_Config@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -102698,7 +102698,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@72993@F@TI1_Config@tmpicpolarity",
+    "ID": "c:stm8l15x_tim3.c@75047@F@TI1_Config@tmpicpolarity",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpicpolarity",
@@ -102726,7 +102726,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@74868@F@TI2_Config@tmpccmr2",
+    "ID": "c:stm8l15x_tim3.c@76972@F@TI2_Config@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -102740,7 +102740,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim3.c@74892@F@TI2_Config@tmpicpolarity",
+    "ID": "c:stm8l15x_tim3.c@76997@F@TI2_Config@tmpicpolarity",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpicpolarity",
@@ -102838,7 +102838,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@12939@F@TIM5_CounterModeConfig@tmpcr1",
+    "ID": "c:stm8l15x_tim5.c@13246@F@TIM5_CounterModeConfig@tmpcr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcr1",
@@ -102894,7 +102894,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@14148@F@TIM5_GetCounter@tmpcnt",
+    "ID": "c:stm8l15x_tim5.c@14505@F@TIM5_GetCounter@tmpcnt",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcnt",
@@ -102908,7 +102908,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@14171@F@TIM5_GetCounter@tmpcntrl",
+    "ID": "c:stm8l15x_tim5.c@14529@F@TIM5_GetCounter@tmpcntrl",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcntrl",
@@ -102922,7 +102922,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@14171@F@TIM5_GetCounter@tmpcntrh",
+    "ID": "c:stm8l15x_tim5.c@14529@F@TIM5_GetCounter@tmpcntrh",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpcntrh",
@@ -103034,7 +103034,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@21944@F@TIM5_OC1Init@tmpccmr1",
+    "ID": "c:stm8l15x_tim5.c@22527@F@TIM5_OC1Init@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -103062,7 +103062,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@24911@F@TIM5_OC2Init@tmpccmr2",
+    "ID": "c:stm8l15x_tim5.c@25580@F@TIM5_OC2Init@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -103160,7 +103160,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@32416@F@TIM5_ForcedOC1Config@tmpccmr1",
+    "ID": "c:stm8l15x_tim5.c@33300@F@TIM5_ForcedOC1Config@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -103188,7 +103188,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@33234@F@TIM5_ForcedOC2Config@tmpccmr2",
+    "ID": "c:stm8l15x_tim5.c@34144@F@TIM5_ForcedOC2Config@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -103328,7 +103328,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@44727@F@TIM5_PWMIConfig@icpolarity",
+    "ID": "c:stm8l15x_tim5.c@45967@F@TIM5_PWMIConfig@icpolarity",
     "What": "Variable",
     "defdec": "Def",
     "display": "icpolarity",
@@ -103342,7 +103342,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@44774@F@TIM5_PWMIConfig@icselection",
+    "ID": "c:stm8l15x_tim5.c@46015@F@TIM5_PWMIConfig@icselection",
     "What": "Variable",
     "defdec": "Def",
     "display": "icselection",
@@ -103370,7 +103370,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@46386@F@TIM5_GetCapture1@tmpccr1",
+    "ID": "c:stm8l15x_tim5.c@47691@F@TIM5_GetCapture1@tmpccr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr1",
@@ -103384,7 +103384,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@46410@F@TIM5_GetCapture1@tmpccr1l",
+    "ID": "c:stm8l15x_tim5.c@47716@F@TIM5_GetCapture1@tmpccr1l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr1l",
@@ -103398,7 +103398,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@46410@F@TIM5_GetCapture1@tmpccr1h",
+    "ID": "c:stm8l15x_tim5.c@47716@F@TIM5_GetCapture1@tmpccr1h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpccr1h",
@@ -103426,7 +103426,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@46807@F@TIM5_GetCapture2@tmpccr2",
+    "ID": "c:stm8l15x_tim5.c@48131@F@TIM5_GetCapture2@tmpccr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr2",
@@ -103440,7 +103440,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@46831@F@TIM5_GetCapture2@tmpccr2l",
+    "ID": "c:stm8l15x_tim5.c@48156@F@TIM5_GetCapture2@tmpccr2l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccr2l",
@@ -103454,7 +103454,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@46831@F@TIM5_GetCapture2@tmpccr2h",
+    "ID": "c:stm8l15x_tim5.c@48156@F@TIM5_GetCapture2@tmpccr2h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tmpccr2h",
@@ -103482,7 +103482,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@47737@F@TIM5_SetIC1Prescaler@tmpccmr1",
+    "ID": "c:stm8l15x_tim5.c@49085@F@TIM5_SetIC1Prescaler@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -103510,7 +103510,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@48715@F@TIM5_SetIC2Prescaler@tmpccmr2",
+    "ID": "c:stm8l15x_tim5.c@50091@F@TIM5_SetIC2Prescaler@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -103566,7 +103566,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@51952@F@TIM5_GetFlagStatus@bitstatus",
+    "ID": "c:stm8l15x_tim5.c@53426@F@TIM5_GetFlagStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -103580,7 +103580,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@51984@F@TIM5_GetFlagStatus@tim5_flag_l",
+    "ID": "c:stm8l15x_tim5.c@53459@F@TIM5_GetFlagStatus@tim5_flag_l",
     "What": "Variable",
     "defdec": "Def",
     "display": "tim5_flag_l",
@@ -103594,7 +103594,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@51984@F@TIM5_GetFlagStatus@tim5_flag_h",
+    "ID": "c:stm8l15x_tim5.c@53459@F@TIM5_GetFlagStatus@tim5_flag_h",
     "What": "Variable",
     "defdec": "Dec",
     "display": "tim5_flag_h",
@@ -103636,7 +103636,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@53776@F@TIM5_GetITStatus@bitstatus",
+    "ID": "c:stm8l15x_tim5.c@55303@F@TIM5_GetITStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -103650,7 +103650,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@53807@F@TIM5_GetITStatus@TIM5_itStatus",
+    "ID": "c:stm8l15x_tim5.c@55336@F@TIM5_GetITStatus@TIM5_itStatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "TIM5_itStatus",
@@ -103664,7 +103664,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@53807@F@TIM5_GetITStatus@TIM5_itEnable",
+    "ID": "c:stm8l15x_tim5.c@55336@F@TIM5_GetITStatus@TIM5_itEnable",
     "What": "Variable",
     "defdec": "Dec",
     "display": "TIM5_itEnable",
@@ -103790,7 +103790,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@64273@F@TIM5_SelectInputTrigger@tmpsmcr",
+    "ID": "c:stm8l15x_tim5.c@66073@F@TIM5_SelectInputTrigger@tmpsmcr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpsmcr",
@@ -103818,7 +103818,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@65393@F@TIM5_SelectOutputTrigger@tmpcr2",
+    "ID": "c:stm8l15x_tim5.c@67221@F@TIM5_SelectOutputTrigger@tmpcr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcr2",
@@ -103846,7 +103846,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@66244@F@TIM5_SelectSlaveMode@tmpsmcr",
+    "ID": "c:stm8l15x_tim5.c@68100@F@TIM5_SelectSlaveMode@tmpsmcr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpsmcr",
@@ -103902,7 +103902,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@70266@F@TIM5_EncoderInterfaceConfig@tmpsmcr",
+    "ID": "c:stm8l15x_tim5.c@72227@F@TIM5_EncoderInterfaceConfig@tmpsmcr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpsmcr",
@@ -103916,7 +103916,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@70289@F@TIM5_EncoderInterfaceConfig@tmpccmr1",
+    "ID": "c:stm8l15x_tim5.c@72251@F@TIM5_EncoderInterfaceConfig@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -103930,7 +103930,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@70313@F@TIM5_EncoderInterfaceConfig@tmpccmr2",
+    "ID": "c:stm8l15x_tim5.c@72276@F@TIM5_EncoderInterfaceConfig@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -103972,7 +103972,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@72969@F@TI1_Config@tmpccmr1",
+    "ID": "c:stm8l15x_tim5.c@75022@F@TI1_Config@tmpccmr1",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr1",
@@ -103986,7 +103986,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@72993@F@TI1_Config@tmpicpolarity",
+    "ID": "c:stm8l15x_tim5.c@75047@F@TI1_Config@tmpicpolarity",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpicpolarity",
@@ -104014,7 +104014,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@74868@F@TI2_Config@tmpccmr2",
+    "ID": "c:stm8l15x_tim5.c@76972@F@TI2_Config@tmpccmr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpccmr2",
@@ -104028,7 +104028,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim5.c@74892@F@TI2_Config@tmpicpolarity",
+    "ID": "c:stm8l15x_tim5.c@76997@F@TI2_Config@tmpicpolarity",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpicpolarity",
@@ -104126,7 +104126,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.c@10289@F@TIM4_GetCounter@tmpcntr",
+    "ID": "c:stm8l15x_tim4.c@10545@F@TIM4_GetCounter@tmpcntr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcntr",
@@ -104266,7 +104266,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.c@16860@F@TIM4_GetFlagStatus@bitstatus",
+    "ID": "c:stm8l15x_tim4.c@17335@F@TIM4_GetFlagStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -104308,7 +104308,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.c@18118@F@TIM4_GetITStatus@bitstatus",
+    "ID": "c:stm8l15x_tim4.c@18637@F@TIM4_GetITStatus@bitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "bitstatus",
@@ -104322,7 +104322,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.c@18149@F@TIM4_GetITStatus@itStatus",
+    "ID": "c:stm8l15x_tim4.c@18670@F@TIM4_GetITStatus@itStatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "itStatus",
@@ -104336,7 +104336,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.c@18149@F@TIM4_GetITStatus@itEnable",
+    "ID": "c:stm8l15x_tim4.c@18670@F@TIM4_GetITStatus@itEnable",
     "What": "Variable",
     "defdec": "Dec",
     "display": "itEnable",
@@ -104406,7 +104406,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.c@22133@F@TIM4_SelectInputTrigger@tmpsmcr",
+    "ID": "c:stm8l15x_tim4.c@22785@F@TIM4_SelectInputTrigger@tmpsmcr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpsmcr",
@@ -104434,7 +104434,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.c@22954@F@TIM4_SelectOutputTrigger@tmpcr2",
+    "ID": "c:stm8l15x_tim4.c@23631@F@TIM4_SelectOutputTrigger@tmpcr2",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpcr2",
@@ -104462,7 +104462,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_tim4.c@23969@F@TIM4_SelectSlaveMode@tmpsmcr",
+    "ID": "c:stm8l15x_tim4.c@24676@F@TIM4_SelectSlaveMode@tmpsmcr",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpsmcr",
@@ -104518,7 +104518,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_usart.c@8784@F@USART_Init@BaudRate_Mantissa",
+    "ID": "c:stm8l15x_usart.c@8979@F@USART_Init@BaudRate_Mantissa",
     "What": "Variable",
     "defdec": "Def",
     "display": "BaudRate_Mantissa",
@@ -104616,7 +104616,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_usart.c@16282@F@USART_ReceiveData9@temp",
+    "ID": "c:stm8l15x_usart.c@16675@F@USART_ReceiveData9@temp",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp",
@@ -104812,7 +104812,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_usart.c@36364@F@USART_ITConfig@usartreg",
+    "ID": "c:stm8l15x_usart.c@37304@F@USART_ITConfig@usartreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "usartreg",
@@ -104826,7 +104826,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_usart.c@36364@F@USART_ITConfig@itpos",
+    "ID": "c:stm8l15x_usart.c@37304@F@USART_ITConfig@itpos",
     "What": "Variable",
     "defdec": "Dec",
     "display": "itpos",
@@ -104854,7 +104854,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_usart.c@38207@F@USART_GetFlagStatus@status",
+    "ID": "c:stm8l15x_usart.c@39210@F@USART_GetFlagStatus@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -104896,7 +104896,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_usart.c@41357@F@USART_GetITStatus@pendingbitstatus",
+    "ID": "c:stm8l15x_usart.c@42441@F@USART_GetITStatus@pendingbitstatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "pendingbitstatus",
@@ -104910,7 +104910,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_usart.c@41394@F@USART_GetITStatus@temp",
+    "ID": "c:stm8l15x_usart.c@42479@F@USART_GetITStatus@temp",
     "What": "Variable",
     "defdec": "Def",
     "display": "temp",
@@ -104924,7 +104924,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_usart.c@41414@F@USART_GetITStatus@itpos",
+    "ID": "c:stm8l15x_usart.c@42500@F@USART_GetITStatus@itpos",
     "What": "Variable",
     "defdec": "Def",
     "display": "itpos",
@@ -104938,7 +104938,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_usart.c@41435@F@USART_GetITStatus@itmask1",
+    "ID": "c:stm8l15x_usart.c@42522@F@USART_GetITStatus@itmask1",
     "What": "Variable",
     "defdec": "Def",
     "display": "itmask1",
@@ -104952,7 +104952,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_usart.c@41458@F@USART_GetITStatus@itmask2",
+    "ID": "c:stm8l15x_usart.c@42546@F@USART_GetITStatus@itmask2",
     "What": "Variable",
     "defdec": "Def",
     "display": "itmask2",
@@ -104966,7 +104966,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_usart.c@41481@F@USART_GetITStatus@enablestatus",
+    "ID": "c:stm8l15x_usart.c@42570@F@USART_GetITStatus@enablestatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "enablestatus",
@@ -105022,7 +105022,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_wfe.c@6762@F@WFE_WakeUpSourceEventCmd@register_index",
+    "ID": "c:stm8l15x_wfe.c@6904@F@WFE_WakeUpSourceEventCmd@register_index",
     "What": "Variable",
     "defdec": "Def",
     "display": "register_index",
@@ -105050,7 +105050,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_wfe.c@10352@F@WFE_GetWakeUpSourceEventStatus@status",
+    "ID": "c:stm8l15x_wfe.c@10590@F@WFE_GetWakeUpSourceEventStatus@status",
     "What": "Variable",
     "defdec": "Def",
     "display": "status",
@@ -105064,7 +105064,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_wwdg.c@4222@macro@BIT_MASK",
+    "ID": "c:stm8l15x_wwdg.c@4310@macro@BIT_MASK",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "BIT_MASK",
@@ -105106,7 +105106,7 @@
     "scope": null
   },
   {
-    "ID": "c:stm8l15x_wwdg.c@5936@F@WWDG_SetWindowValue@tmpreg",
+    "ID": "c:stm8l15x_wwdg.c@6072@F@WWDG_SetWindowValue@tmpreg",
     "What": "Variable",
     "defdec": "Def",
     "display": "tmpreg",
@@ -108090,7 +108090,7 @@
     "scope": null
   },
   {
-    "ID": "c:Radio.h@28@macro@__RADIO_H__",
+    "ID": "c:Radio.h@29@macro@__RADIO_H__",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "__RADIO_H__",
