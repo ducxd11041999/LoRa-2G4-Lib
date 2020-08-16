@@ -124,7 +124,7 @@ void setup() {
 
   if (IS_MASTER)
   {
-    Radio.SetRangingRequestAddress(rangingAddress[2]);
+    Radio.SetRangingRequestAddress(rangingAddress[0]);
     Radio.SetDioIrqParams( masterIrqMask, masterIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetTx((TickTime_t) {
       RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -133,7 +133,7 @@ void setup() {
   else // SLAVE
   {
     Radio.SetRangingIdLength(RANGING_IDCHECK_LENGTH_32_BITS);
-    Radio.SetDeviceRangingAddress(rangingAddress[2]);
+    Radio.SetDeviceRangingAddress(rangingAddress[0]);
     Radio.SetDioIrqParams( slaveIrqMask, slaveIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetRx((TickTime_t) {
       RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -189,9 +189,9 @@ void loop() {
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR, &reg[0], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 1, &reg[1], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 2, &reg[2], 1);
-            Serial.println(reg[0]);
-            Serial.println(reg[1]);
-            Serial.println(reg[2]);
+            // Serial.println(reg[0]);
+            // Serial.println(reg[1]);
+            // Serial.println(reg[2]);
 
             double rangingResult = Radio.GetRangingResult(RANGING_RESULT_RAW);
             Serial.println(rangingResult);
