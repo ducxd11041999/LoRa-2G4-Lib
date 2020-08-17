@@ -1,7 +1,7 @@
 #include "Radio.h"
 #include "FreqLUT.h"
 
-#define IS_MASTER 0
+#define IS_MASTER 1
 
 #define TX_OUTPUT_POWER                             13 // dBm
 #define RX_TIMEOUT_TICK_SIZE                        RADIO_TICK_SIZE_1000_US
@@ -33,7 +33,9 @@ const char* IrqRangingCodeName[] = {
   "IRQ_RANGING_SLAVE_ERROR_CODE",
   "IRQ_RANGING_SLAVE_VALID_CODE",
   "IRQ_RANGING_MASTER_ERROR_CODE",
-  "IRQ_RANGING_MASTER_VALID_CODE"
+  "IRQ_RANGING_MASTER_VALID_CODE",
+  "IRQ_RANGING_REQUEST_VALID_CODE", 
+  "IRQ_RANGING_SLAVE_RESPONE_CODE"
 };
 
 typedef enum
@@ -82,7 +84,7 @@ PacketStatus_t packetStatus;
 ModulationParams_t modulationParams;
 
 AppStates_t AppState = APP_IDLE;
-IrqRangingCode_t MasterIrqRangingCode = IRQ_RANGING_MASTER_ERROR_CODE;
+IrqRangingCode_t IrqRangingCode = IRQ_RANGING_MASTER_ERROR_CODE;
 uint8_t Buffer[BUFFER_SIZE];
 uint8_t BufferSize = BUFFER_SIZE;
 
@@ -124,7 +126,7 @@ void setup() {
 
   if (IS_MASTER)
   {
-    Radio.SetRangingRequestAddress(rangingAddress[2]);
+    Radio.SetRangingRequestAddress(rangingAddress[0]);
     Radio.SetDioIrqParams( masterIrqMask, masterIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetTx((TickTime_t) {
       RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -133,7 +135,7 @@ void setup() {
   else // SLAVE
   {
     Radio.SetRangingIdLength(RANGING_IDCHECK_LENGTH_32_BITS);
-    Radio.SetDeviceRangingAddress(rangingAddress[2]);
+    Radio.SetDeviceRangingAddress(rangingAddress[0]);
     Radio.SetDioIrqParams( slaveIrqMask, slaveIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetRx((TickTime_t) {
       RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -181,17 +183,17 @@ void loop() {
       // Serial.println("APP_RANGING");
       if (IS_MASTER)
       {
-        switch (MasterIrqRangingCode)
+        switch (IrqRangingCode)
         {
           case IRQ_RANGING_MASTER_VALID_CODE:
             uint8_t reg[3];
-            
+
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR, &reg[0], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 1, &reg[1], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 2, &reg[2], 1);
-            Serial.println(reg[0]);
-            Serial.println(reg[1]);
-            Serial.println(reg[2]);
+            //            Serial.println(reg[0]);
+            //            Serial.println(reg[1]);
+            //            Serial.println(reg[2]);
 
             double rangingResult = Radio.GetRangingResult(RANGING_RESULT_RAW);
             Serial.println(rangingResult);
@@ -202,15 +204,30 @@ void loop() {
           default:
             break;
         }
-
         Radio.SetTx((TickTime_t) {
           RADIO_TICK_SIZE_1000_US, 0xFFFF
         });
+      } else {
+        switch (IrqRangingCode)
+        {
+          case IRQ_RANGING_SLAVE_ERROR_CODE:
+            Serial.println("SLAVE ERR");
+            break;
+          case IRQ_RANGING_REQUEST_VALID_CODE:
+            Serial.println("Request");
+            break;
+          case IRQ_RANGING_SLAVE_RESPONE_CODE:
+            Serial.println("Respone");
+            break;
+          default:
+            Serial.println("SLAVE");
+            break;
+        }
       }
       break;
     case APP_CAD:
       AppState = APP_IDLE;
-      // Serial.println("APP_CAD");
+      Serial.println("APP_CAD");
       break;
     default:
       AppState = APP_IDLE;
@@ -231,21 +248,25 @@ void rxDoneIRQ( void )
 void rxSyncWordDoneIRQ( void )
 {
   AppState = APP_RX_SYNC_WORD;
+  Serial.println("sync word");
 }
 
 void rxHeaderDoneIRQ( void )
 {
   AppState = APP_RX_HEADER;
+  Serial.println("rx header");
 }
 
 void txTimeoutIRQ( void )
 {
   AppState = APP_TX_TIMEOUT;
+  Serial.println("tx timeout");
 }
 
 void rxTimeoutIRQ( void )
 {
   AppState = APP_RX_TIMEOUT;
+  Serial.println("rx timeout");
 }
 
 void rxErrorIRQ( IrqErrorCode_t errCode )
@@ -256,7 +277,7 @@ void rxErrorIRQ( IrqErrorCode_t errCode )
 void rangingDoneIRQ( IrqRangingCode_t val )
 {
   AppState = APP_RANGING;
-  MasterIrqRangingCode = val;
+  IrqRangingCode = val;
 }
 
 void cadDoneIRQ( bool cadFlag )
