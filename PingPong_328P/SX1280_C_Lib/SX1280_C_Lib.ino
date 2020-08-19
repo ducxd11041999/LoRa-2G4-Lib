@@ -1,6 +1,6 @@
 #include "Radio.h"
 
-#define IS_MASTER 1
+#define IS_MASTER 0
 
 #define RF_FREQUENCY                                2400000000// Hz
 #define TX_OUTPUT_POWER                             13 // dBm
@@ -12,7 +12,7 @@
 const uint8_t PingMsg[] = "PING";
 const uint8_t PongMsg[] = "PONG";
 #define PINGPONGSIZE                                4
-
+uint8_t rev[3] = {0,0,0};
 typedef enum
 {
   APP_LOWPOWER,
@@ -141,6 +141,7 @@ void loop() {
 
           for (int i = BufferSize - 1; i >= 0; i--)
           {
+            rev[i] = Buffer[i];
             if (i != 0) {
               Serial.print(Buffer[i]);
               Serial.print(":");
@@ -156,8 +157,13 @@ void loop() {
         break;
       case APP_RX_TIMEOUT:
         AppState = APP_LOWPOWER;
-
+        
         Serial.println("Timeout");
+        Serial.print(rev[2]);
+        Serial.print(":");
+        Serial.print(rev[1]);
+        Serial.print(":");
+        Serial.println(rev[0]);
         Radio.SetRx( ( TickTime_t ) {
           RX_TIMEOUT_TICK_SIZE, RX_TIMEOUT_VALUE
         }  );

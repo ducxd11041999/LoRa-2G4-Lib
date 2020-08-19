@@ -1,7 +1,7 @@
 #include "Radio.h"
 #include "FreqLUT.h"
 
-#define IS_MASTER 1
+#define IS_MASTER 0x01
 
 #define TX_OUTPUT_POWER                             13 // dBm
 #define RX_TIMEOUT_TICK_SIZE                        RADIO_TICK_SIZE_1000_US
@@ -126,7 +126,8 @@ void setup() {
 
   if (IS_MASTER)
   {
-    Radio.SetRangingRequestAddress(rangingAddress[0]);
+    Serial.print(rangingAddress[0], HEX);
+    Radio.SetRangingRequestAddress(rangingAddress[2]);
     Radio.SetDioIrqParams( masterIrqMask, masterIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetTx((TickTime_t) {
       RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -135,7 +136,7 @@ void setup() {
   else // SLAVE
   {
     Radio.SetRangingIdLength(RANGING_IDCHECK_LENGTH_32_BITS);
-    Radio.SetDeviceRangingAddress(rangingAddress[0]);
+    Radio.SetDeviceRangingAddress(rangingAddress[2]);
     Radio.SetDioIrqParams( slaveIrqMask, slaveIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetRx((TickTime_t) {
       RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -146,6 +147,7 @@ void setup() {
 }
 
 void loop() {
+  //delay(1000);
   switch (AppState)
   {
     case APP_IDLE:
