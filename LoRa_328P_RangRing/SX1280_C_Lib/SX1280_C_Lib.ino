@@ -166,7 +166,7 @@ void RangingPacketInit(long RangingCalib)
 
 void Slave_Init()
 {
-  Role = SLAVE;
+    Role = SLAVE;
     Serial.println ("Salve role");
     Radio.SetRangingIdLength(RANGING_IDCHECK_LENGTH_32_BITS);
     Radio.SetDeviceRangingAddress(rangingAddress[2]);
@@ -178,7 +178,7 @@ void Slave_Init()
 
 void Master_Init()
 {
-  Role = MASTER ;
+    Role = MASTER ;
     Serial.println ("Master role");
     Radio.SetRangingRequestAddress(rangingAddress[2]);
     Radio.SetDioIrqParams( masterIrqMask, masterIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);

@@ -1001,8 +1001,8 @@ double __GetRangingResult(RadioRangingResultTypes_t resultType)
           // distance [m] = ( complement2( register ) * 150 ) / ( 2^12 * bandwidth[MHz] ) )
           // The API provide BW in [Hz] so the implemented formula is complement2( register ) / bandwidth[Hz] * A,
           // where A = 150 / (2^12 / 1e6) = 36621.09
-          //val = ( double )complement2( valLsb, 24 ) / ( double )__GetLoRaBandwidth( ) * 36621.09375;
-          val = ( double )complement2( valLsb, 24 ) / ( double )__GetLoRaBandwidth( );
+          val = ( double )complement2( valLsb, 24 ) / ( double )__GetLoRaBandwidth( ) * 36621.09375;
+          //val = ( double )complement2( valLsb, 24 ) / ( double )__GetLoRaBandwidth( );
           break;
 
         case RANGING_RESULT_AVERAGED:

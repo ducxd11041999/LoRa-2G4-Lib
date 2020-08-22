@@ -87,7 +87,7 @@ AppStates_t AppState = APP_IDLE;
 IrqRangingCode_t IrqRangingCode = IRQ_RANGING_MASTER_ERROR_CODE;
 uint8_t Buffer[BUFFER_SIZE];
 uint8_t BufferSize = BUFFER_SIZE;
-uint8_t indexAddr = 1;
+
 void setup() {
   Serial.begin(9600);
   if (IS_MASTER)
@@ -118,15 +118,15 @@ void setup() {
   Radio.SetPacketType( modulationParams.PacketType );
   Radio.SetModulationParams( &modulationParams );
   Radio.SetPacketParams( &packetParams );
-  Radio.SetRfFrequency( Channels[1] );
+  Radio.SetRfFrequency( Channels[0] );
   Radio.SetTxParams( TX_OUTPUT_POWER, RADIO_RAMP_20_US );
   Radio.SetBufferBaseAddresses( 0x00, 0x00 );
   Radio.SetRangingCalibration( RNG_CALIB_1600[5] ); // Bandwith 1600, SF10
-  
+  Radio.SetInterruptMode();
 
   if (IS_MASTER)
   {
-    //Serial.print(rangingAddress[1], HEX);
+    Serial.print(rangingAddress[1], HEX);
     Radio.SetRangingRequestAddress(rangingAddress[1]);
     Radio.SetDioIrqParams( masterIrqMask, masterIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetTx((TickTime_t) {
@@ -188,9 +188,8 @@ void loop() {
         switch (IrqRangingCode)
         {
           case IRQ_RANGING_MASTER_VALID_CODE:
-            Radio.SetRangingRequestAddress(rangingAddress[indexAddr]);
-            Radio.SetInterruptMode();
             uint8_t reg[3];
+
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR, &reg[0], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 1, &reg[1], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 2, &reg[2], 1);
@@ -201,11 +200,7 @@ void loop() {
 
             double rangingResult = Radio.GetRangingResult(RANGING_RESULT_RAW);
             Serial.println(rangingResult);
-            Serial.println(indexAddr);
             
-            if(++indexAddr > 2){
-              indexAddr = 1;
-            }
             break;
           case IRQ_RANGING_MASTER_ERROR_CODE:
             Serial.println("Raging Error");
@@ -227,7 +222,6 @@ void loop() {
             break;
           case IRQ_RANGING_SLAVE_RESPONE_CODE:
             Serial.println("Respone");
-           // Serial.print(rangingAddress[2], HEX);
             break;
           default:
             Serial.println("SLAVE");

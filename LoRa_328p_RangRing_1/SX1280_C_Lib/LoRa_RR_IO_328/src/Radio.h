@@ -71,7 +71,6 @@ typedef struct {
   double (*GetFrequencyError)();
   void (*ProcessIrqs)(void);
   void (*ForcePreambleLength)(RadioPreambleLengths_t preambleLength);
-  
 } Radio_t;
 
 static const Radio_t Radio = {
