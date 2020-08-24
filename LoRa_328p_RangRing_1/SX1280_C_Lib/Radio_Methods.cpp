@@ -2,6 +2,14 @@
 #include "Arduino.h"
 #include "SPI.h"
 
+double t0 =       -0.016432807883697;                         // X0
+double t1 =       0.323147003165358;                          // X1
+double t2 =       0.014922061351196;                          // X1^2
+double t3 =       0.000137832006285;                          // X1^3
+double t4 =       0.536873856625399;                          // X2
+double t5 =       0.040890089178579;                          // X2^2
+double t6 =       -0.001074801048732;                         // X2^3
+double t7 =       0.000009240142234;                          // X2^4
 static RadioCallbacks_t *__callbacks = NULL;
 static bool __IrqState = false;
 static bool __PollingMode = false;
@@ -330,7 +338,6 @@ void __SetTx(TickTime_t timeout)
   // prior to SetTx
   if ( __GetPacketType( true ) == PACKET_TYPE_RANGING )
   {
-    __SetRangingRole( RADIO_RANGING_ROLE_MASTER );
   }
   __WriteCommand( RADIO_SET_TX, buf, 3 );
   __OperatingMode = MODE_TX;
@@ -942,7 +949,7 @@ int32_t complement2( const uint32_t num, const uint8_t bitCnt )
   int32_t retVal = ( int32_t )num;
   if ( num >= 2 << ( bitCnt - 2 ) )
   {
-    retVal -= 2 << ( bitCnt - 1 );
+    retVal -= (uint32_t)2 << ( bitCnt - 1 );
   }
   return retVal;
 }
@@ -982,7 +989,7 @@ double __GetRangingResult(RadioRangingResultTypes_t resultType)
       __SetStandby( STDBY_XOSC );
       __WriteRegister_1( 0x97F, __ReadRegister_1( 0x97F ) | ( 1 << 1 ) ); // enable LORA modem clock
       __WriteRegister_1( REG_LR_RANGINGRESULTCONFIG, ( __ReadRegister_1( REG_LR_RANGINGRESULTCONFIG ) & MASK_RANGINGMUXSEL ) | ( ( ( ( uint8_t )resultType ) & 0x03 ) << 4 ) );
-      valLsb = ( ( __ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR ) << 16 ) | ( __ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR + 1 ) << 8 ) | ( __ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR + 2 ) ) );
+      valLsb = ( ( (uint32_t)__ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR ) << 16 ) | ( (uint32_t)__ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR + 1 ) << 8 ) | ( (uint32_t)__ReadRegister_1( REG_LR_RANGINGRESULTBASEADDR + 2 ) ) );
       __SetStandby( STDBY_RC );
 
       // Convertion from LSB to distance. For explanation on the formula, refer to Datasheet of SX1280
@@ -995,6 +1002,7 @@ double __GetRangingResult(RadioRangingResultTypes_t resultType)
           // The API provide BW in [Hz] so the implemented formula is complement2( register ) / bandwidth[Hz] * A,
           // where A = 150 / (2^12 / 1e6) = 36621.09
           val = ( double )complement2( valLsb, 24 ) / ( double )__GetLoRaBandwidth( ) * 36621.09375;
+          //val = ( double )complement2( valLsb, 24 ) / ( double )__GetLoRaBandwidth( );
           break;
 
         case RANGING_RESULT_AVERAGED:
@@ -1008,6 +1016,19 @@ double __GetRangingResult(RadioRangingResultTypes_t resultType)
       break;
     default:
       break;
+  }
+   if (val <= 50)
+  {
+    int8_t rssi = __GetRssiInst(), val2 ;
+    val = t0 + t1 * rssi + t2 * pow(rssi,2) + t3 * pow(rssi, 3) +t4 * val + t5 * pow(val,2) + t6 * pow(val, 3) + t7 * pow(val, 4) ; // calculate according to source code
+    val2 = exp((val + 2.4917)/7.2262); // calculate according to datasheet 
+    #ifdef DEBUG 
+    Serial.print("After Short range correction : ");
+    Serial.print(val);
+    Serial.print(" (fomular from source code) or ");
+    Serial.print(val2);
+    Serial.println(" (fomular from datasheet)");
+    #endif 
   }
   return val;
 }
@@ -1222,7 +1243,6 @@ void __ProcessIrqs(void)
           }
           break;
         case MODE_TX:
-        //Serial.println("ssss");
           if ( ( irqRegs & IRQ_TX_DONE ) == IRQ_TX_DONE )
           {
             if ( __callbacks->txDone != NULL )
@@ -1285,14 +1305,14 @@ void __ProcessIrqs(void)
           {
             if ( __callbacks->rangingDone != NULL )
             {
-              __callbacks->rangingDone( IRQ_RANGING_SLAVE_VALID_CODE );
+              __callbacks->rangingDone( IRQ_RANGING_REQUEST_VALID_CODE );
             }
           }
           if ( ( irqRegs & IRQ_RANGING_SLAVE_RESPONSE_DONE ) == IRQ_RANGING_SLAVE_RESPONSE_DONE )
           {
             if ( __callbacks->rangingDone != NULL )
             {
-              __callbacks->rangingDone( IRQ_RANGING_SLAVE_VALID_CODE );
+              __callbacks->rangingDone( IRQ_RANGING_SLAVE_RESPONE_CODE );
             }
           }
           if ( ( irqRegs & IRQ_RX_TX_TIMEOUT ) == IRQ_RX_TX_TIMEOUT )
