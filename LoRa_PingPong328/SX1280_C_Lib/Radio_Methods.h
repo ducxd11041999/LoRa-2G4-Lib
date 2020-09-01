@@ -1,4 +1,3 @@
-// #pragma once
 #ifndef __RADIO_METHODS_H__
 #define __RADIO_METHODS_H__
 

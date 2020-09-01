@@ -1222,7 +1222,6 @@ void __ProcessIrqs(void)
           }
           break;
         case MODE_TX:
-        //Serial.println("ssss");
           if ( ( irqRegs & IRQ_TX_DONE ) == IRQ_TX_DONE )
           {
             if ( __callbacks->txDone != NULL )

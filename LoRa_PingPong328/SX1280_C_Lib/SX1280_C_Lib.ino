@@ -1,20 +1,18 @@
 #include "Radio.h"
-#include <Wire.h>
-#include <BME280.h>
-BME280 bme(Wire,0x76);
+
 #define IS_MASTER 1
 
 #define RF_FREQUENCY                                2400000000// Hz
 #define TX_OUTPUT_POWER                             13 // dBm
 #define RX_TIMEOUT_TICK_SIZE                        RADIO_TICK_SIZE_1000_US
-#define RX_TIMEOUT_VALUE                            4000 // ms
-#define TX_TIMEOUT_VALUE                            2000 // ms
+#define RX_TIMEOUT_VALUE                            1000 // ms
+#define TX_TIMEOUT_VALUE                            10000 // ms
 #define BUFFER_SIZE                                 255
 
 const uint8_t PingMsg[] = "PING";
 const uint8_t PongMsg[] = "PONG";
 #define PINGPONGSIZE                                4
-
+uint8_t rev[3] = {0,0,0};
 typedef enum
 {
   APP_LOWPOWER,
@@ -59,9 +57,7 @@ ModulationParams_t modulationParams;
 AppStates_t AppState = APP_LOWPOWER;
 uint8_t Buffer[BUFFER_SIZE];
 uint8_t BufferSize = BUFFER_SIZE;
-uint8_t counter = 0;
-uint8_t Pres = 0;
-
+uint8_t counter[] = {0, 0, 0};
 void setup() {
   Serial.begin(9600);
   Serial.println("SX1280");
@@ -73,12 +69,12 @@ void setup() {
   modulationParams.PacketType = PACKET_TYPE_LORA;
   modulationParams.Params.LoRa.SpreadingFactor = LORA_SF12;
   modulationParams.Params.LoRa.Bandwidth = LORA_BW_1600;
-  modulationParams.Params.LoRa.CodingRate = LORA_CR_4_8;
+  modulationParams.Params.LoRa.CodingRate = LORA_CR_LI_4_7;
 
   packetParams.PacketType = PACKET_TYPE_LORA;
-  packetParams.Params.LoRa.PreambleLength = 15;
+  packetParams.Params.LoRa.PreambleLength = 12;
   packetParams.Params.LoRa.HeaderType = LORA_PACKET_VARIABLE_LENGTH;
-  packetParams.Params.LoRa.PayloadLength = 1;
+  packetParams.Params.LoRa.PayloadLength = 3;
   packetParams.Params.LoRa.Crc = LORA_CRC_ON;
   packetParams.Params.LoRa.InvertIQ = LORA_IQ_NORMAL;
 
@@ -106,30 +102,25 @@ void setup() {
     }  );
   }
   AppState = APP_LOWPOWER;
-  if (bme.begin() < 0) {
-    Serial.println("Error communicating with sensor, check wiring and I2C address");
-    while(1){}
-  }
 }
 
 void loop() {
-  
-  //Serial.print("\t");
-  bme.readSensor();
-  //Serial.print(bme.getTemperature_C(),2);
-  Pres = bme.getPressure_Pa();
-  Serial.print(Pres);
-  Serial.print("\n");
-  //Pres = Pres ;
-  //Serial.print(Pres,6);
   if (IS_MASTER)
   {
-    Radio.SendPayload(&Pres, 8, ( TickTime_t ) {
+    if (++counter[0] == 60)
+    {
+      counter[0] = 0;
+      if (++counter[1] == 60) {
+        counter[1] = 0;
+        if (++counter[2] == 255) {
+          counter[2] = 255;
+          Serial.print("End Game . . .");
+        }
+      }
+    }
+    Radio.SendPayload(counter, 10, ( TickTime_t ) {
       RX_TIMEOUT_TICK_SIZE, TX_TIMEOUT_VALUE
     }, 0 );
-    
-    //if (++counter > 100) counter = 0;
-    
     delay(1000);
   }
   else
@@ -145,12 +136,18 @@ void loop() {
         if (BufferSize > 0)
         {
           Serial.print("RX ");
-          Serial.print(BufferSize);
-          Serial.println(" bytes:");
+//          Serial.print(BufferSize);
+//          Serial.println(" bytes:");
 
-          for (int i = 0; i < BufferSize; i++)
+          for (int i = BufferSize - 1; i >= 0; i--)
           {
-            Serial.println(Buffer[i]);
+            rev[i] = Buffer[i];
+            if (i != 0) {
+              Serial.print(Buffer[i]);
+              Serial.print(":");
+            } else {
+              Serial.println(Buffer[i]);
+            }
           }
         }
 
@@ -160,8 +157,13 @@ void loop() {
         break;
       case APP_RX_TIMEOUT:
         AppState = APP_LOWPOWER;
-
+        
         Serial.println("Timeout");
+        Serial.print(rev[2]);
+        Serial.print(":");
+        Serial.print(rev[1]);
+        Serial.print(":");
+        Serial.println(rev[0]);
         Radio.SetRx( ( TickTime_t ) {
           RX_TIMEOUT_TICK_SIZE, RX_TIMEOUT_VALUE
         }  );

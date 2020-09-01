@@ -1,18 +1,18 @@
 #include "Radio.h"
 
-#define IS_MASTER 0
+#define IS_MASTER 1U
 
 #define RF_FREQUENCY                                2400000000// Hz
 #define TX_OUTPUT_POWER                             13 // dBm
 #define RX_TIMEOUT_TICK_SIZE                        RADIO_TICK_SIZE_1000_US
 #define RX_TIMEOUT_VALUE                            1000 // ms
-#define TX_TIMEOUT_VALUE                            10000 // ms
+#define TX_TIMEOUT_VALUE                            1000 // ms
 #define BUFFER_SIZE                                 255
 
 const uint8_t PingMsg[] = "PING";
 const uint8_t PongMsg[] = "PONG";
 #define PINGPONGSIZE                                4
-uint8_t rev[3] = {0,0,0};
+
 typedef enum
 {
   APP_LOWPOWER,
@@ -57,24 +57,29 @@ ModulationParams_t modulationParams;
 AppStates_t AppState = APP_LOWPOWER;
 uint8_t Buffer[BUFFER_SIZE];
 uint8_t BufferSize = BUFFER_SIZE;
-uint8_t counter[] = {0, 0, 0};
+
+uint8_t Index_SF = 0;
+uint8_t counter = 0;
+
+RadioLoRaSpreadingFactors_t SetSF[] = {LORA_SF5, LORA_SF10, LORA_SF12};
+
 void setup() {
   Serial.begin(9600);
   Serial.println("SX1280");
-
+  Serial.println("PingPong");
   Radio.Init(&Callbacks);
   Radio.SetRegulatorMode( USE_DCDC ); // Can also be set in LDO mode but consume more power
   Serial.println( "\n\n\r     SX1280 Ping Pong Demo Application. \n\n\r");
 
   modulationParams.PacketType = PACKET_TYPE_LORA;
-  modulationParams.Params.LoRa.SpreadingFactor = LORA_SF12;
+  modulationParams.Params.LoRa.SpreadingFactor = SetSF[Index_SF];
   modulationParams.Params.LoRa.Bandwidth = LORA_BW_1600;
-  modulationParams.Params.LoRa.CodingRate = LORA_CR_LI_4_7;
+  modulationParams.Params.LoRa.CodingRate = LORA_CR_4_5;
 
   packetParams.PacketType = PACKET_TYPE_LORA;
   packetParams.Params.LoRa.PreambleLength = 12;
   packetParams.Params.LoRa.HeaderType = LORA_PACKET_VARIABLE_LENGTH;
-  packetParams.Params.LoRa.PayloadLength = 3;
+  packetParams.Params.LoRa.PayloadLength = 1;
   packetParams.Params.LoRa.Crc = LORA_CRC_ON;
   packetParams.Params.LoRa.InvertIQ = LORA_IQ_NORMAL;
 
@@ -83,6 +88,7 @@ void setup() {
   Radio.SetModulationParams( &modulationParams );
   Radio.SetPacketParams( &packetParams );
   Radio.SetRfFrequency( RF_FREQUENCY );
+  Radio.SetRfFrequency( 2402000000U );
   Radio.SetBufferBaseAddresses( 0x00, 0x00 );
   Radio.SetTxParams( TX_OUTPUT_POWER, RADIO_RAMP_20_US );
 
@@ -107,21 +113,25 @@ void setup() {
 void loop() {
   if (IS_MASTER)
   {
-    if (++counter[0] == 60)
-    {
-      counter[0] = 0;
-      if (++counter[1] == 60) {
-        counter[1] = 0;
-        if (++counter[2] == 255) {
-          counter[2] = 255;
-          Serial.print("End Game . . .");
-        }
+      //Serial.println("PingPong");
+      Radio.SendPayload( &counter, 1, ( TickTime_t ) {
+        RX_TIMEOUT_TICK_SIZE, TX_TIMEOUT_VALUE
+      }, 0 );
+      if (++counter > 100) 
+      {
+        counter = 0;
+        Index_SF++;
+        Serial.print("Change SF");
+        Serial.println(Index_SF);
+        if(Index_SF==3)
+          {
+              Serial.print("Reset SF");
+              Index_SF = 0;
+          }
+        modulationParams.Params.LoRa.SpreadingFactor = SetSF[Index_SF];
+        Radio.SetModulationParams( &modulationParams );
       }
-    }
-    Radio.SendPayload(counter, 10, ( TickTime_t ) {
-      RX_TIMEOUT_TICK_SIZE, TX_TIMEOUT_VALUE
-    }, 0 );
-    delay(1000);
+      delay(1000);
   }
   else
   {
@@ -139,15 +149,23 @@ void loop() {
 //          Serial.print(BufferSize);
 //          Serial.println(" bytes:");
 
-          for (int i = BufferSize - 1; i >= 0; i--)
+          for (int i = 0; i < BufferSize; i++)
           {
-            rev[i] = Buffer[i];
-            if (i != 0) {
-              Serial.print(Buffer[i]);
-              Serial.print(":");
-            } else {
-              Serial.println(Buffer[i]);
-            }
+            Serial.println(Buffer[i]);
+            if(Buffer[i] == 99)
+            {
+                Index_SF++;
+                Serial.print("Change SF");
+                Serial.println(Index_SF);
+
+                if(Index_SF==3)
+                  {
+                      Serial.print("Reset SF");
+                      Index_SF = 0;
+                  }
+                modulationParams.Params.LoRa.SpreadingFactor = SetSF[Index_SF];
+                Radio.SetModulationParams( &modulationParams );
+             }
           }
         }
 
@@ -157,13 +175,8 @@ void loop() {
         break;
       case APP_RX_TIMEOUT:
         AppState = APP_LOWPOWER;
-        
+
         Serial.println("Timeout");
-        Serial.print(rev[2]);
-        Serial.print(":");
-        Serial.print(rev[1]);
-        Serial.print(":");
-        Serial.println(rev[0]);
         Radio.SetRx( ( TickTime_t ) {
           RX_TIMEOUT_TICK_SIZE, RX_TIMEOUT_VALUE
         }  );
