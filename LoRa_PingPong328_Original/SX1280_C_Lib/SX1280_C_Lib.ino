@@ -61,7 +61,7 @@ uint8_t BufferSize = BUFFER_SIZE;
 uint8_t Index_SF = 0;
 uint8_t counter = 0;
 
-RadioLoRaSpreadingFactors_t SetSF[] = {LORA_SF5, LORA_SF10, LORA_SF12};
+RadioLoRaSpreadingFactors_t SetSF[] = {LORA_SF12, LORA_SF10, LORA_SF5};
 
 void setup() {
   Serial.begin(9600);

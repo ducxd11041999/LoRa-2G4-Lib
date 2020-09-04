@@ -136,7 +136,7 @@ void setup() {
   else // SLAVE
   {
     Radio.SetRangingIdLength(RANGING_IDCHECK_LENGTH_32_BITS);
-    Radio.SetDeviceRangingAddress(rangingAddress[1]);
+    Radio.SetDeviceRangingAddress(rangingAddress[2]);
     Radio.SetDioIrqParams( slaveIrqMask, slaveIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetRx((TickTime_t) {
       RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -188,8 +188,8 @@ void loop() {
         switch (IrqRangingCode)
         {
           case IRQ_RANGING_MASTER_VALID_CODE:
-            Radio.SetRangingRequestAddress(rangingAddress[indexAddr]);
-            Radio.SetInterruptMode();
+           // Radio.SetRangingRequestAddress(rangingAddress[1]);
+           // Radio.SetInterruptMode();
             uint8_t reg[3];
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR, &reg[0], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 1, &reg[1], 1);
@@ -197,15 +197,11 @@ void loop() {
             // Serial.println(reg[0]);
             // Serial.println(reg[1]);
             // Serial.println(reg[2]);
-
-
             double rangingResult = Radio.GetRangingResult(RANGING_RESULT_RAW);
             Serial.println(rangingResult);
-            Serial.println(indexAddr);
+//            Serial.println(indexAddr);
             
-            if(++indexAddr > 2){
-              indexAddr = 1;
-            }
+
             break;
           case IRQ_RANGING_MASTER_ERROR_CODE:
             Serial.println("Raging Error");
@@ -226,8 +222,14 @@ void loop() {
             Serial.println("Request");
             break;
           case IRQ_RANGING_SLAVE_RESPONE_CODE:
-            Serial.println("Respone");
+            Serial.println(indexAddr);
            // Serial.print(rangingAddress[2], HEX);
+               if(indexAddr == 1){
+                  indexAddr = 2;
+               }else{
+                  indexAddr = 1;   
+               }
+            Radio.SetDeviceRangingAddress(rangingAddress[indexAddr]);
             break;
           default:
             Serial.println("SLAVE");

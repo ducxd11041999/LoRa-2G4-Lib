@@ -1,6 +1,6 @@
 #include "Radio.h"
 
-#define IS_MASTER 1U
+#define IS_MASTER 0U
 
 #define RF_FREQUENCY                                2400000000// Hz
 #define TX_OUTPUT_POWER                             13 // dBm
