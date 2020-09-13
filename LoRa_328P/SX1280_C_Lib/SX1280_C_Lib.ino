@@ -1,6 +1,7 @@
 #include "Radio.h"
 #include <Wire.h>
 #include "BME280.h"
+
 BME280 bme(Wire,0x76);
 #define IS_MASTER 1
 
@@ -60,7 +61,7 @@ AppStates_t AppState = APP_LOWPOWER;
 uint8_t Buffer[BUFFER_SIZE];
 uint8_t BufferSize = BUFFER_SIZE;
 uint8_t counter = 0;
-uint8_t Pres = 0;
+int Pres = 0;
 
 void setup() {
   Serial.begin(9600);
@@ -118,13 +119,13 @@ void loop() {
   bme.readSensor();
   //Serial.print(bme.getTemperature_C(),2);
   Pres = bme.getPressure_Pa();
-  Serial.print(Pres);
+  Serial.print((int)Pres);
   Serial.print("\n");
   //Pres = Pres ;
   //Serial.print(Pres,6);
   if (IS_MASTER)
   {
-    Radio.SendPayload(&Pres, 8, ( TickTime_t ) {
+    Radio.SendPayload(&counter, 8, ( TickTime_t ) {
       RX_TIMEOUT_TICK_SIZE, TX_TIMEOUT_VALUE
     }, 0 );
     
