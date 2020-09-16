@@ -1,7 +1,7 @@
 #include "Radio.h"
 #include "FreqLUT.h"
 
-#define IS_MASTER 0x01
+#define IS_MASTER 0x00
 
 #define TX_OUTPUT_POWER                             13 // dBm
 #define RX_TIMEOUT_TICK_SIZE                        RADIO_TICK_SIZE_1000_US
@@ -110,7 +110,7 @@ void setup() {
   packetParams.PacketType = PACKET_TYPE_RANGING;
   packetParams.Params.LoRa.PreambleLength = 12;
   packetParams.Params.LoRa.HeaderType = LORA_PACKET_VARIABLE_LENGTH;
-  packetParams.Params.LoRa.PayloadLength = 7;
+  packetParams.Params.LoRa.PayloadLength = 1;
   packetParams.Params.LoRa.Crc = LORA_CRC_ON;
   packetParams.Params.LoRa.InvertIQ = LORA_IQ_NORMAL;
 
@@ -118,7 +118,7 @@ void setup() {
   Radio.SetPacketType( modulationParams.PacketType );
   Radio.SetModulationParams( &modulationParams );
   Radio.SetPacketParams( &packetParams );
-  Radio.SetRfFrequency( Channels[0] );
+  Radio.SetRfFrequency( Channels[1] );
   Radio.SetTxParams( TX_OUTPUT_POWER, RADIO_RAMP_20_US );
   Radio.SetBufferBaseAddresses( 0x00, 0x00 );
   Radio.SetRangingCalibration( RNG_CALIB_1600[5] ); // Bandwith 1600, SF10

@@ -974,7 +974,8 @@ int32_t __GetLoRaBandwidth( )
 double __GetRangingResult(RadioRangingResultTypes_t resultType)
 {
   uint32_t valLsb = 0;
-  double val = 0.0;
+  double d_Uncalibrated = 0.0;
+  double d_Calibration, d_Cable = 0;
 
   switch ( __GetPacketType( true ) )
   {
@@ -993,23 +994,24 @@ double __GetRangingResult(RadioRangingResultTypes_t resultType)
           // The theoretical conversion from register value to distance [m] is given by:
           // distance [m] = ( complement2( register ) * 150 ) / ( 2^12 * bandwidth[MHz] ) )
           // The API provide BW in [Hz] so the implemented formula is complement2( register ) / bandwidth[Hz] * A,
-          // where A = 150 / (2^12 / 1e6) = 36621.09
-          val = ( double )complement2( valLsb, 24 ) / ( double )__GetLoRaBandwidth( ) * 36621.09375;
+          // where A = 150 / (2^12 *  1e6) = 36621.09
+          d_Uncalibrated = ( double )complement2( valLsb, 24 ) / ( double )__GetLoRaBandwidth( ) * 36621.09375;
+          d_Calibration =  (d_Uncalibrated - d_Cable) / 2 ;
           break;
 
         case RANGING_RESULT_AVERAGED:
         case RANGING_RESULT_DEBIASED:
         case RANGING_RESULT_FILTERED:
-          val = ( double )valLsb * 20.0 / 100.0;
+          d_Uncalibrated = ( double )valLsb * 20.0 / 100.0;
           break;
         default:
-          val = 0.0;
+          d_Uncalibrated = 0.0;
       }
       break;
     default:
       break;
   }
-  return val;
+  return d_Calibration;
 }
 
 void __SetRangingCalibration(uint16_t cal)
