@@ -975,7 +975,7 @@ double __GetRangingResult(RadioRangingResultTypes_t resultType)
 {
   uint32_t valLsb = 0;
   double d_Uncalibrated = 0.0;
-  double d_Calibration, d_Cable = 0;
+  double d_Calibration, d_Cable = 0 , d_Offset = 377870;
 
   switch ( __GetPacketType( true ) )
   {
@@ -996,7 +996,7 @@ double __GetRangingResult(RadioRangingResultTypes_t resultType)
           // The API provide BW in [Hz] so the implemented formula is complement2( register ) / bandwidth[Hz] * A,
           // where A = 150 / (2^12 *  1e6) = 36621.09
           d_Uncalibrated = ( double )complement2( valLsb, 24 ) / ( double )__GetLoRaBandwidth( ) * 36621.09375;
-          d_Calibration =  (d_Uncalibrated - d_Cable) / 2 ;
+          d_Calibration =  (d_Uncalibrated - d_Cable - d_Offset) / 2 ;
           break;
 
         case RANGING_RESULT_AVERAGED:

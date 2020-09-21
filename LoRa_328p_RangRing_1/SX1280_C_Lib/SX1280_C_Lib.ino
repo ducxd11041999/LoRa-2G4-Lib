@@ -1,8 +1,7 @@
 #include "Radio.h"
 #include "FreqLUT.h"
 
-#define IS_MASTER 0x00
-
+#define IS_MASTER 0x01
 #define TX_OUTPUT_POWER                             13 // dBm
 #define RX_TIMEOUT_TICK_SIZE                        RADIO_TICK_SIZE_1000_US
 #define RX_TIMEOUT_VALUE                            1000 // ms
@@ -87,7 +86,7 @@ AppStates_t AppState = APP_IDLE;
 IrqRangingCode_t IrqRangingCode = IRQ_RANGING_MASTER_ERROR_CODE;
 uint8_t Buffer[BUFFER_SIZE];
 uint8_t BufferSize = BUFFER_SIZE;
-
+int divNumber = 1000; 
 void setup() {
   Serial.begin(9600);
   if (IS_MASTER)
@@ -189,18 +188,14 @@ void loop() {
         {
           case IRQ_RANGING_MASTER_VALID_CODE:
             uint8_t reg[3];
-
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR, &reg[0], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 1, &reg[1], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 2, &reg[2], 1);
             // Serial.println(reg[0]);
             // Serial.println(reg[1]);
             // Serial.println(reg[2]);
-
-
             double rangingResult = Radio.GetRangingResult(RANGING_RESULT_RAW);
-            Serial.println(rangingResult);
-            
+            Serial.println(rangingResult, 6);
             break;
           case IRQ_RANGING_MASTER_ERROR_CODE:
             Serial.println("Raging Error");
