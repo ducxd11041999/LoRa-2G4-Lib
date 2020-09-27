@@ -1,3 +1,4 @@
+
 #include "Radio.h"
 #include <Wire.h>
 #include "BME280.h"
@@ -109,18 +110,18 @@ void setup() {
   AppState = APP_LOWPOWER;
   if (bme.begin() < 0) {
     Serial.println("Error communicating with sensor, check wiring and I2C address");
-    while(1){}
+    //while(1){}
   }
 }
 
 void loop() {
   
   //Serial.print("\t");
-  bme.readSensor();
-  //Serial.print(bme.getTemperature_C(),2);
-  Pres = bme.getPressure_Pa();
-  Serial.print((int)Pres);
-  Serial.print("\n");
+//  bme.readSensor();
+//  //Serial.print(bme.getTemperature_C(),2);
+//  Pres = bme.getPressure_Pa();
+//  Serial.print((int)Pres);
+//  Serial.print("\n");
   //Pres = Pres ;
   //Serial.print(Pres,6);
   if (IS_MASTER)

@@ -1,7 +1,7 @@
 #include "Radio.h"
 #include "FreqLUT.h"
 
-#define IS_MASTER 0x01
+#define IS_MASTER 0x00
 #define TX_OUTPUT_POWER                             13 // dBm
 #define RX_TIMEOUT_TICK_SIZE                        RADIO_TICK_SIZE_1000_US
 #define RX_TIMEOUT_VALUE                            1000 // ms
@@ -117,7 +117,7 @@ void setup() {
   Radio.SetPacketType( modulationParams.PacketType );
   Radio.SetModulationParams( &modulationParams );
   Radio.SetPacketParams( &packetParams );
-  Radio.SetRfFrequency( Channels[1] );
+  Radio.SetRfFrequency( Channels[2] );
   Radio.SetTxParams( TX_OUTPUT_POWER, RADIO_RAMP_20_US );
   Radio.SetBufferBaseAddresses( 0x00, 0x00 );
   Radio.SetRangingCalibration( RNG_CALIB_1600[5] ); // Bandwith 1600, SF10
@@ -125,8 +125,7 @@ void setup() {
 
   if (IS_MASTER)
   {
-    Serial.print(rangingAddress[1], HEX);
-    Radio.SetRangingRequestAddress(rangingAddress[1]);
+    Radio.SetRangingRequestAddress(rangingAddress[2]);
     Radio.SetDioIrqParams( masterIrqMask, masterIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetTx((TickTime_t) {
       RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -135,7 +134,7 @@ void setup() {
   else // SLAVE
   {
     Radio.SetRangingIdLength(RANGING_IDCHECK_LENGTH_32_BITS);
-    Radio.SetDeviceRangingAddress(rangingAddress[1]);
+    Radio.SetDeviceRangingAddress(rangingAddress[2]);
     Radio.SetDioIrqParams( slaveIrqMask, slaveIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetRx((TickTime_t) {
       RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -195,7 +194,7 @@ void loop() {
             // Serial.println(reg[1]);
             // Serial.println(reg[2]);
             double rangingResult = Radio.GetRangingResult(RANGING_RESULT_RAW);
-            Serial.println(rangingResult, 6);
+            Serial.println(rangingResult, 3);
             break;
           case IRQ_RANGING_MASTER_ERROR_CODE:
             Serial.println("Raging Error");
