@@ -33,7 +33,7 @@ const char* IrqRangingCodeName[] = {
   "IRQ_RANGING_SLAVE_VALID_CODE",
   "IRQ_RANGING_MASTER_ERROR_CODE",
   "IRQ_RANGING_MASTER_VALID_CODE",
-  "IRQ_RANGING_REQUEST_VALID_CODE", 
+  "IRQ_RANGING_REQUEST_VALID_CODE",
   "IRQ_RANGING_SLAVE_RESPONE_CODE"
 };
 
@@ -48,7 +48,8 @@ typedef enum
   APP_RX_SYNC_WORD,
   APP_RX_HEADER,
   APP_RANGING,
-  APP_CAD
+  APP_CAD,
+  APP_LOWPOWER
 } AppStates_t;
 
 void txDoneIRQ( void );
@@ -60,7 +61,10 @@ void rxTimeoutIRQ( void );
 void rxErrorIRQ( IrqErrorCode_t errCode );
 void rangingDoneIRQ( IrqRangingCode_t val );
 void cadDoneIRQ( bool cadFlag );
-
+void handleRangingContinueous();
+void configPacketType( RadioPacketTypes_t packetType);
+void handleRxLoRa();
+void handleTxLoRa();
 RadioCallbacks_t Callbacks = {
   txDoneIRQ,
   rxDoneIRQ,
@@ -84,9 +88,13 @@ ModulationParams_t modulationParams;
 
 AppStates_t AppState = APP_IDLE;
 IrqRangingCode_t IrqRangingCode = IRQ_RANGING_MASTER_ERROR_CODE;
+
+
 uint8_t Buffer[BUFFER_SIZE];
 uint8_t BufferSize = BUFFER_SIZE;
-int divNumber = 1000; 
+uint8_t SendPackage = 111;
+
+
 void setup() {
   Serial.begin(9600);
   if (IS_MASTER)
@@ -146,6 +154,76 @@ void setup() {
 
 void loop() {
   //delay(1000);
+  if (__GetPacketType(true) == PACKET_TYPE_RANGING) {
+    handleRangingContinueous();
+    //configPacketType(PACKET_TYPE_LORA);
+  }
+  else {
+    if (IS_MASTER) {
+      handleRxLoRa();
+    }
+    else {
+      handleTxLoRa();
+    }
+    configPacketType(PACKET_TYPE_RANGING);
+  }
+}
+
+void configPacketType( RadioPacketTypes_t packetType) {
+  modulationParams.PacketType = packetType;
+}
+
+void handleTxLoRa() {
+  Radio.SendPayload( &SendPackage, 1, ( TickTime_t ) {
+    RX_TIMEOUT_TICK_SIZE, TX_TIMEOUT_VALUE
+  }, 0 );
+  delay(1000);
+}
+void handleRxLoRa() {
+  switch (AppState)
+  {
+    case APP_LOWPOWER:
+      break;
+    case APP_RX:
+      AppState = APP_LOWPOWER;
+
+      Radio.GetPayload( Buffer, &BufferSize, BUFFER_SIZE );
+      if (BufferSize > 0)
+      {
+        Serial.print("RX ");
+        for (int i = 0; i < BufferSize; i++)
+        {
+          Serial.println(Buffer[i]);
+        }
+      }
+
+      Radio.SetRx( ( TickTime_t ) {
+        RX_TIMEOUT_TICK_SIZE, RX_TIMEOUT_VALUE
+      }  );
+      break;
+    case APP_RX_TIMEOUT:
+      AppState = APP_LOWPOWER;
+
+      Serial.println("Timeout");
+      Radio.SetRx( ( TickTime_t ) {
+        RX_TIMEOUT_TICK_SIZE, RX_TIMEOUT_VALUE
+      }  );
+      break;
+    case APP_RX_ERROR:
+      AppState = APP_LOWPOWER;
+      break;
+    case APP_TX:
+      AppState = APP_LOWPOWER;
+      break;
+    case APP_TX_TIMEOUT:
+      AppState = APP_LOWPOWER;
+      break;
+    default:
+      AppState = APP_LOWPOWER;
+      break;
+  }
+}
+void handleRangingContinueous() {
   switch (AppState)
   {
     case APP_IDLE:
