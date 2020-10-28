@@ -1,13 +1,17 @@
 #include "Radio.h"
 #include "FreqLUT.h"
+#include <SimpleKalmanFilter.h>
+#define RESTRICT_PITCH
+SimpleKalmanFilter KalmanFilter(1, 1, 0.001);
+#include <EEPROM.h>
 
-#define IS_MASTER 0x00
+#define IS_MASTER 0x01
 #define TX_OUTPUT_POWER                             13 // dBm
 #define RX_TIMEOUT_TICK_SIZE                        RADIO_TICK_SIZE_1000_US
 #define RX_TIMEOUT_VALUE                            1000 // ms
 #define TX_TIMEOUT_VALUE                            10000 // ms
 #define BUFFER_SIZE                                 255
-
+#define Label 1
 const uint32_t rangingAddress[] = {
   0x10000000,
   0x32100000,
@@ -65,6 +69,8 @@ void handleRangingContinueous();
 void configPacketType( RadioPacketTypes_t packetType);
 void handleRxLoRa();
 void handleTxLoRa();
+void filterKalman(double rangingResult, int options);
+void noFilterKalman(double rangingResult);
 RadioCallbacks_t Callbacks = {
   txDoneIRQ,
   rxDoneIRQ,
@@ -93,8 +99,9 @@ IrqRangingCode_t IrqRangingCode = IRQ_RANGING_MASTER_ERROR_CODE;
 uint8_t Buffer[BUFFER_SIZE];
 uint8_t BufferSize = BUFFER_SIZE;
 uint8_t SendPackage = 111;
-
-
+uint8_t Address = 0;
+uint32_t SumNoFilter = 0;
+uint32_t SumFilter = 0;
 void setup() {
   Serial.begin(9600);
   if (IS_MASTER)
@@ -125,7 +132,7 @@ void setup() {
   Radio.SetPacketType( modulationParams.PacketType );
   Radio.SetModulationParams( &modulationParams );
   Radio.SetPacketParams( &packetParams );
-  Radio.SetRfFrequency( Channels[2] );
+  Radio.SetRfFrequency( Channels[1] );
   Radio.SetTxParams( TX_OUTPUT_POWER, RADIO_RAMP_20_US );
   Radio.SetBufferBaseAddresses( 0x00, 0x00 );
   Radio.SetRangingCalibration( RNG_CALIB_1600[5] ); // Bandwith 1600, SF10
@@ -133,7 +140,7 @@ void setup() {
 
   if (IS_MASTER)
   {
-    Radio.SetRangingRequestAddress(rangingAddress[2]);
+    Radio.SetRangingRequestAddress(rangingAddress[1]);
     Radio.SetDioIrqParams( masterIrqMask, masterIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetTx((TickTime_t) {
       RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -142,7 +149,7 @@ void setup() {
   else // SLAVE
   {
     Radio.SetRangingIdLength(RANGING_IDCHECK_LENGTH_32_BITS);
-    Radio.SetDeviceRangingAddress(rangingAddress[2]);
+    Radio.SetDeviceRangingAddress(rangingAddress[1]);
     Radio.SetDioIrqParams( slaveIrqMask, slaveIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetRx((TickTime_t) {
       RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -153,20 +160,8 @@ void setup() {
 }
 
 void loop() {
-  //delay(1000);
-  if (__GetPacketType(true) == PACKET_TYPE_RANGING) {
-    handleRangingContinueous();
-    //configPacketType(PACKET_TYPE_LORA);
-  }
-  else {
-    if (IS_MASTER) {
-      handleRxLoRa();
-    }
-    else {
-      handleTxLoRa();
-    }
-    configPacketType(PACKET_TYPE_RANGING);
-  }
+  handleRangingContinueous();
+  // Serial.print("a");
 }
 
 void configPacketType( RadioPacketTypes_t packetType) {
@@ -258,7 +253,7 @@ void handleRangingContinueous() {
       break;
     case APP_RANGING:
       AppState = APP_IDLE;
-      // Serial.println("APP_RANGING");
+      //Serial.println(IrqRangingCode);
       if (IS_MASTER)
       {
         switch (IrqRangingCode)
@@ -268,11 +263,9 @@ void handleRangingContinueous() {
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR, &reg[0], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 1, &reg[1], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 2, &reg[2], 1);
-            // Serial.println(reg[0]);
-            // Serial.println(reg[1]);
-            // Serial.println(reg[2]);
             double rangingResult = Radio.GetRangingResult(RANGING_RESULT_RAW);
-            Serial.println(rangingResult, 3);
+            filterKalman(rangingResult, 1);
+            //Serial.print(rangingResult);
             break;
           case IRQ_RANGING_MASTER_ERROR_CODE:
             Serial.println("Raging Error");
@@ -350,13 +343,85 @@ void rxErrorIRQ( IrqErrorCode_t errCode )
   AppState = APP_RX_ERROR;
 }
 
-void rangingDoneIRQ( IrqRangingCode_t val )
+void rangingDoneIRQ(IrqRangingCode_t val )
 {
   AppState = APP_RANGING;
+  //  Serial.println("aaa");
   IrqRangingCode = val;
 }
 
 void cadDoneIRQ( bool cadFlag )
 {
   AppState = APP_CAD;
+}
+/*=====================User Functions=====================*/
+uint32_t FloatToUint(float n)
+{
+  return (uint32_t)(*(uint32_t*)&n);
+}
+
+float UintToFloat(uint32_t n)
+{
+  return (float)(*(float*)&n);
+}
+
+void filterKalman(double rangingResult, int options = 0)
+{
+  double kalmanFilter = KalmanFilter.updateEstimate(rangingResult);
+  if (kalmanFilter < 0 || rangingResult < 0) {
+    return;
+  }
+  else {
+    EEPROM.write(Address, kalmanFilter);
+    SumFilter += kalmanFilter;
+    delay(5);
+    if (Address < 100) {
+#ifdef Label
+      Serial.print('.');
+#endif
+      Address++;
+    }
+    else {
+      Serial.println();
+      if (options)
+      {
+#ifdef Label
+        Serial.print("Median of Result : ");
+#endif
+        Serial.println(EEPROM.read(50));
+      }
+      else {
+        double resultCalib = SumFilter / 100.0;
+        SumFilter = 0;
+#ifdef Label
+        Serial.print("Mean of Result Filter: ");
+#endif
+        Serial.println(resultCalib);
+      }
+      Address = 0;
+    }
+  }
+}
+void noFilterKalman(double rangingResult)
+{
+  if (rangingResult < 0)
+    return;
+  else {
+    SumNoFilter += rangingResult;
+    if (Address < 100)
+    {
+      Serial.print('.');
+      Address++;
+    }
+    else {
+      Serial.println();
+#ifdef Label
+      Serial.print("Mean of Result NoFilter: ");
+#endif
+      double reasultNoFilter = SumNoFilter / 100.0;
+      SumNoFilter = 0;
+      Serial.println(reasultNoFilter);
+      Address = 0;
+    }
+  }
 }

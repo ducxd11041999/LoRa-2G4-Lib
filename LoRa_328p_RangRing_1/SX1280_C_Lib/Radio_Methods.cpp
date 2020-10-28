@@ -976,7 +976,8 @@ double __GetRangingResult(RadioRangingResultTypes_t resultType)
   uint32_t valLsb = 0;
   double d_Uncalibrated = 0.0;
   double d_Calibration, d_Cable = 0 ;
-  double d_Offset = 377870; ///sf10
+  double d_Offset = 377874; ///sf10
+//  double d_Offset = 377870; ///sf10
   ///double d_Offset = 377860; //sf12
 
   switch ( __GetPacketType( true ) )
@@ -1327,6 +1328,7 @@ void __ProcessIrqs(void)
             if ( __callbacks->rangingDone != NULL )
             {
               __callbacks->rangingDone( IRQ_RANGING_MASTER_ERROR_CODE );
+              //Serial.print("Ok");
             }
           }
           if ( ( irqRegs & IRQ_RANGING_MASTER_RESULT_VALID ) == IRQ_RANGING_MASTER_RESULT_VALID )
