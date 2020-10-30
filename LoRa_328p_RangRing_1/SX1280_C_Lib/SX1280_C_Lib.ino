@@ -2,17 +2,22 @@
 #include "FreqLUT.h"
 #include <SimpleKalmanFilter.h>
 #define RESTRICT_PITCH
-SimpleKalmanFilter KalmanFilter(1, 1, 0.001);
 #include <EEPROM.h>
 
-#define IS_MASTER 0x01
+SimpleKalmanFilter KalmanFilter(1, 1, 0.01); 
+
+#define IS_MASTER 1U /// MASTER = 1 , SLAVE = 0
+
 #define TX_OUTPUT_POWER                             13 // dBm
 #define RX_TIMEOUT_TICK_SIZE                        RADIO_TICK_SIZE_1000_US
 #define RX_TIMEOUT_VALUE                            1000 // ms
-#define TX_TIMEOUT_VALUE                            10000 // ms
+#define TX_TIMEOUT_VALUE                             10000 // ms
 #define BUFFER_SIZE                                 255
-#define Label 1
+
+#define Label 1    // debug label
+
 typedef unsigned char uchar;
+
 const uint32_t rangingAddress[] = {
   0x10000000,
   0x32100000,
@@ -26,6 +31,7 @@ const uint32_t rangingAddress[] = {
    \brief Ranging raw factors
                                     SF5     SF6     SF7     SF8     SF9     SF10
 */
+
 const uint16_t RNG_CALIB_0400[] = { 10299,  10271,  10244,  10242,  10230,  10246  };
 const uint16_t RNG_CALIB_0800[] = { 11486,  11474,  11453,  11426,  11417,  11401  };
 const uint16_t RNG_CALIB_1600[] = { 13308,  13493,  13528,  13515,  13430,  13376  };
@@ -74,7 +80,6 @@ void filterKalman(double rangingResult, int options);
 void noFilterKalman(double rangingResult);
 void writeEEPROM(int addr, float value);
 double readEEPROM(int addr);
-float bytesToFloat(uchar b0, uchar b1, uchar b2, uchar b3);
 RadioCallbacks_t Callbacks = {
   txDoneIRQ,
   rxDoneIRQ,
@@ -104,8 +109,9 @@ uint8_t Buffer[BUFFER_SIZE];
 uint8_t BufferSize = BUFFER_SIZE;
 uint8_t SendPackage = 111;
 int Address = 0;
-uint32_t SumNoFilter = 0;
-uint32_t SumFilter = 0;
+double SumNoFilter = 0;
+double SumFilter = 0;
+
 void setup() {
   Serial.begin(9600);
   if (IS_MASTER)
@@ -165,9 +171,6 @@ void setup() {
 
 void loop() {
   handleRangingContinueous();
-  //writeEEPROM(0,2.8);
-  //delay(100);
-  //Serial.println(readEEPROM(0));
 }
 
 void configPacketType( RadioPacketTypes_t packetType) {
@@ -270,7 +273,8 @@ void handleRangingContinueous() {
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 1, &reg[1], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 2, &reg[2], 1);
             double rangingResult = Radio.GetRangingResult(RANGING_RESULT_RAW);
-            filterKalman(rangingResult, 1);
+            //filterKalman(rangingResult, 1);
+            noFilterKalman(rangingResult);
             //Serial.print(rangingResult);
             break;
           case IRQ_RANGING_MASTER_ERROR_CODE:
@@ -373,37 +377,42 @@ float UintToFloat(uint32_t n)
 
 void filterKalman(double rangingResult, int options = 0)
 {
+  //Serial.println(rangingResult);
   double kalmanFilter = KalmanFilter.updateEstimate(rangingResult);
   if (kalmanFilter < 0 || rangingResult < 0) {
     return;
   }
   else {
     //EEPROM.write(Address, kalmanFilter);
-    writeEEPROM(Address , kalmanFilter);
+    if(options == 1 ){
+      writeEEPROM(Address , kalmanFilter);
+    }
     SumFilter += kalmanFilter;
     delay(5);
     if (Address < 400) {
 #ifdef Label
       Serial.print('.');
 #endif
-      Address+=4;
+      Address += 4;
     }
     else {
+#ifdef Label
       Serial.println();
+#endif
       if (options)
       {
 #ifdef Label
         Serial.print("Median of Result : ");
 #endif
-        Serial.println(readEEPROM(200));
+        Serial.println(readEEPROM(Address / 2));
       }
       else {
-        double resultCalib = SumFilter / 100.0;
+        double resultAverage = (double)SumFilter / (100);
         SumFilter = 0;
 #ifdef Label
         Serial.print("Mean of Result Filter: ");
 #endif
-        Serial.println(resultCalib);
+        Serial.println(resultAverage);
       }
       Address = 0;
     }
@@ -415,14 +424,16 @@ void noFilterKalman(double rangingResult)
     return;
   else {
     SumNoFilter += rangingResult;
-    if (Address < 100)
+    if (Address < 400)
     {
+#ifdef Label
       Serial.print('.');
-      Address++;
+#endif
+      Address = Address + 4;
     }
     else {
       Serial.println();
-#ifdef Label
+#if Label
       Serial.print("Mean of Result NoFilter: ");
 #endif
       double reasultNoFilter = SumNoFilter / 100.0;
@@ -433,43 +444,35 @@ void noFilterKalman(double rangingResult)
   }
 }
 
-void writeEEPROM(int addr, float value)
+void writeEEPROM(int addr, double value)
 {
-    //Serial.print(sizeof(value));
-    //double b;
-    byte bytes[4];
-    *((float *)bytes) = value;
-    EEPROM.write(addr , bytes[0]);
-    delay(5);
-    EEPROM.write(addr + 1, bytes[1]);
-    delay(5);
-    EEPROM.write(addr + 2 , bytes[2]);
-    delay(5);
-    EEPROM.write(addr + 3 , bytes[3]);
-    delay(5);   
+  //Serial.print(sizeof(value));
+  //double b;
+  byte bytes[4];
+  *((double *)bytes) = value;
+  EEPROM.write(addr , bytes[0]);
+  delay(5);
+  EEPROM.write(addr + 1, bytes[1]);
+  delay(5);
+  EEPROM.write(addr + 2 , bytes[2]);
+  delay(5);
+  EEPROM.write(addr + 3 , bytes[3]);
+  delay(5);
 }
 
 double readEEPROM(int addr)
 {
-   byte bytes[4]; 
-   bytes[0] = EEPROM.read(addr);
-   bytes[1] = EEPROM.read(addr + 1);
-   bytes[2] = EEPROM.read(addr + 2);
-   bytes[3] = EEPROM.read(addr + 3);
-   float f;
-   memcpy(&f , bytes,sizeof(f));
-   return f;
-}
-
-
-float bytesToFloat(uchar b0, uchar b1, uchar b2, uchar b3)
-{
-    float output;
-
-    *((uchar*)(&output) + 3) = b0;
-    *((uchar*)(&output) + 2) = b1;
-    *((uchar*)(&output) + 1) = b2;
-    *((uchar*)(&output) + 0) = b3;
-
-    return output;
+  byte bytes[4];
+  bytes[0] = EEPROM.read(addr);
+  delay(5);
+  bytes[1] = EEPROM.read(addr + 1);
+  delay(5);
+  bytes[2] = EEPROM.read(addr + 2);
+  delay(5);
+  bytes[3] = EEPROM.read(addr + 3);
+  delay(5);
+  double f;
+  memcpy(&f , bytes, sizeof(f));
+  delay(5);
+  return f;
 }

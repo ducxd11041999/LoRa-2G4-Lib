@@ -976,7 +976,7 @@ double __GetRangingResult(RadioRangingResultTypes_t resultType)
   uint32_t valLsb = 0;
   double d_Uncalibrated = 0.0;
   double d_Calibration, d_Cable = 0 ;
-  double d_Offset = 377874; ///sf10
+  double d_Offset = 377870; ///sf10
 //  double d_Offset = 377870; ///sf10
   ///double d_Offset = 377860; //sf12
 
