@@ -1,13 +1,29 @@
 #include "Radio.h"
 #include "FreqLUT.h"
+#include <SimpleKalmanFilter.h>
+#include <EEPROM.h>
+#include <Wire.h>                                                  // required by BME280 library
+#include <Adafruit_BME280.h>
+#include <Adafruit_Sensor.h>
+Adafruit_BME280 bme; // I2C
+#define SEALEVELPRESSURE_HPA (1013.25)
+unsigned long delayTime;
 
-#define IS_MASTER 1
+SimpleKalmanFilter KalmanFilter(1, 1, 0.01); 
+
+#define IS_MASTER 1U /// MASTER = 1 , SLAVE = 0
 
 #define TX_OUTPUT_POWER                             13 // dBm
 #define RX_TIMEOUT_TICK_SIZE                        RADIO_TICK_SIZE_1000_US
 #define RX_TIMEOUT_VALUE                            1000 // ms
-#define TX_TIMEOUT_VALUE                            10000 // ms
+#define TX_TIMEOUT_VALUE                             10000 // ms
 #define BUFFER_SIZE                                 255
+
+#define USE_FILTER 1
+#define FILTER_OPTIONS 0
+#define Label 1    // debug label
+
+typedef unsigned char uchar;
 
 const uint32_t rangingAddress[] = {
   0x10000000,
@@ -22,6 +38,7 @@ const uint32_t rangingAddress[] = {
    \brief Ranging raw factors
                                     SF5     SF6     SF7     SF8     SF9     SF10
 */
+
 const uint16_t RNG_CALIB_0400[] = { 10299,  10271,  10244,  10242,  10230,  10246  };
 const uint16_t RNG_CALIB_0800[] = { 11486,  11474,  11453,  11426,  11417,  11401  };
 const uint16_t RNG_CALIB_1600[] = { 13308,  13493,  13528,  13515,  13430,  13376  };
@@ -33,7 +50,9 @@ const char* IrqRangingCodeName[] = {
   "IRQ_RANGING_SLAVE_ERROR_CODE",
   "IRQ_RANGING_SLAVE_VALID_CODE",
   "IRQ_RANGING_MASTER_ERROR_CODE",
-  "IRQ_RANGING_MASTER_VALID_CODE"
+  "IRQ_RANGING_MASTER_VALID_CODE",
+  "IRQ_RANGING_REQUEST_VALID_CODE",
+  "IRQ_RANGING_SLAVE_RESPONE_CODE"
 };
 
 typedef enum
@@ -47,7 +66,8 @@ typedef enum
   APP_RX_SYNC_WORD,
   APP_RX_HEADER,
   APP_RANGING,
-  APP_CAD
+  APP_CAD,
+  APP_LOWPOWER
 } AppStates_t;
 
 void txDoneIRQ( void );
@@ -59,6 +79,15 @@ void rxTimeoutIRQ( void );
 void rxErrorIRQ( IrqErrorCode_t errCode );
 void rangingDoneIRQ( IrqRangingCode_t val );
 void cadDoneIRQ( bool cadFlag );
+void handleRangingContinueous();
+void configPacketType( RadioPacketTypes_t packetType);
+void handleRxLoRa();
+void handleTxLoRa();
+void filterKalman(double rangingResult, int options);
+void noFilterKalman(double rangingResult);
+void writeEEPROM(int addr, float value);
+double readEEPROM(int addr);
+void readBMESensor();
 
 RadioCallbacks_t Callbacks = {
   txDoneIRQ,
@@ -82,12 +111,30 @@ PacketStatus_t packetStatus;
 ModulationParams_t modulationParams;
 
 AppStates_t AppState = APP_IDLE;
-IrqRangingCode_t MasterIrqRangingCode = IRQ_RANGING_MASTER_ERROR_CODE;
+IrqRangingCode_t IrqRangingCode = IRQ_RANGING_MASTER_ERROR_CODE;
+
+
 uint8_t Buffer[BUFFER_SIZE];
 uint8_t BufferSize = BUFFER_SIZE;
+uint8_t SendPackage = 111;
+int Address = 0;
+double SumNoFilter = 0;
+double SumFilter = 0;
 
 void setup() {
   Serial.begin(9600);
+  Serial.println(F("BME280 test"));
+
+  if (!bme.begin(0x77, &Wire)) {
+      Serial.println("Could not find a valid BME280 sensor, check wiring!");
+      while (1);
+  }
+
+  Serial.println("-- Default Test --");
+  Serial.println("normal mode, 16x oversampling for all, filter off,");
+  Serial.println("0.5ms standby period");
+  delayTime = 5000;
+
   if (IS_MASTER)
   {
     Serial.println("SX1280 MASTER");
@@ -108,7 +155,7 @@ void setup() {
   packetParams.PacketType = PACKET_TYPE_RANGING;
   packetParams.Params.LoRa.PreambleLength = 12;
   packetParams.Params.LoRa.HeaderType = LORA_PACKET_VARIABLE_LENGTH;
-  packetParams.Params.LoRa.PayloadLength = 7;
+  packetParams.Params.LoRa.PayloadLength = 1;
   packetParams.Params.LoRa.Crc = LORA_CRC_ON;
   packetParams.Params.LoRa.InvertIQ = LORA_IQ_NORMAL;
 
@@ -116,7 +163,7 @@ void setup() {
   Radio.SetPacketType( modulationParams.PacketType );
   Radio.SetModulationParams( &modulationParams );
   Radio.SetPacketParams( &packetParams );
-  Radio.SetRfFrequency( Channels[0] );
+  Radio.SetRfFrequency( Channels[1] );
   Radio.SetTxParams( TX_OUTPUT_POWER, RADIO_RAMP_20_US );
   Radio.SetBufferBaseAddresses( 0x00, 0x00 );
   Radio.SetRangingCalibration( RNG_CALIB_1600[5] ); // Bandwith 1600, SF10
@@ -124,7 +171,7 @@ void setup() {
 
   if (IS_MASTER)
   {
-    Radio.SetRangingRequestAddress(rangingAddress[0]);
+    Radio.SetRangingRequestAddress(rangingAddress[1]);
     Radio.SetDioIrqParams( masterIrqMask, masterIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetTx((TickTime_t) {
       RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -133,7 +180,7 @@ void setup() {
   else // SLAVE
   {
     Radio.SetRangingIdLength(RANGING_IDCHECK_LENGTH_32_BITS);
-    Radio.SetDeviceRangingAddress(rangingAddress[0]);
+    Radio.SetDeviceRangingAddress(rangingAddress[1]);
     Radio.SetDioIrqParams( slaveIrqMask, slaveIrqMask, IRQ_RADIO_NONE, IRQ_RADIO_NONE);
     Radio.SetRx((TickTime_t) {
       RADIO_TICK_SIZE_1000_US, 0xFFFF
@@ -144,6 +191,67 @@ void setup() {
 }
 
 void loop() {
+  //handleRangingContinueous();
+  bme.takeForcedMeasurement(); // has no effect in normal mode
+  readBMESensor(); 
+  delay(delayTime);
+}
+
+void configPacketType( RadioPacketTypes_t packetType) {
+  modulationParams.PacketType = packetType;
+}
+
+void handleTxLoRa() {
+  Radio.SendPayload( &SendPackage, 1, ( TickTime_t ) {
+    RX_TIMEOUT_TICK_SIZE, TX_TIMEOUT_VALUE
+  }, 0 );
+  delay(1000);
+}
+void handleRxLoRa() {
+  switch (AppState)
+  {
+    case APP_LOWPOWER:
+      break;
+    case APP_RX:
+      AppState = APP_LOWPOWER;
+
+      Radio.GetPayload( Buffer, &BufferSize, BUFFER_SIZE );
+      if (BufferSize > 0)
+      {
+        Serial.print("RX ");
+        for (int i = 0; i < BufferSize; i++)
+        {
+          Serial.println(Buffer[i]);
+        }
+      }
+
+      Radio.SetRx( ( TickTime_t ) {
+        RX_TIMEOUT_TICK_SIZE, RX_TIMEOUT_VALUE
+      }  );
+      break;
+    case APP_RX_TIMEOUT:
+      AppState = APP_LOWPOWER;
+
+      Serial.println("Timeout");
+      Radio.SetRx( ( TickTime_t ) {
+        RX_TIMEOUT_TICK_SIZE, RX_TIMEOUT_VALUE
+      }  );
+      break;
+    case APP_RX_ERROR:
+      AppState = APP_LOWPOWER;
+      break;
+    case APP_TX:
+      AppState = APP_LOWPOWER;
+      break;
+    case APP_TX_TIMEOUT:
+      AppState = APP_LOWPOWER;
+      break;
+    default:
+      AppState = APP_LOWPOWER;
+      break;
+  }
+}
+void handleRangingContinueous() {
   switch (AppState)
   {
     case APP_IDLE:
@@ -178,23 +286,25 @@ void loop() {
       break;
     case APP_RANGING:
       AppState = APP_IDLE;
-      // Serial.println("APP_RANGING");
+      //Serial.println(IrqRangingCode);
       if (IS_MASTER)
       {
-        switch (MasterIrqRangingCode)
+        switch (IrqRangingCode)
         {
           case IRQ_RANGING_MASTER_VALID_CODE:
             uint8_t reg[3];
-            
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR, &reg[0], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 1, &reg[1], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 2, &reg[2], 1);
-            // Serial.println(reg[0]);
-            // Serial.println(reg[1]);
-            // Serial.println(reg[2]);
-
             double rangingResult = Radio.GetRangingResult(RANGING_RESULT_RAW);
-            Serial.println(rangingResult);
+            
+            if (USE_FILTER){
+              filterKalman(rangingResult, FILTER_OPTIONS);
+            }
+            else{
+              noFilterKalman(rangingResult);
+            }
+            //Serial.print(rangingResult);
             break;
           case IRQ_RANGING_MASTER_ERROR_CODE:
             Serial.println("Raging Error");
@@ -202,15 +312,30 @@ void loop() {
           default:
             break;
         }
-
         Radio.SetTx((TickTime_t) {
           RADIO_TICK_SIZE_1000_US, 0xFFFF
         });
+      } else {
+        switch (IrqRangingCode)
+        {
+          case IRQ_RANGING_SLAVE_ERROR_CODE:
+            Serial.println("SLAVE ERR");
+            break;
+          case IRQ_RANGING_REQUEST_VALID_CODE:
+            Serial.println("Request");
+            break;
+          case IRQ_RANGING_SLAVE_RESPONE_CODE:
+            Serial.println("Respone");
+            break;
+          default:
+            Serial.println("SLAVE");
+            break;
+        }
       }
       break;
     case APP_CAD:
       AppState = APP_IDLE;
-      // Serial.println("APP_CAD");
+      Serial.println("APP_CAD");
       break;
     default:
       AppState = APP_IDLE;
@@ -231,21 +356,25 @@ void rxDoneIRQ( void )
 void rxSyncWordDoneIRQ( void )
 {
   AppState = APP_RX_SYNC_WORD;
+  Serial.println("sync word");
 }
 
 void rxHeaderDoneIRQ( void )
 {
   AppState = APP_RX_HEADER;
+  Serial.println("rx header");
 }
 
 void txTimeoutIRQ( void )
 {
   AppState = APP_TX_TIMEOUT;
+  Serial.println("tx timeout");
 }
 
 void rxTimeoutIRQ( void )
 {
   AppState = APP_RX_TIMEOUT;
+  Serial.println("rx timeout");
 }
 
 void rxErrorIRQ( IrqErrorCode_t errCode )
@@ -253,13 +382,148 @@ void rxErrorIRQ( IrqErrorCode_t errCode )
   AppState = APP_RX_ERROR;
 }
 
-void rangingDoneIRQ( IrqRangingCode_t val )
+void rangingDoneIRQ(IrqRangingCode_t val )
 {
   AppState = APP_RANGING;
-  MasterIrqRangingCode = val;
+  //  Serial.println("aaa");
+  IrqRangingCode = val;
 }
 
 void cadDoneIRQ( bool cadFlag )
 {
   AppState = APP_CAD;
+}
+/*=====================User Functions=====================*/
+uint32_t FloatToUint(float n)
+{
+  return (uint32_t)(*(uint32_t*)&n);
+}
+
+float UintToFloat(uint32_t n)
+{
+  return (float)(*(float*)&n);
+}
+
+void filterKalman(double rangingResult, int options = 0)
+{
+  //Serial.println(rangingResult);
+  double kalmanFilter = KalmanFilter.updateEstimate(rangingResult);
+  if (kalmanFilter < 0 || rangingResult < 0) {
+    return;
+  }
+  else {
+    //EEPROM.write(Address, kalmanFilter);
+    if(options == 1 ){
+      writeEEPROM(Address , kalmanFilter);
+    }
+    SumFilter += kalmanFilter;
+    delay(5);
+    if (Address < 400) {
+#ifdef Label
+      Serial.print('.');
+#endif
+      Address += 4;
+    }
+    else {
+#ifdef Label
+      Serial.println();
+#endif
+      if (options)
+      {
+#ifdef Label
+        Serial.print("Median of Result : ");
+#endif
+        Serial.println(readEEPROM(Address / 2));
+      }
+      else {
+        double resultAverage = (double)SumFilter / (100);
+        SumFilter = 0;
+#ifdef Label
+        Serial.print("Mean of Result Filter: ");
+#endif
+        Serial.println(resultAverage);
+      }
+      Address = 0;
+    }
+  }
+}
+void noFilterKalman(double rangingResult)
+{
+  if (rangingResult < 0)
+    return;
+  else {
+    SumNoFilter += rangingResult;
+    if (Address < 400)
+    {
+#ifdef Label
+      Serial.print('.');
+#endif
+      Address = Address + 4;
+    }
+    else {
+      Serial.println();
+#if Label
+      Serial.print("Mean of Result NoFilter: ");
+#endif
+      double reasultNoFilter = SumNoFilter / 100.0;
+      SumNoFilter = 0;
+      Serial.println(reasultNoFilter);
+      Address = 0;
+    }
+  }
+}
+
+void writeEEPROM(int addr, double value)
+{
+  //Serial.print(sizeof(value));
+  //double b;
+  byte bytes[4];
+  *((double *)bytes) = value;
+  EEPROM.write(addr , bytes[0]);
+  delay(5);
+  EEPROM.write(addr + 1, bytes[1]);
+  delay(5);
+  EEPROM.write(addr + 2 , bytes[2]);
+  delay(5);
+  EEPROM.write(addr + 3 , bytes[3]);
+  delay(5);
+}
+
+double readEEPROM(int addr)
+{
+  byte bytes[4];
+  bytes[0] = EEPROM.read(addr);
+  delay(5);
+  bytes[1] = EEPROM.read(addr + 1);
+  delay(5);
+  bytes[2] = EEPROM.read(addr + 2);
+  delay(5);
+  bytes[3] = EEPROM.read(addr + 3);
+  delay(5);
+  double f;
+  memcpy(&f , bytes, sizeof(f));
+  delay(5);
+  return f;
+}
+
+void readBMESensor()
+{
+  Serial.print("Temperature = ");
+  Serial.print(bme.readTemperature());
+  Serial.println(" *C");
+
+  Serial.print("Pressure = ");
+
+  Serial.print(bme.readPressure() / 100.0F);
+  Serial.println(" hPa");
+
+  Serial.print("Approx. Altitude = ");
+  Serial.print(bme.readAltitude(SEALEVELPRESSURE_HPA));
+  Serial.println(" m");
+
+  Serial.print("Humidity = ");
+  Serial.print(bme.readHumidity());
+  Serial.println(" %");
+
+  Serial.println();        
 }

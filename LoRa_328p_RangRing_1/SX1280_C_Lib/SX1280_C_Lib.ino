@@ -1,8 +1,13 @@
 #include "Radio.h"
 #include "FreqLUT.h"
 #include <SimpleKalmanFilter.h>
-#define RESTRICT_PITCH
 #include <EEPROM.h>
+#include <Wire.h>                                                  // required by BME280 library
+#include <Adafruit_BME280.h>
+#include <Adafruit_Sensor.h>
+Adafruit_BME280 bme; // I2C
+#define SEALEVELPRESSURE_HPA (1013.25)
+unsigned long delayTime;
 
 SimpleKalmanFilter KalmanFilter(1, 1, 0.01); 
 
@@ -14,6 +19,8 @@ SimpleKalmanFilter KalmanFilter(1, 1, 0.01);
 #define TX_TIMEOUT_VALUE                             10000 // ms
 #define BUFFER_SIZE                                 255
 
+#define USE_FILTER 1
+#define FILTER_OPTIONS 0
 #define Label 1    // debug label
 
 typedef unsigned char uchar;
@@ -80,6 +87,8 @@ void filterKalman(double rangingResult, int options);
 void noFilterKalman(double rangingResult);
 void writeEEPROM(int addr, float value);
 double readEEPROM(int addr);
+void readBMESensor();
+
 RadioCallbacks_t Callbacks = {
   txDoneIRQ,
   rxDoneIRQ,
@@ -114,6 +123,18 @@ double SumFilter = 0;
 
 void setup() {
   Serial.begin(9600);
+  Serial.println(F("BME280 test"));
+
+  if (!bme.begin(0x77, &Wire)) {
+      Serial.println("Could not find a valid BME280 sensor, check wiring!");
+      while (1);
+  }
+
+  Serial.println("-- Default Test --");
+  Serial.println("normal mode, 16x oversampling for all, filter off,");
+  Serial.println("0.5ms standby period");
+  delayTime = 5000;
+
   if (IS_MASTER)
   {
     Serial.println("SX1280 MASTER");
@@ -170,7 +191,10 @@ void setup() {
 }
 
 void loop() {
-  handleRangingContinueous();
+  //handleRangingContinueous();
+  bme.takeForcedMeasurement(); // has no effect in normal mode
+  readBMESensor(); 
+  delay(delayTime);
 }
 
 void configPacketType( RadioPacketTypes_t packetType) {
@@ -273,8 +297,13 @@ void handleRangingContinueous() {
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 1, &reg[1], 1);
             Radio.ReadRegister(REG_LR_RANGINGRESULTBASEADDR + 2, &reg[2], 1);
             double rangingResult = Radio.GetRangingResult(RANGING_RESULT_RAW);
-            //filterKalman(rangingResult, 1);
-            noFilterKalman(rangingResult);
+            
+            if (USE_FILTER){
+              filterKalman(rangingResult, FILTER_OPTIONS);
+            }
+            else{
+              noFilterKalman(rangingResult);
+            }
             //Serial.print(rangingResult);
             break;
           case IRQ_RANGING_MASTER_ERROR_CODE:
@@ -475,4 +504,26 @@ double readEEPROM(int addr)
   memcpy(&f , bytes, sizeof(f));
   delay(5);
   return f;
+}
+
+void readBMESensor()
+{
+  Serial.print("Temperature = ");
+  Serial.print(bme.readTemperature());
+  Serial.println(" *C");
+
+  Serial.print("Pressure = ");
+
+  Serial.print(bme.readPressure() / 100.0F);
+  Serial.println(" hPa");
+
+  Serial.print("Approx. Altitude = ");
+  Serial.print(bme.readAltitude(SEALEVELPRESSURE_HPA));
+  Serial.println(" m");
+
+  Serial.print("Humidity = ");
+  Serial.print(bme.readHumidity());
+  Serial.println(" %");
+
+  Serial.println();        
 }
