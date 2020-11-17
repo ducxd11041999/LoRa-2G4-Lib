@@ -4,7 +4,6 @@
 #include <EEPROM.h>
 #include <Wire.h>                                                  // required by BME280 library
 #include <Adafruit_BME280.h>
-#include <Adafruit_Sensor.h>
 Adafruit_BME280 bme; // I2C
 #define SEALEVELPRESSURE_HPA (1013.25)
 unsigned long delayTime;
